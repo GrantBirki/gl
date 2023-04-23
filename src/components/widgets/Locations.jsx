@@ -17,12 +17,12 @@ export default function Locations(props) {
   }
 
   return (
-    <section className="scroll-mt-16 dark:bg-slate-800 bg-blue-50">
+    <section className="scroll-mt-16 dark:bg-slate-800 bg-sage-50">
       <div className="max-w-6xl mx-auto px-4 sm:px-6">
         <div className="md:mx-auto text-center">
           <div className="py-12 md:py-20">
             {props.highlight && (
-              <p className="text-base text-primary dark:text-blue-200 font-semibold tracking-wide uppercase">
+              <p className="text-base text-primary dark:text-sage-200 font-semibold tracking-wide uppercase">
                 {props.highlight}
               </p>
             )}

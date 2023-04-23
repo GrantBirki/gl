@@ -44,7 +44,7 @@ const footerData = {
 
   // The footnote to be displayed in the footer (can contain HTML)
   footNote: `
-    Made by <a class="text-blue-600 hover:underline dark:text-gray-200" target="_blank" href="https://github.com/grantbirki/gl"> Grant and Leah</a> with ❤️
+    Made by <a class="text-sage-800 hover:underline dark:text-gray-200" target="_blank" href="https://github.com/grantbirki/gl"> Grant and Leah</a> with ❤️
   `,
 };
 
