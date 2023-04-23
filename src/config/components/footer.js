@@ -25,15 +25,11 @@ const footerData = {
     },
     {
       title: 'Gallery',
-      links: [
-        { text: 'Photos', href: '#' },
-      ],
+      links: [{ text: 'Photos', href: '#' }],
     },
     {
       title: 'Links',
-      links: [
-        { text: 'Registry', href: '#' },
-      ],
+      links: [{ text: 'Registry', href: '#' }],
     },
   ],
 
@@ -44,9 +40,7 @@ const footerData = {
   ],
 
   // A list of social links to be displayed in the footer
-  socialLinks: [
-    { ariaLabel: 'GitHub', icon: 'tabler:brand-github', href: 'https://github.com/grantbirki/gl' },
-  ],
+  socialLinks: [{ ariaLabel: 'GitHub', icon: 'tabler:brand-github', href: 'https://github.com/grantbirki/gl' }],
 
   // The footnote to be displayed in the footer (can contain HTML)
   footNote: `
