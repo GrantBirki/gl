@@ -1,7 +1,7 @@
 // Configuration for the footer component on all pages
 
 // ----------- imports -----------
-import { getPermalink } from '~/utils/permalinks';
+// import { getPermalink } from '~/utils/permalinks';
 // ----------- imports -----------
 
 const footerData = {
@@ -9,49 +9,30 @@ const footerData = {
   links: [
     {
       // The title of the section
-      title: 'Product',
+      title: 'Details',
       // List of links to be displayed in the section
       links: [
-        { text: 'Features', href: '#' },
-        { text: 'Security', href: '#' },
-        { text: 'Team', href: '#' },
-        { text: 'Enterprise', href: '#' },
-        { text: 'Customer stories', href: '#' },
-        { text: 'Pricing', href: '#' },
-        { text: 'Resources', href: '#' },
+        { text: 'Event Details', href: '#' },
+        { text: 'Venue', href: '#' },
       ],
     },
     {
-      title: 'Platform',
+      title: 'Invite',
       links: [
-        { text: 'Developer API', href: '#' },
-        { text: 'Partners', href: '#' },
-        { text: 'Atom', href: '#' },
-        { text: 'Electron', href: '#' },
-        { text: 'AstroWind Desktop', href: '#' },
+        { text: 'RSVP', href: '#' },
+        { text: 'Digital Save the Date', href: '#' },
       ],
     },
     {
-      title: 'Support',
+      title: 'Gallery',
       links: [
-        { text: 'Docs', href: '#' },
-        { text: 'Community Forum', href: '#' },
-        { text: 'Professional Services', href: '#' },
-        { text: 'Skills', href: '#' },
-        { text: 'Status', href: '#' },
+        { text: 'Photos', href: '#' },
       ],
     },
     {
-      title: 'Company',
+      title: 'Links',
       links: [
-        { text: 'About', href: '#' },
-        { text: 'Team', href: getPermalink('/team') },
-        { text: 'Blog', href: '#' },
-        { text: 'Careers', href: '#' },
-        { text: 'Press', href: '#' },
-        { text: 'Inclusion', href: '#' },
-        { text: 'Social Impact', href: '#' },
-        { text: 'Shop', href: '#' },
+        { text: 'Registry', href: '#' },
       ],
     },
   ],
