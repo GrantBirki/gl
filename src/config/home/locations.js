@@ -5,17 +5,17 @@ const locations = {
   enabled: true,
 
   // Small highlight text at the top of the component
-  highlight: 'Physical Locations',
+  highlight: 'Wedding Location',
 
   // Main title text
-  title: 'Locations',
+  title: 'Location',
   // Subtitle text
-  subtitle: 'Drop in and see us at one of our locations.',
+  subtitle: 'Details about the wedding ceremony and reception locations',
 
   // Location cards to display
   locations: [
     {
-      name: 'Location 1',
+      name: 'Ceremony',
       address: {
         enabled: true,
         line1: '123 Sesame Street',
@@ -24,9 +24,9 @@ const locations = {
         postcode: '12345',
         country: 'United States',
       },
-      description: 'Location 1 description',
+      description: 'Ceremony location and details',
       image: {
-        alt: 'location 1',
+        alt: 'ceremony location',
         height: '140',
         src: 'https://images.unsplash.com/photo-1678986992005-87c3f4a2b0af?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwcm9maWxlLXBhZ2V8MXx8fGVufDB8fHx8&auto=format&fit=crop&w=700&q=60',
       },
@@ -39,16 +39,16 @@ const locations = {
           icon: 'directions',
         },
         {
-          text: 'Call',
+          text: 'Details',
           link: 'tel:1234567890', // phone number
           target: '_self', // opens in same tab
           size: 'large',
-          icon: 'phone',
+          icon: 'link',
         },
       ],
     },
     {
-      name: 'Location 2',
+      name: 'Reception',
       address: {
         enabled: true,
         line1: '123 Sesame Street',
@@ -57,9 +57,9 @@ const locations = {
         postcode: '12345',
         country: 'United States',
       },
-      description: 'Location 2 description',
+      description: 'Reception location and details',
       image: {
-        alt: 'location 2',
+        alt: 'reception location',
         height: '140',
         src: 'https://images.unsplash.com/photo-1678986992005-87c3f4a2b0af?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwcm9maWxlLXBhZ2V8MXx8fGVufDB8fHx8&auto=format&fit=crop&w=700&q=60',
       },
@@ -72,11 +72,11 @@ const locations = {
           icon: 'directions',
         },
         {
-          text: 'Call',
+          text: 'Details',
           link: 'tel:1234567890', // phone number
           target: '_self', // opens in same tab
           size: 'large',
-          icon: 'phone',
+          icon: 'link',
         },
       ],
     },

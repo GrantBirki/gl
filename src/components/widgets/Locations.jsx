@@ -5,6 +5,7 @@ import CardMedia from '@mui/material/CardMedia';
 import Button from '@mui/material/Button';
 import PhoneIcon from '@mui/icons-material/Phone';
 import EmailIcon from '@mui/icons-material/Email';
+import LinkIcon from '@mui/icons-material/Link';
 import DirectionsIcon from '@mui/icons-material/Directions';
 
 export default function Locations(props) {
@@ -86,6 +87,8 @@ export default function Locations(props) {
                           icon = <EmailIcon />;
                         } else if (button.icon === 'directions') {
                           icon = <DirectionsIcon />;
+                        } else if (button.icon === 'link') {
+                          icon = <LinkIcon />;
                         }
 
                         return (
