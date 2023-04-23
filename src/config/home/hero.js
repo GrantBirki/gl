@@ -55,7 +55,7 @@ const hero = {
     // Image source
     src: import('~/assets/images/hero.jpg'),
     // Image alt text
-    alt: 'AstroWind Hero Image',
+    alt: 'Grant and Leah',
   },
 };
 

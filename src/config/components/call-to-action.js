@@ -3,7 +3,7 @@
 
 const callToAction = {
   // If the call to action should be displayed
-  enabled: true,
+  enabled: false,
 
   // The title of the call to action component
   title: 'Astro + Tailwind CSS',

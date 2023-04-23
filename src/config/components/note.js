@@ -5,12 +5,12 @@ const note = {
   enabled: true,
 
   // Note text with HTML support
-  text: `<span class="font-bold">Philosophy:</span> Simplicity, Best Practices and High Performance`,
+  text: `<span class="font-bold">Save the Date:</span> G + L are getting married on YYYY-MM-DD`,
 
   // Optional note icon (prefix to the text)
   icon: {
     enabled: true,
-    name: 'tabler:star',
+    name: 'tabler:calendar',
   },
 };
 

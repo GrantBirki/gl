@@ -2,7 +2,7 @@
 
 const steps = {
   // Whether the component is enabled or not
-  enabled: true,
+  enabled: false,
 
   // The title text of the component
   title: 'Get your dream website up and running in no time with AstroWind.',
