@@ -67,6 +67,25 @@
   font-display: swap;
 }
 
+@font-face {
+  font-family: 'PetitFormalScript';
+  src: url('/fonts/PetitFormalScript-Regular.tff') format('tff');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+.extra-fancy {
+  font-family: 'PetitFormalScript', cursive;
+  font-weight: 400;
+  letter-spacing: 0.00em;
+}
+
+.extra-fancy-spaced {
+  font-size: 2.5rem;
+  padding: 0 0.5rem;
+}
+
 .fancy {
   font-family: 'CormorantGaramond', serif;
   font-weight: 400;
