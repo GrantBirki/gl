@@ -58,3 +58,17 @@
 [data-aw-toggle-menu].expanded g > path:last-child {
   @apply rotate-45 translate-y-[-8px] translate-x-[14px];
 }
+
+@font-face {
+  font-family: 'CormorantGaramond';
+  src: url('/fonts/CormorantGaramond-Light.tff') format('tff');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+.fancy {
+  font-family: 'CormorantGaramond', serif;
+  font-weight: 400;
+  letter-spacing: 0.05em;
+}
