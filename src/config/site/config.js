@@ -17,8 +17,7 @@ const CONFIG = {
   title: 'G + L',
 
   // Website description
-  description:
-    'Grant and Leah are getting married! 💍',
+  description: 'Grant and Leah are getting married! 💍',
 
   // The website's preview image that is displayed when sharing the website on social media
   defaultImage: defaultImage,
