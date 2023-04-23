@@ -24,7 +24,7 @@ const CONFIG = {
 
   // Default site theme
   // Values: "system" | "light" | "dark" | "light:only" | "dark:only"
-  defaultTheme: 'system',
+  defaultTheme: 'light:only',
 
   // The default language of the website
   language: 'en',
