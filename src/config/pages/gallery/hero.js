@@ -3,6 +3,7 @@
 const hero = {
   // If the entire hero section should be enabled or not
   enabled: true,
+  padding: 'pt-12 md:pt-20',
 
   // Hero title with HTML support
   title: {
