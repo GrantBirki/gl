@@ -1,0 +1,109 @@
+---
+import { SITE } from '~/config/site/config.js';
+import Layout from '~/layouts/PageLayout.astro';
+
+import Hero from '~/components/widgets/Hero.astro';
+import hero from '~/config/pages/gallery/hero';
+
+const meta = {
+  title: SITE.title,
+  description: SITE.description,
+  dontUseTitleTemplate: true,
+};
+
+const galleryCss =
+  'block h-full w-full rounded-lg object-cover object-center transition-shadow duration-300 ease-in-out hover:shadow-lg hover:shadow-black/20';
+---
+
+<Layout {meta}>
+  <!-- Hero Widget ******************* -->
+
+  {
+    hero && hero.enabled && (
+      <Hero
+        callToAction={{
+          enabled: hero.callToAction.enabled,
+          text: hero.callToAction.text,
+          href: hero.callToAction.href,
+          target: hero.callToAction.target,
+          rel: hero.callToAction.rel,
+          icon: hero.callToAction.icon,
+        }}
+        callToAction2={{
+          enabled: hero.callToAction2.enabled,
+          text: hero.callToAction2.text,
+          href: hero.callToAction2.href,
+          target: hero.callToAction2.target,
+          rel: hero.callToAction2.rel,
+          icon: hero.callToAction2.icon,
+        }}
+        image={{ enabled: hero.image.enabled, src: hero.image.src, alt: hero.image.alt }}
+      >
+        {hero.title.enabled && <Fragment slot="title" set:html={hero.title.text} />}
+
+        {hero.subtitle.enabled && <Fragment slot="subtitle" set:html={hero.subtitle.text} />}
+      </Hero>
+    )
+  }
+
+  <!-- Gallery -->
+  <div class="container mx-auto mb-20 px-5 py-2 lg:px-32 lg:pt-12">
+    <div class="-m-1 flex flex-wrap md:-m-2">
+      <div class="flex w-1/3 flex-wrap">
+        <div class="w-full p-1 md:p-2">
+          <img
+            alt="gallery"
+            class={galleryCss}
+            src="https://tecdn.b-cdn.net/img/Photos/Horizontal/Nature/4-col/img%20(73).webp"
+          />
+        </div>
+      </div>
+      <div class="flex w-1/3 flex-wrap">
+        <div class="w-full p-1 md:p-2">
+          <img
+            alt="gallery"
+            class={galleryCss}
+            src="https://tecdn.b-cdn.net/img/Photos/Horizontal/Nature/4-col/img%20(74).webp"
+          />
+        </div>
+      </div>
+      <div class="flex w-1/3 flex-wrap">
+        <div class="w-full p-1 md:p-2">
+          <img
+            alt="gallery"
+            class={galleryCss}
+            src="https://tecdn.b-cdn.net/img/Photos/Horizontal/Nature/4-col/img%20(75).webp"
+          />
+        </div>
+      </div>
+      <div class="flex w-1/3 flex-wrap">
+        <div class="w-full p-1 md:p-2">
+          <img
+            alt="gallery"
+            class={galleryCss}
+            src="https://tecdn.b-cdn.net/img/Photos/Horizontal/Nature/4-col/img%20(70).webp"
+          />
+        </div>
+      </div>
+      <div class="flex w-1/3 flex-wrap">
+        <div class="w-full p-1 md:p-2">
+          <img
+            alt="gallery"
+            class={galleryCss}
+            src="https://tecdn.b-cdn.net/img/Photos/Horizontal/Nature/4-col/img%20(76).webp"
+          />
+        </div>
+      </div>
+      <div class="flex w-1/3 flex-wrap">
+        <div class="w-full p-1 md:p-2">
+          <img
+            alt="gallery"
+            class={galleryCss}
+            src="https://tecdn.b-cdn.net/img/Photos/Horizontal/Nature/4-col/img%20(72).webp"
+          />
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- End of Gallery -->
+</Layout>
