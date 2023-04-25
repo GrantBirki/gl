@@ -14,27 +14,34 @@ export default function Gallery(props) {
     imageBoxCss = 'flex flex-wrap my-4';
   }
 
-  return (
-    <>
-      <div className="container mx-auto mb-20 px-5 py-2 lg:px-32 lg:pt-12">
-        <div className="-m-1 flex flex-wrap md:-m-2">
-          {props.images.map((image, index) => {
-            return (
-              <div key={index} className={imageBoxCss}>
-                <div className="w-full p-1 md:p-2">
-                  <ModalImage
-                    small={image.small}
-                    medium={image.medium}
-                    large={image.large}
-                    alt={image.alt}
-                    className={modalCss}
-                  />
+  // Use the basic gallery style if it is requested or if the screen width is less than 700px
+  if (props.style === 'basic' || isMobile) {
+    return (
+      <>
+        <div className="container mx-auto mb-20 px-5 py-2 lg:px-32 lg:pt-12">
+          <div className="-m-1 flex flex-wrap md:-m-2">
+            {props.images.map((image, index) => {
+              return (
+                <div key={index} className={imageBoxCss}>
+                  <div className="w-full p-1 md:p-2">
+                    <ModalImage
+                      small={image.small}
+                      medium={image.medium}
+                      large={image.large}
+                      alt={image.alt}
+                      className={modalCss}
+                    />
+                  </div>
                 </div>
-              </div>
-            );
-          })}
+              );
+            })}
+          </div>
         </div>
-      </div>
-    </>
-  );
+      </>
+    );
+  }
+
+  if (props.style === 'mixed') {
+    // TODO
+  }
 }

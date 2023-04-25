@@ -4,6 +4,9 @@ const gallery = {
   // If the entire gallery section should be enabled or not
   enabled: true,
 
+  // The gallery style (basic or mixed)
+  style: 'basic',
+
   images: [
     {
       alt: 'Hello World',

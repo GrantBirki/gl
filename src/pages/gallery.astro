@@ -50,6 +50,6 @@ const meta = {
   }
 
   <!-- Gallery -->
-  {gallery && gallery.enabled && <Gallery client:only="react" images={gallery.images} />}
+  {gallery && gallery.enabled && <Gallery client:only="react" images={gallery.images} style={gallery.style} />}
   <!-- End of Gallery -->
 </Layout>
