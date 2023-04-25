@@ -1,7 +1,6 @@
 // load and parse the json file images.json
 import photos from './photos.json';
 
-
 // Image gallery configuration on the galley page
 
 const gallery = {
