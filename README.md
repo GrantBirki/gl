@@ -22,6 +22,7 @@ All commands are run from the root of the project, from a terminal:
 | `npm run lint:eslint` | Run Eslint                                         |
 | `npm run astro ...`   | Run CLI commands like `astro add`, `astro preview` |
 | `npm run bootstrap`   | Bootstraps the project                             |
+| `script/generate-gallery-images` | Generate gallery images                 |
 
 ## Development
 
