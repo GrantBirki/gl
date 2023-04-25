@@ -7,12 +7,13 @@ const gallery = {
   // The gallery style (basic or mixed)
   style: 'basic',
 
+  // Collection of images to display in the gallery
   images: [
     {
       alt: 'Hello World',
-      small: 'https://tecdn.b-cdn.net/img/Photos/Horizontal/Nature/4-col/img%20(70).webp',
-      medium: 'https://tecdn.b-cdn.net/img/Photos/Horizontal/Nature/4-col/img%20(70).webp',
-      large: 'https://tecdn.b-cdn.net/img/Photos/Horizontal/Nature/4-col/img%20(70).webp',
+      small: '/public/assets/colors-public.jpg',
+      medium: '/public/assets/colors-public.jpg',
+      large: '/public/assets/colors-public.jpg',
     },
     {
       alt: 'Hello World',
