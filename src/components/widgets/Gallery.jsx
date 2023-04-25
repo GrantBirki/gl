@@ -1,4 +1,5 @@
 // gallery reference: https://react-photo-album.com/
+// ... https://github.com/igordanchenko/react-photo-album
 
 import PhotoAlbum from 'react-photo-album';
 
