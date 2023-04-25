@@ -1,4 +1,4 @@
-// Hero configuration on the homepage
+// Hero configuration on the gallery page
 
 const hero = {
   // If the entire hero section should be enabled or not
