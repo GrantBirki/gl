@@ -12,7 +12,7 @@ const gallery = {
     {
       key: 1,
       alt: 'Leah and Grant with the engagement ring',
-      src: '/assets/ring-public.jpg',
+      src: '/assets/ring.jpg',
       width: 1600,
       height: 2400,
     },
