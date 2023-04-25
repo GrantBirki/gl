@@ -17,9 +17,9 @@ const gallery = {
     },
     {
       alt: 'Hello World',
-      small: 'https://tecdn.b-cdn.net/img/Photos/Horizontal/Nature/4-col/img%20(70).webp',
-      medium: 'https://tecdn.b-cdn.net/img/Photos/Horizontal/Nature/4-col/img%20(70).webp',
-      large: 'https://tecdn.b-cdn.net/img/Photos/Horizontal/Nature/4-col/img%20(70).webp',
+      small: '/public/assets/ring-public.jpg',
+      medium: '/public/assets/ring-public.jpg',
+      large: '/public/assets/ring-public.jpg',
     },
     {
       alt: 'Hello World',
