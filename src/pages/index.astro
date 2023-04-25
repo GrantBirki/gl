@@ -166,10 +166,9 @@ const meta = {
 
   <Block
     enabled={true}
-    title={'Example Text Block'}
-    subtitle={'This is an example of a text block'}
-    highlight={'Block'}
-    content={'In a text block you can add any content you want. This could be a description about something, a quote, or other details. With this component you can optionally add an image and call to action buttons.'}
+    title={'Photo Gallery'}
+    highlight={'Gallery'}
+    content={'Traveling has been a huge part of our lives. We have taken photos all over the globe and have a special gallery here to highlight some of our favorite moments as a couple.'}
     image={{
       enabled: true,
       src: import('~/assets/images/g-and-l-streets.jpg'),
@@ -177,19 +176,11 @@ const meta = {
     }}
     callToAction={{
       enabled: true,
-      text: 'Button 1',
-      href: 'https://www.google.com',
-      target: '_blank',
+      text: 'View Gallery',
+      href: '/gallery',
+      target: '_self',
       rel: 'noopener',
-      icon: 'tabler:star',
-    }}
-    callToAction2={{
-      enabled: true,
-      text: 'Button 2',
-      href: 'https://www.google.com',
-      target: '_blank',
-      rel: 'noopener',
-      icon: 'tabler:star',
+      icon: 'tabler:photo',
     }}
   />
 
