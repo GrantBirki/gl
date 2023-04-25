@@ -5,7 +5,7 @@ const gallery = {
   enabled: true,
 
   // The gallery style (basic or mixed)
-  style: 'mixed',
+  style: 'basic',
 
   images: [
     {
