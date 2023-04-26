@@ -24,4 +24,7 @@ images.map((image, index) => {
 // write the array to a json file
 fs.writeFileSync('src/config/pages/gallery/photos.json', JSON.stringify(imgArray, null, 2));
 
+// append a new line to the end of the file
+fs.appendFileSync('src/config/pages/gallery/photos.json', '\n');
+
 console.log('Images generated successfully');
