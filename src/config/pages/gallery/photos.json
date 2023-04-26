@@ -8,31 +8,31 @@
   },
   {
     "key": 1,
+    "alt": "A_DSC03718.jpg",
+    "src": "/assets/A_DSC03718.jpg",
+    "width": 2400,
+    "height": 3600
+  },
+  {
+    "key": 2,
     "alt": "A_DSC03761.jpg",
     "src": "/assets/A_DSC03761.jpg",
     "width": 1960,
     "height": 2940
   },
   {
-    "key": 2,
+    "key": 3,
     "alt": "A_DSC03777.jpg",
     "src": "/assets/A_DSC03777.jpg",
     "width": 1600,
     "height": 2400
   },
   {
-    "key": 3,
+    "key": 4,
     "alt": "A_DSC03871.jpg",
     "src": "/assets/A_DSC03871.jpg",
     "width": 3000,
     "height": 2000
-  },
-  {
-    "key": 4,
-    "alt": "A_DSC03906.jpg",
-    "src": "/assets/A_DSC03906.jpg",
-    "width": 2400,
-    "height": 3600
   },
   {
     "key": 5,
