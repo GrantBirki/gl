@@ -20,7 +20,7 @@ const headerData = {
         },
         {
           text: 'Gallery',
-          href: getPermalink('/about'),
+          href: getPermalink('/gallery'),
         },
         {
           text: 'Contact',

@@ -1,0 +1,765 @@
+[
+  {
+    "key": 0,
+    "alt": "A_DSC03717.jpg",
+    "src": "/assets/A_DSC03717.jpg",
+    "width": 1800,
+    "height": 2700
+  },
+  {
+    "key": 1,
+    "alt": "A_DSC03718.jpg",
+    "src": "/assets/A_DSC03718.jpg",
+    "width": 2400,
+    "height": 3600
+  },
+  {
+    "key": 2,
+    "alt": "A_DSC03761.jpg",
+    "src": "/assets/A_DSC03761.jpg",
+    "width": 1960,
+    "height": 2940
+  },
+  {
+    "key": 3,
+    "alt": "A_DSC03777.jpg",
+    "src": "/assets/A_DSC03777.jpg",
+    "width": 1600,
+    "height": 2400
+  },
+  {
+    "key": 4,
+    "alt": "A_DSC03871.jpg",
+    "src": "/assets/A_DSC03871.jpg",
+    "width": 3000,
+    "height": 2000
+  },
+  {
+    "key": 5,
+    "alt": "A_DSC03925.jpg",
+    "src": "/assets/A_DSC03925.jpg",
+    "width": 2800,
+    "height": 4200
+  },
+  {
+    "key": 6,
+    "alt": "A_DSC03959.jpg",
+    "src": "/assets/A_DSC03959.jpg",
+    "width": 2800,
+    "height": 4200
+  },
+  {
+    "key": 7,
+    "alt": "A_DSC03986.jpg",
+    "src": "/assets/A_DSC03986.jpg",
+    "width": 2000,
+    "height": 3000
+  },
+  {
+    "key": 8,
+    "alt": "A_DSC03996.jpg",
+    "src": "/assets/A_DSC03996.jpg",
+    "width": 1800,
+    "height": 1200
+  },
+  {
+    "key": 9,
+    "alt": "A_DSC04128.jpg",
+    "src": "/assets/A_DSC04128.jpg",
+    "width": 4000,
+    "height": 6000
+  },
+  {
+    "key": 10,
+    "alt": "DJI_0142_LR.jpg",
+    "src": "/assets/DJI_0142_LR.jpg",
+    "width": 2186,
+    "height": 1456
+  },
+  {
+    "key": 11,
+    "alt": "DJI_0273_LR.jpg",
+    "src": "/assets/DJI_0273_LR.jpg",
+    "width": 1820,
+    "height": 2732
+  },
+  {
+    "key": 12,
+    "alt": "DJI_0402_LR-2.jpg",
+    "src": "/assets/DJI_0402_LR-2.jpg",
+    "width": 2912,
+    "height": 3640
+  },
+  {
+    "key": 13,
+    "alt": "DJI_0716_LR.jpg",
+    "src": "/assets/DJI_0716_LR.jpg",
+    "width": 2732,
+    "height": 1820
+  },
+  {
+    "key": 14,
+    "alt": "DSC00656_LR.jpg",
+    "src": "/assets/DSC00656_LR.jpg",
+    "width": 2000,
+    "height": 3000
+  },
+  {
+    "key": 15,
+    "alt": "DSC01362_LR-2.jpg",
+    "src": "/assets/DSC01362_LR-2.jpg",
+    "width": 4000,
+    "height": 6000
+  },
+  {
+    "key": 16,
+    "alt": "DSC01402_LR.jpg",
+    "src": "/assets/DSC01402_LR.jpg",
+    "width": 2000,
+    "height": 3000
+  },
+  {
+    "key": 17,
+    "alt": "DSC01720_LR-2.jpg",
+    "src": "/assets/DSC01720_LR-2.jpg",
+    "width": 1600,
+    "height": 2000
+  },
+  {
+    "key": 18,
+    "alt": "DSC01738_LR-2.jpg",
+    "src": "/assets/DSC01738_LR-2.jpg",
+    "width": 1680,
+    "height": 2100
+  },
+  {
+    "key": 19,
+    "alt": "DSC01780_LR.jpg",
+    "src": "/assets/DSC01780_LR.jpg",
+    "width": 2000,
+    "height": 3000
+  },
+  {
+    "key": 20,
+    "alt": "DSC01817_LR.jpg",
+    "src": "/assets/DSC01817_LR.jpg",
+    "width": 1120,
+    "height": 1680
+  },
+  {
+    "key": 21,
+    "alt": "DSC02592_LR.jpg",
+    "src": "/assets/DSC02592_LR.jpg",
+    "width": 2400,
+    "height": 1600
+  },
+  {
+    "key": 22,
+    "alt": "DSC03011_LR.jpg",
+    "src": "/assets/DSC03011_LR.jpg",
+    "width": 1600,
+    "height": 2400
+  },
+  {
+    "key": 23,
+    "alt": "DSC03124_LR.jpg",
+    "src": "/assets/DSC03124_LR.jpg",
+    "width": 2400,
+    "height": 1600
+  },
+  {
+    "key": 24,
+    "alt": "DSC03382_LR.jpg",
+    "src": "/assets/DSC03382_LR.jpg",
+    "width": 1600,
+    "height": 2400
+  },
+  {
+    "key": 25,
+    "alt": "DSC05225_LR.jpg",
+    "src": "/assets/DSC05225_LR.jpg",
+    "width": 4000,
+    "height": 6000
+  },
+  {
+    "key": 26,
+    "alt": "IMG_0508_LR.jpg",
+    "src": "/assets/IMG_0508_LR.jpg",
+    "width": 2189,
+    "height": 1459
+  },
+  {
+    "key": 27,
+    "alt": "IMG_0728_LR.jpg",
+    "src": "/assets/IMG_0728_LR.jpg",
+    "width": 5472,
+    "height": 3648
+  },
+  {
+    "key": 28,
+    "alt": "IMG_0836_LR.jpg",
+    "src": "/assets/IMG_0836_LR.jpg",
+    "width": 5472,
+    "height": 3648
+  },
+  {
+    "key": 29,
+    "alt": "IMG_0912_LR.jpg",
+    "src": "/assets/IMG_0912_LR.jpg",
+    "width": 2189,
+    "height": 1459
+  },
+  {
+    "key": 30,
+    "alt": "IMG_0954_LR.jpg",
+    "src": "/assets/IMG_0954_LR.jpg",
+    "width": 5472,
+    "height": 3648
+  },
+  {
+    "key": 31,
+    "alt": "IMG_1333_LR.jpg",
+    "src": "/assets/IMG_1333_LR.jpg",
+    "width": 2189,
+    "height": 1459
+  },
+  {
+    "key": 32,
+    "alt": "IMG_1438_LR.jpg",
+    "src": "/assets/IMG_1438_LR.jpg",
+    "width": 3648,
+    "height": 5472
+  },
+  {
+    "key": 33,
+    "alt": "IMG_1456_LR.jpg",
+    "src": "/assets/IMG_1456_LR.jpg",
+    "width": 3648,
+    "height": 5472
+  },
+  {
+    "key": 34,
+    "alt": "IMG_1619_LR.jpg",
+    "src": "/assets/IMG_1619_LR.jpg",
+    "width": 5472,
+    "height": 3648
+  },
+  {
+    "key": 35,
+    "alt": "IMG_1660_LR.jpg",
+    "src": "/assets/IMG_1660_LR.jpg",
+    "width": 5472,
+    "height": 3648
+  },
+  {
+    "key": 36,
+    "alt": "IMG_1830_LR-2.jpg",
+    "src": "/assets/IMG_1830_LR-2.jpg",
+    "width": 3648,
+    "height": 4560
+  },
+  {
+    "key": 37,
+    "alt": "IMG_2183_LR.jpg",
+    "src": "/assets/IMG_2183_LR.jpg",
+    "width": 2189,
+    "height": 3283
+  },
+  {
+    "key": 38,
+    "alt": "IMG_2203_LR.jpg",
+    "src": "/assets/IMG_2203_LR.jpg",
+    "width": 1824,
+    "height": 2736
+  },
+  {
+    "key": 39,
+    "alt": "IMG_2385_LR_P.jpg",
+    "src": "/assets/IMG_2385_LR_P.jpg",
+    "width": 1824,
+    "height": 2736
+  },
+  {
+    "key": 40,
+    "alt": "IMG_2498_LR.jpg",
+    "src": "/assets/IMG_2498_LR.jpg",
+    "width": 5472,
+    "height": 3648
+  },
+  {
+    "key": 41,
+    "alt": "IMG_2702_LR.jpg",
+    "src": "/assets/IMG_2702_LR.jpg",
+    "width": 2189,
+    "height": 1459
+  },
+  {
+    "key": 42,
+    "alt": "IMG_2772_LR.jpg",
+    "src": "/assets/IMG_2772_LR.jpg",
+    "width": 2736,
+    "height": 1824
+  },
+  {
+    "key": 43,
+    "alt": "IMG_2826_LR.jpg",
+    "src": "/assets/IMG_2826_LR.jpg",
+    "width": 2736,
+    "height": 1824
+  },
+  {
+    "key": 44,
+    "alt": "IMG_2852_LR.jpg",
+    "src": "/assets/IMG_2852_LR.jpg",
+    "width": 2189,
+    "height": 1459
+  },
+  {
+    "key": 45,
+    "alt": "IMG_2907-HDR_LR.jpg",
+    "src": "/assets/IMG_2907-HDR_LR.jpg",
+    "width": 2456,
+    "height": 1638
+  },
+  {
+    "key": 46,
+    "alt": "IMG_3061_LR.jpg",
+    "src": "/assets/IMG_3061_LR.jpg",
+    "width": 5472,
+    "height": 3648
+  },
+  {
+    "key": 47,
+    "alt": "IMG_3196_LR.jpg",
+    "src": "/assets/IMG_3196_LR.jpg",
+    "width": 1313,
+    "height": 875
+  },
+  {
+    "key": 48,
+    "alt": "IMG_3212_LR.jpg",
+    "src": "/assets/IMG_3212_LR.jpg",
+    "width": 2189,
+    "height": 1459
+  },
+  {
+    "key": 49,
+    "alt": "IMG_3305_LR.jpg",
+    "src": "/assets/IMG_3305_LR.jpg",
+    "width": 1824,
+    "height": 2736
+  },
+  {
+    "key": 50,
+    "alt": "IMG_3419_LR.jpg",
+    "src": "/assets/IMG_3419_LR.jpg",
+    "width": 5472,
+    "height": 3648
+  },
+  {
+    "key": 51,
+    "alt": "IMG_3442_LR.jpg",
+    "src": "/assets/IMG_3442_LR.jpg",
+    "width": 5472,
+    "height": 3648
+  },
+  {
+    "key": 52,
+    "alt": "IMG_3484_LR.jpg",
+    "src": "/assets/IMG_3484_LR.jpg",
+    "width": 1824,
+    "height": 2736
+  },
+  {
+    "key": 53,
+    "alt": "IMG_3563_LR.jpg",
+    "src": "/assets/IMG_3563_LR.jpg",
+    "width": 1824,
+    "height": 2736
+  },
+  {
+    "key": 54,
+    "alt": "IMG_3851_LR.jpg",
+    "src": "/assets/IMG_3851_LR.jpg",
+    "width": 5472,
+    "height": 3648
+  },
+  {
+    "key": 55,
+    "alt": "IMG_4139_LR.jpg",
+    "src": "/assets/IMG_4139_LR.jpg",
+    "width": 2189,
+    "height": 1459
+  },
+  {
+    "key": 56,
+    "alt": "IMG_4231.jpg",
+    "src": "/assets/IMG_4231.jpg",
+    "width": 1459,
+    "height": 2189
+  },
+  {
+    "key": 57,
+    "alt": "IMG_4419_LR.jpg",
+    "src": "/assets/IMG_4419_LR.jpg",
+    "width": 5472,
+    "height": 3648
+  },
+  {
+    "key": 58,
+    "alt": "IMG_4493_LR.jpg",
+    "src": "/assets/IMG_4493_LR.jpg",
+    "width": 2736,
+    "height": 1824
+  },
+  {
+    "key": 59,
+    "alt": "IMG_4568.jpg",
+    "src": "/assets/IMG_4568.jpg",
+    "width": 1210,
+    "height": 1512
+  },
+  {
+    "key": 60,
+    "alt": "IMG_4597.jpg",
+    "src": "/assets/IMG_4597.jpg",
+    "width": 1158,
+    "height": 1544
+  },
+  {
+    "key": 61,
+    "alt": "IMG_4730_LR.jpg",
+    "src": "/assets/IMG_4730_LR.jpg",
+    "width": 5472,
+    "height": 3648
+  },
+  {
+    "key": 62,
+    "alt": "IMG_4878_LR.jpg",
+    "src": "/assets/IMG_4878_LR.jpg",
+    "width": 5472,
+    "height": 3648
+  },
+  {
+    "key": 63,
+    "alt": "IMG_4964.jpg",
+    "src": "/assets/IMG_4964.jpg",
+    "width": 1459,
+    "height": 2189
+  },
+  {
+    "key": 64,
+    "alt": "IMG_5209_LR_P.jpg",
+    "src": "/assets/IMG_5209_LR_P.jpg",
+    "width": 5472,
+    "height": 3648
+  },
+  {
+    "key": 65,
+    "alt": "IMG_5392_LR.jpg",
+    "src": "/assets/IMG_5392_LR.jpg",
+    "width": 1459,
+    "height": 2189
+  },
+  {
+    "key": 66,
+    "alt": "IMG_5584_LR.jpg",
+    "src": "/assets/IMG_5584_LR.jpg",
+    "width": 3648,
+    "height": 5472
+  },
+  {
+    "key": 67,
+    "alt": "IMG_5627_LR.jpg",
+    "src": "/assets/IMG_5627_LR.jpg",
+    "width": 2462,
+    "height": 1642
+  },
+  {
+    "key": 68,
+    "alt": "IMG_5902_LR.jpg",
+    "src": "/assets/IMG_5902_LR.jpg",
+    "width": 5472,
+    "height": 3648
+  },
+  {
+    "key": 69,
+    "alt": "IMG_6059_LR.jpg",
+    "src": "/assets/IMG_6059_LR.jpg",
+    "width": 1459,
+    "height": 2189
+  },
+  {
+    "key": 70,
+    "alt": "IMG_6067_LR.jpg",
+    "src": "/assets/IMG_6067_LR.jpg",
+    "width": 2736,
+    "height": 1824
+  },
+  {
+    "key": 71,
+    "alt": "IMG_6157_LR.jpg",
+    "src": "/assets/IMG_6157_LR.jpg",
+    "width": 2189,
+    "height": 1459
+  },
+  {
+    "key": 72,
+    "alt": "IMG_6277_LR.jpg",
+    "src": "/assets/IMG_6277_LR.jpg",
+    "width": 5472,
+    "height": 3648
+  },
+  {
+    "key": 73,
+    "alt": "IMG_6330_LR.jpg",
+    "src": "/assets/IMG_6330_LR.jpg",
+    "width": 5472,
+    "height": 3648
+  },
+  {
+    "key": 74,
+    "alt": "IMG_6341_LR.jpg",
+    "src": "/assets/IMG_6341_LR.jpg",
+    "width": 1824,
+    "height": 2736
+  },
+  {
+    "key": 75,
+    "alt": "IMG_6603_LR.jpg",
+    "src": "/assets/IMG_6603_LR.jpg",
+    "width": 2189,
+    "height": 1459
+  },
+  {
+    "key": 76,
+    "alt": "IMG_6781_LR.jpg",
+    "src": "/assets/IMG_6781_LR.jpg",
+    "width": 1824,
+    "height": 2736
+  },
+  {
+    "key": 77,
+    "alt": "IMG_6843_LR.jpg",
+    "src": "/assets/IMG_6843_LR.jpg",
+    "width": 5472,
+    "height": 3648
+  },
+  {
+    "key": 78,
+    "alt": "IMG_6990_LR.jpg",
+    "src": "/assets/IMG_6990_LR.jpg",
+    "width": 5472,
+    "height": 3648
+  },
+  {
+    "key": 79,
+    "alt": "IMG_7011_LR.jpg",
+    "src": "/assets/IMG_7011_LR.jpg",
+    "width": 2189,
+    "height": 1459
+  },
+  {
+    "key": 80,
+    "alt": "IMG_7196_LR.jpg",
+    "src": "/assets/IMG_7196_LR.jpg",
+    "width": 2189,
+    "height": 1459
+  },
+  {
+    "key": 81,
+    "alt": "IMG_7335_LR.jpg",
+    "src": "/assets/IMG_7335_LR.jpg",
+    "width": 3648,
+    "height": 5472
+  },
+  {
+    "key": 82,
+    "alt": "IMG_7450-Pano_LR.jpg",
+    "src": "/assets/IMG_7450-Pano_LR.jpg",
+    "width": 2089,
+    "height": 973
+  },
+  {
+    "key": 83,
+    "alt": "IMG_7523_LR.jpg",
+    "src": "/assets/IMG_7523_LR.jpg",
+    "width": 1824,
+    "height": 2736
+  },
+  {
+    "key": 84,
+    "alt": "IMG_7559_LR-2.jpg",
+    "src": "/assets/IMG_7559_LR-2.jpg",
+    "width": 1824,
+    "height": 2736
+  },
+  {
+    "key": 85,
+    "alt": "IMG_7560_LR.jpg",
+    "src": "/assets/IMG_7560_LR.jpg",
+    "width": 2189,
+    "height": 1459
+  },
+  {
+    "key": 86,
+    "alt": "IMG_7637_LR.jpg",
+    "src": "/assets/IMG_7637_LR.jpg",
+    "width": 1459,
+    "height": 2189
+  },
+  {
+    "key": 87,
+    "alt": "IMG_8090_LR.jpg",
+    "src": "/assets/IMG_8090_LR.jpg",
+    "width": 2736,
+    "height": 1824
+  },
+  {
+    "key": 88,
+    "alt": "IMG_8130_LR.jpg",
+    "src": "/assets/IMG_8130_LR.jpg",
+    "width": 1824,
+    "height": 2736
+  },
+  {
+    "key": 89,
+    "alt": "IMG_8249_LR.jpg",
+    "src": "/assets/IMG_8249_LR.jpg",
+    "width": 5472,
+    "height": 3648
+  },
+  {
+    "key": 90,
+    "alt": "IMG_8303_LR.jpg",
+    "src": "/assets/IMG_8303_LR.jpg",
+    "width": 5472,
+    "height": 3648
+  },
+  {
+    "key": 91,
+    "alt": "IMG_8366_LR.jpg",
+    "src": "/assets/IMG_8366_LR.jpg",
+    "width": 2189,
+    "height": 1459
+  },
+  {
+    "key": 92,
+    "alt": "IMG_8523_LR.jpg",
+    "src": "/assets/IMG_8523_LR.jpg",
+    "width": 3283,
+    "height": 2189
+  },
+  {
+    "key": 93,
+    "alt": "IMG_8668_LR.jpg",
+    "src": "/assets/IMG_8668_LR.jpg",
+    "width": 5472,
+    "height": 3648
+  },
+  {
+    "key": 94,
+    "alt": "IMG_8686_LR.jpg",
+    "src": "/assets/IMG_8686_LR.jpg",
+    "width": 2736,
+    "height": 1824
+  },
+  {
+    "key": 95,
+    "alt": "IMG_8786_LR.jpg",
+    "src": "/assets/IMG_8786_LR.jpg",
+    "width": 1459,
+    "height": 2189
+  },
+  {
+    "key": 96,
+    "alt": "IMG_8948_LR.jpg",
+    "src": "/assets/IMG_8948_LR.jpg",
+    "width": 2189,
+    "height": 1459
+  },
+  {
+    "key": 97,
+    "alt": "IMG_8954_LR.jpg",
+    "src": "/assets/IMG_8954_LR.jpg",
+    "width": 1824,
+    "height": 2736
+  },
+  {
+    "key": 98,
+    "alt": "IMG_8955_LR.jpg",
+    "src": "/assets/IMG_8955_LR.jpg",
+    "width": 2736,
+    "height": 1824
+  },
+  {
+    "key": 99,
+    "alt": "IMG_9192_LR.jpg",
+    "src": "/assets/IMG_9192_LR.jpg",
+    "width": 2462,
+    "height": 1642
+  },
+  {
+    "key": 100,
+    "alt": "IMG_9231_LR.jpg",
+    "src": "/assets/IMG_9231_LR.jpg",
+    "width": 5472,
+    "height": 3648
+  },
+  {
+    "key": 101,
+    "alt": "IMG_9299_LR.jpg",
+    "src": "/assets/IMG_9299_LR.jpg",
+    "width": 2189,
+    "height": 1459
+  },
+  {
+    "key": 102,
+    "alt": "IMG_9600_LR.jpg",
+    "src": "/assets/IMG_9600_LR.jpg",
+    "width": 2736,
+    "height": 1824
+  },
+  {
+    "key": 103,
+    "alt": "IMG_9751-HDR_LR.jpg",
+    "src": "/assets/IMG_9751-HDR_LR.jpg",
+    "width": 5452,
+    "height": 3636
+  },
+  {
+    "key": 104,
+    "alt": "IMG_9782_LR.jpg",
+    "src": "/assets/IMG_9782_LR.jpg",
+    "width": 2189,
+    "height": 1459
+  },
+  {
+    "key": 105,
+    "alt": "grant-and-leah-norway-boat.jpg",
+    "src": "/assets/grant-and-leah-norway-boat.jpg",
+    "width": 1440,
+    "height": 1800
+  },
+  {
+    "key": 106,
+    "alt": "grant-with-kite.jpg",
+    "src": "/assets/grant-with-kite.jpg",
+    "width": 712,
+    "height": 477
+  },
+  {
+    "key": 107,
+    "alt": "howelsen-hill.jpg",
+    "src": "/assets/howelsen-hill.jpg",
+    "width": 2189,
+    "height": 1459
+  },
+  {
+    "key": 108,
+    "alt": "ring.jpg",
+    "src": "/assets/ring.jpg",
+    "width": 1600,
+    "height": 2400
+  }
+]

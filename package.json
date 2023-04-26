@@ -33,6 +33,7 @@
     "eslint": "^8.37.0",
     "eslint-plugin-astro": "^0.26.1",
     "eslint-plugin-jsx-a11y": "^6.7.1",
+    "image-size": "^1.0.2",
     "limax": "2.1.0",
     "mdast-util-to-string": "^3.1.1",
     "prettier": "^2.8.7",
@@ -55,6 +56,7 @@
     "@types/react": "^18.0.37",
     "@types/react-dom": "^18.0.11",
     "react": "^18.2.0",
-    "react-dom": "^18.2.0"
+    "react-dom": "^18.2.0",
+    "react-photo-album": "^2.0.4"
   }
 }
