@@ -25,7 +25,7 @@ const footerData = {
     },
     {
       title: 'Gallery',
-      links: [{ text: 'Photos', href: '#' }],
+      links: [{ text: 'Photos', href: '/gallery' }],
     },
     {
       title: 'Links',
