@@ -9,7 +9,7 @@ layout: '~/layouts/MarkdownLayout.astro'
 
 TODO: Add a description of our registry
 
+- ✈️ [Travel Fund]()
 - 🛒 [Amazon](https://www.amazon.com/wedding/grant-birkinbine-leah-caragol--may-2024/registry/11BZEM3G36MR4)
 - 🛋️ [Crate and Barrel]()
-- ✈️ [Travel Fund]()
 - 🌱 [Donate]()
