@@ -6,6 +6,7 @@ import Gallery from '~/components/widgets/Gallery.jsx';
 import Hero from '~/components/widgets/Hero.astro';
 import hero from '~/config/pages/gallery/hero';
 import gallery from '~/config/pages/gallery/gallery';
+import Block from '~/components/widgets/Block.astro';
 
 const meta = {
   title: SITE.title,
@@ -45,6 +46,14 @@ const meta = {
       </Hero>
     )
   }
+
+  <br />
+  <Block
+    enabled={true}
+    title={'Our Travels'}
+    content={'Traveling has been a huge part of our lives and it has built a lot of the foundation of our relationship today. We have traveled near and far, collecting photos and memories along the way. We are excited to share some of our favorite moments with you!'}
+  />
+  <br />
 
   <!-- Gallery -->
   {gallery && gallery.enabled && <Gallery client:only="react" photos={gallery.photos} layout={gallery.layout} />}
