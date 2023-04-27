@@ -29,7 +29,7 @@ const footerData = {
     },
     {
       title: 'Links',
-      links: [{ text: 'Registry', href: '#' }],
+      links: [{ text: 'Registry', href: '/registry' }],
     },
   ],
 

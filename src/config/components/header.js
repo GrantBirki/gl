@@ -32,7 +32,7 @@ const headerData = {
     // A single link with no dropdown
     {
       text: 'Registry',
-      href: '#',
+      href: '/registry',
     },
     {
       text: 'Invite',
