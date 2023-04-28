@@ -3,7 +3,7 @@ title: 'Wedding Registry'
 layout: '~/layouts/MarkdownLayout.astro'
 ---
 
-![G and L](/assets/A_DSC04128.jpg)
+![G and L](/assets/gallery/A_DSC04128.jpg)
 
 ## Our Wedding Registry
 
