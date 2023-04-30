@@ -46,7 +46,7 @@ export default defineConfig({
       html: {
         removeAttributeQuotes: false,
       },
-      img: true,
+      img: false,
       js: true,
       svg: true,
       logger: 1,
