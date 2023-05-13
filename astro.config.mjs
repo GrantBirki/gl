@@ -23,6 +23,9 @@ export default defineConfig({
   markdown: {
     remarkPlugins: [readingTimeRemarkPlugin],
   },
+  experimental: {
+    assets: true,
+  },
   integrations: [
     tailwind({
       config: {
@@ -31,6 +34,7 @@ export default defineConfig({
     }),
     sitemap(),
     image({
+      cacheDir: './.cache/image',
       serviceEntryPoint: '@astrojs/image/sharp',
     }),
     mdx(),

@@ -44,6 +44,10 @@ Here are some basic commands to get you up and running to develop with this temp
 
 > Live reload is enabled by default, so any changes you make will be reflected in the browser.
 
+## Build Cache
+
+This templates also uses a custom GitHub Actions build cache to help speed things up in CI when processing images. If you make any changes to images when working on a project using this template, please ensure to run `npm run build` before deploying to ensure your `cache.json` file is updated.
+
 ## Acknowledgements
 
 This theme is based off the template by [onwidget](https://github.com/onwidget/astrowind)
