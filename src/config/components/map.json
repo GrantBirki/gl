@@ -83,5 +83,260 @@
     "name": "Banff",
     "lat": 51.178363,
     "lon": -115.570769
+  },
+  {
+    "name": "Portland",
+    "lat": 45.523062,
+    "lon": -122.676482
+  },
+  {
+    "name": "San Diego",
+    "lat": 32.715738,
+    "lon": -117.161084
+  },
+  {
+    "name": "Orlando",
+    "lat": 28.538336,
+    "lon": -81.379234
+  },
+  {
+    "name": "Washington DC",
+    "lat": 38.907192,
+    "lon": -77.036871
+  },
+  {
+    "name": "Woman Lake",
+    "lat": 46.936120,
+    "lon": -94.459970
+  },
+  {
+    "name": "Las Vegas",
+    "lat": 36.169941,
+    "lon": -115.139830
+  },
+  {
+    "name": "Havana",
+    "lat": 23.113592,
+    "lon": -82.366596
+  },
+  {
+    "name": "Moab",
+    "lat": 38.573315,
+    "lon": -109.549839
+  },
+  {
+    "name": "Crested Butte",
+    "lat": 38.869715,
+    "lon": -106.987823
+  },
+  {
+    "name": "Madison",
+    "lat": 43.073052,
+    "lon": -89.401230
+  },
+  {
+    "name": "Ouray",
+    "lat": 38.022772,
+    "lon": -107.671449
+  },
+  {
+    "name": "Paris",
+    "lat": 48.856614,
+    "lon": 2.352222
+  },
+  {
+    "name": "London",
+    "lat": 51.507351,
+    "lon": -0.127758
+  },
+  {
+    "name": "Bergen",
+    "lat": 60.391263,
+    "lon": 5.322054
+  },
+  {
+    "name": "Dublin",
+    "lat": 53.349805,
+    "lon": -6.260310
+  },
+  {
+    "name": "Belfast",
+    "lat": 54.597285,
+    "lon": -5.930120
+  },
+  {
+    "name": "Split",
+    "lat": 43.508132,
+    "lon": 16.440193
+  },
+  {
+    "name": "Zagreb",
+    "lat": 45.815011,
+    "lon": 15.981919
+  },
+  {
+    "name": "Budapest",
+    "lat": 47.497912,
+    "lon": 19.040235
+  },
+  {
+    "name": "Santorini",
+    "lat": 36.393156,
+    "lon": 25.461509
+  },
+  {
+    "name": "Athens",
+    "lat": 37.983917,
+    "lon": 23.729360
+  },
+  {
+    "name": "Naxos",
+    "lat": 37.102103,
+    "lon": 25.376819
+  },
+  {
+    "name": "Paros",
+    "lat": 37.085643,
+    "lon": 25.148780
+  },
+  {
+    "name": "Copenhagen",
+    "lat": 55.676097,
+    "lon": 12.568337
+  },
+  {
+    "name": "Stockholm",
+    "lat": 59.329323,
+    "lon": 18.068581
+  },
+  {
+    "name": "Uppsala",
+    "lat": 59.858562,
+    "lon": 17.638927
+  },
+  {
+    "name": "Amsterdam",
+    "lat": 52.370216,
+    "lon": 4.895168
+  },
+  {
+    "name": "Erg Chigaga",
+    "lat": 29.815138,
+    "lon": -6.073287
+  },
+  {
+    "name": "Casablanca",
+    "lat": 33.573110,
+    "lon": -7.589843
+  },
+  {
+    "name": "Marrakech",
+    "lat": 31.629472,
+    "lon": -7.981084
+  },
+  {
+    "name": "Rome",
+    "lat": 41.902783,
+    "lon": 12.496366
+  },
+  {
+    "name": "Wales",
+    "lat": 52.130661,
+    "lon": -3.783712
+  },
+  {
+    "name": "Isle of Man",
+    "lat": 54.236107,
+    "lon": -4.548056
+  },
+  {
+    "name": "Annecy",
+    "lat": 45.899247,
+    "lon": 6.129384
+  },
+  {
+    "name": "Munich",
+    "lat": 48.135125,
+    "lon": 11.581981
+  },
+  {
+    "name": "Milan",
+    "lat": 45.465422,
+    "lon": 9.185924
+  },
+  {
+    "name": "Venice",
+    "lat": 45.440847,
+    "lon": 12.315515
+  },
+  {
+    "name": "Capri",
+    "lat": 40.553201,
+    "lon": 14.222154
+  },
+  {
+    "name": "Cinque Terre",
+    "lat": 44.146120,
+    "lon": 9.643501
+  },
+  {
+    "name": "Florence",
+    "lat": 43.769560,
+    "lon": 11.255814
+  },
+  {
+    "name": "Naples",
+    "lat": 40.851775,
+    "lon": 14.268124
+  },
+  {
+    "name": "Pompeii",
+    "lat": 40.746157,
+    "lon": 14.498934
+  },
+  {
+    "name": "Amalfi",
+    "lat": 40.634003,
+    "lon": 14.602680
+  },
+  {
+    "name": "Thessaloniki",
+    "lat": 40.640063,
+    "lon": 22.944419
+  },
+  {
+    "name": "Meteora",
+    "lat": 39.713824,
+    "lon": 21.630587
+  },
+  {
+    "name": "Vienna",
+    "lat": 48.208174,
+    "lon": 16.373819
+  },
+  {
+    "name": "Prague",
+    "lat": 50.075538,
+    "lon": 14.437800
+  },
+  {
+    "name": "Oswiecim",
+    "lat": 50.034966,
+    "lon": 19.219459
+  },
+  {
+    "name": "Kracow",
+    "lat": 50.064650,
+    "lon": 19.944980
+  },
+  {
+    "name": "Kutna Hora",
+    "lat": 49.948436,
+    "lon": 15.268654
+  },
+  {
+    "name": "Reykjavik",
+    "lat": 64.126521,
+    "lon": -21.817439
   }
 ]
