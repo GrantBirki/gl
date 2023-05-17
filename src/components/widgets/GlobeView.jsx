@@ -3,7 +3,7 @@ import map from '../../config/components/map.json';
 
 export default function GlobeView() {
   // flying arcs
-  const N = 20;
+  const N = 12;
   const arcsData = [...Array(N).keys()].map(() => ({
     startLat: (Math.random() - 0.5) * 180,
     startLng: (Math.random() - 0.5) * 360,
