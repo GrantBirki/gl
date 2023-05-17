@@ -14,6 +14,7 @@ import Stats from '~/components/widgets/Stats.astro';
 import CallToAction from '~/components/widgets/CallToAction.astro';
 import Block from '~/components/widgets/Block.astro';
 import Locations from '~/components/widgets/Locations.jsx';
+import GlobeView from '~/components/widgets/GlobeView.jsx';
 
 import hero from '~/config/home/hero';
 import content from '~/config/home/content';
@@ -202,6 +203,8 @@ const meta = {
       />
     )
   }
+
+  <GlobeView client:only="react" />
 
   <!-- CallToAction Widget *********** -->
   {
