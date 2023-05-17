@@ -5,7 +5,7 @@
     "type": "Shield",
     "lat": 34.5,
     "lon": 131.6,
-    "elevation": 641
+    "elevation": 0
   },
   {
     "name": "Acamarachi",
@@ -13,7 +13,7 @@
     "type": "Stratovolcano",
     "lat": -23.3,
     "lon": -67.62,
-    "elevation": 6046
+    "elevation": 0
   },
   {
     "name": "Acatenango",
@@ -21,7 +21,7 @@
     "type": "Stratovolcano",
     "lat": 14.5,
     "lon": -90.88,
-    "elevation": 3976
+    "elevation": 0
   },
   {
     "name": "Acigöl-Nevsehir",
@@ -29,7 +29,7 @@
     "type": "Caldera",
     "lat": 38.57,
     "lon": 34.52,
-    "elevation": 1689
+    "elevation": 0
   },
   {
     "name": "Adams",
@@ -37,7 +37,7 @@
     "type": "Stratovolcano",
     "lat": 46.21,
     "lon": -121.49,
-    "elevation": 3742
+    "elevation": 0
   },
   {
     "name": "Adams Seamount",
@@ -45,7 +45,7 @@
     "type": "Submarine",
     "lat": -25.37,
     "lon": -129.27,
-    "elevation": -39
+    "elevation": 0
   },
   {
     "name": "Adatara",
@@ -53,7 +53,7 @@
     "type": "Stratovolcano",
     "lat": 37.64,
     "lon": 140.29,
-    "elevation": 1718
+    "elevation": 0
   },
   {
     "name": "Adwa",
@@ -61,7 +61,7 @@
     "type": "Stratovolcano",
     "lat": 10.07,
     "lon": 40.84,
-    "elevation": 1733
+    "elevation": 0
   },
   {
     "name": "Afderà",
@@ -69,7 +69,7 @@
     "type": "Stratovolcano",
     "lat": 13.08,
     "lon": 40.85,
-    "elevation": 1295
+    "elevation": 0
   },
   {
     "name": "Agrigan",
@@ -77,7 +77,7 @@
     "type": "Stratovolcano",
     "lat": 18.77,
     "lon": 145.67,
-    "elevation": 965
+    "elevation": 0
   },
   {
     "name": "Agua",
@@ -85,7 +85,7 @@
     "type": "Stratovolcano",
     "lat": 14.47,
     "lon": -90.74,
-    "elevation": 3760
+    "elevation": 0
   },
   {
     "name": "Agua de Pau",
@@ -93,7 +93,7 @@
     "type": "Stratovolcano",
     "lat": 37.77,
     "lon": -25.47,
-    "elevation": 947
+    "elevation": 0
   },
   {
     "name": "Aguilera",
@@ -101,7 +101,7 @@
     "type": "Stratovolcano",
     "lat": -50.33,
     "lon": -73.75,
-    "elevation": 2546
+    "elevation": 0
   },
   {
     "name": "Agung",
@@ -109,7 +109,7 @@
     "type": "Stratovolcano",
     "lat": -8.34,
     "lon": 115.51,
-    "elevation": 3142
+    "elevation": 0
   },
   {
     "name": "Ahyi",
@@ -117,7 +117,7 @@
     "type": "Submarine",
     "lat": 20.42,
     "lon": 145.03,
-    "elevation": -137
+    "elevation": 0
   },
   {
     "name": "Akademia Nauk",
@@ -125,7 +125,7 @@
     "type": "Caldera",
     "lat": 53.98,
     "lon": 159.45,
-    "elevation": 1180
+    "elevation": 0
   },
   {
     "name": "Akagi",
@@ -133,7 +133,7 @@
     "type": "Stratovolcano",
     "lat": 36.56,
     "lon": 139.2,
-    "elevation": 1828
+    "elevation": 0
   },
   {
     "name": "Akan",
@@ -141,7 +141,7 @@
     "type": "Caldera",
     "lat": 43.38,
     "lon": 144.01,
-    "elevation": 1499
+    "elevation": 0
   },
   {
     "name": "Akhtang",
@@ -149,7 +149,7 @@
     "type": "Shield",
     "lat": 55.43,
     "lon": 158.65,
-    "elevation": 1956
+    "elevation": 0
   },
   {
     "name": "Akita Komagatake",
@@ -157,7 +157,7 @@
     "type": "Stratovolcano",
     "lat": 39.76,
     "lon": 140.8,
-    "elevation": 1637
+    "elevation": 0
   },
   {
     "name": "Akita Yakeyama",
@@ -165,7 +165,7 @@
     "type": "Stratovolcano",
     "lat": 39.96,
     "lon": 140.76,
-    "elevation": 1366
+    "elevation": 0
   },
   {
     "name": "Akuseki-jima",
@@ -173,7 +173,7 @@
     "type": "Stratovolcano",
     "lat": 29.46,
     "lon": 129.6,
-    "elevation": 584
+    "elevation": 0
   },
   {
     "name": "Akutan",
@@ -181,7 +181,7 @@
     "type": "Stratovolcano",
     "lat": 54.13,
     "lon": -165.99,
-    "elevation": 1303
+    "elevation": 0
   },
   {
     "name": "Alaid",
@@ -189,7 +189,7 @@
     "type": "Stratovolcano",
     "lat": 50.86,
     "lon": 155.55,
-    "elevation": 2339
+    "elevation": 0
   },
   {
     "name": "Alamagan",
@@ -197,7 +197,7 @@
     "type": "Stratovolcano",
     "lat": 17.6,
     "lon": 145.83,
-    "elevation": 744
+    "elevation": 0
   },
   {
     "name": "Alayta",
@@ -205,7 +205,7 @@
     "type": "Shield",
     "lat": 12.88,
     "lon": 40.57,
-    "elevation": 1501
+    "elevation": 0
   },
   {
     "name": "Alban Hills",
@@ -213,7 +213,7 @@
     "type": "Caldera",
     "lat": 41.73,
     "lon": 12.7,
-    "elevation": 949
+    "elevation": 0
   },
   {
     "name": "Alcedo",
@@ -221,7 +221,7 @@
     "type": "Shield",
     "lat": -0.43,
     "lon": -91.12,
-    "elevation": 1130
+    "elevation": 0
   },
   {
     "name": "Ale Bagu",
@@ -229,7 +229,7 @@
     "type": "Stratovolcano",
     "lat": 13.52,
     "lon": 40.63,
-    "elevation": 1031
+    "elevation": 0
   },
   {
     "name": "Alid",
@@ -237,7 +237,7 @@
     "type": "Stratovolcano",
     "lat": 14.88,
     "lon": 39.92,
-    "elevation": 904
+    "elevation": 0
   },
   {
     "name": "Altiplano-Puna Volcanic Complex",
@@ -245,7 +245,7 @@
     "type": "",
     "lat": -22.44,
     "lon": -67.96,
-    "elevation": 4600
+    "elevation": 0
   },
   {
     "name": "Ambrym",
@@ -253,7 +253,7 @@
     "type": "Shield",
     "lat": -16.25,
     "lon": 168.12,
-    "elevation": 1334
+    "elevation": 0
   },
   {
     "name": "Anatahan",
@@ -261,7 +261,7 @@
     "type": "Stratovolcano",
     "lat": 16.35,
     "lon": 145.67,
-    "elevation": 790
+    "elevation": 0
   },
   {
     "name": "Aneityum",
@@ -269,7 +269,7 @@
     "type": "Stratovolcano",
     "lat": -20.2,
     "lon": 169.78,
-    "elevation": 852
+    "elevation": 0
   },
   {
     "name": "Aniakchak",
@@ -277,7 +277,7 @@
     "type": "Caldera",
     "lat": 56.88,
     "lon": -158.17,
-    "elevation": 1341
+    "elevation": 0
   },
   {
     "name": "Antisana",
@@ -285,7 +285,7 @@
     "type": "Stratovolcano",
     "lat": -0.48,
     "lon": -78.14,
-    "elevation": 5753
+    "elevation": 0
   },
   {
     "name": "Aoba",
@@ -293,7 +293,7 @@
     "type": "Shield",
     "lat": -15.4,
     "lon": 167.83,
-    "elevation": 1496
+    "elevation": 0
   },
   {
     "name": "Ararat",
@@ -301,7 +301,7 @@
     "type": "Stratovolcano",
     "lat": 39.7,
     "lon": 44.3,
-    "elevation": 5165
+    "elevation": 0
   },
   {
     "name": "Arenal",
@@ -309,7 +309,7 @@
     "type": "Stratovolcano",
     "lat": 10.46,
     "lon": -84.7,
-    "elevation": 1670
+    "elevation": 0
   },
   {
     "name": "Arintica",
@@ -317,7 +317,7 @@
     "type": "Complex Volcano",
     "lat": -18.73,
     "lon": -69.05,
-    "elevation": 5597
+    "elevation": 0
   },
   {
     "name": "Asacha",
@@ -325,7 +325,7 @@
     "type": "Stratovolcano",
     "lat": 52.36,
     "lon": 157.83,
-    "elevation": 1910
+    "elevation": 0
   },
   {
     "name": "Asama",
@@ -333,7 +333,7 @@
     "type": "Complex Volcano",
     "lat": 36.4,
     "lon": 138.53,
-    "elevation": 2568
+    "elevation": 0
   },
   {
     "name": "Ascensión",
@@ -341,7 +341,7 @@
     "type": "Stratovolcano",
     "lat": -7.95,
     "lon": -14.37,
-    "elevation": 858
+    "elevation": 0
   },
   {
     "name": "Askja",
@@ -349,7 +349,7 @@
     "type": "Stratovolcano",
     "lat": 65.03,
     "lon": -16.75,
-    "elevation": 1516
+    "elevation": 0
   },
   {
     "name": "Aso",
@@ -357,7 +357,7 @@
     "type": "Caldera",
     "lat": 32.88,
     "lon": 131.11,
-    "elevation": 1592
+    "elevation": 0
   },
   {
     "name": "Atitlán",
@@ -365,7 +365,7 @@
     "type": "Complex Volcano",
     "lat": 14.58,
     "lon": -91.19,
-    "elevation": 3535
+    "elevation": 0
   },
   {
     "name": "Atka",
@@ -373,7 +373,7 @@
     "type": "Caldera",
     "lat": 52.38,
     "lon": -174.15,
-    "elevation": 1533
+    "elevation": 0
   },
   {
     "name": "Atsonupuri",
@@ -381,7 +381,7 @@
     "type": "Stratovolcano",
     "lat": 44.81,
     "lon": 147.14,
-    "elevation": 1206
+    "elevation": 0
   },
   {
     "name": "Augustine",
@@ -389,7 +389,7 @@
     "type": "Dome",
     "lat": 59.36,
     "lon": -153.43,
-    "elevation": 1252
+    "elevation": 0
   },
   {
     "name": "Avachinsky",
@@ -397,7 +397,7 @@
     "type": "Stratovolcano",
     "lat": 53.26,
     "lon": 158.83,
-    "elevation": 2741
+    "elevation": 0
   },
   {
     "name": "Awu",
@@ -405,7 +405,7 @@
     "type": "Stratovolcano",
     "lat": 3.67,
     "lon": 125.5,
-    "elevation": 1320
+    "elevation": 0
   },
   {
     "name": "Axial Seamount",
@@ -413,7 +413,7 @@
     "type": "Submarine",
     "lat": 45.95,
     "lon": -130,
-    "elevation": -1410
+    "elevation": 0
   },
   {
     "name": "Ayelu",
@@ -421,7 +421,7 @@
     "type": "Stratovolcano",
     "lat": 10.08,
     "lon": 40.7,
-    "elevation": 2145
+    "elevation": 0
   },
   {
     "name": "Azufre",
@@ -429,7 +429,7 @@
     "type": "Complex Volcano",
     "lat": -21.79,
     "lon": -68.24,
-    "elevation": 5846
+    "elevation": 0
   },
   {
     "name": "Azuma",
@@ -437,7 +437,7 @@
     "type": "Stratovolcano",
     "lat": 37.73,
     "lon": 140.25,
-    "elevation": 2035
+    "elevation": 0
   },
   {
     "name": "Babuyon Claro",
@@ -445,7 +445,7 @@
     "type": "Stratovolcano",
     "lat": 19.5,
     "lon": 121.9,
-    "elevation": 1180
+    "elevation": 0
   },
   {
     "name": "Bachelor",
@@ -453,7 +453,7 @@
     "type": "Stratovolcano",
     "lat": 43.8,
     "lon": -121.6,
-    "elevation": 2763
+    "elevation": 0
   },
   {
     "name": "Bagana",
@@ -461,7 +461,7 @@
     "type": "Cinder Cone",
     "lat": -6.1,
     "lon": 155.2,
-    "elevation": 1750
+    "elevation": 0
   },
   {
     "name": "Baker",
@@ -469,7 +469,7 @@
     "type": "Stratovolcano",
     "lat": 48.79,
     "lon": -121.82,
-    "elevation": 3285
+    "elevation": 0
   },
   {
     "name": "Bam",
@@ -477,7 +477,7 @@
     "type": "Stratovolcano",
     "lat": -3.6,
     "lon": 144.85,
-    "elevation": 685
+    "elevation": 0
   },
   {
     "name": "Bamus",
@@ -485,7 +485,7 @@
     "type": "Stratovolcano",
     "lat": -5.2,
     "lon": 151.2,
-    "elevation": 2248
+    "elevation": 0
   },
   {
     "name": "Bandai",
@@ -493,7 +493,7 @@
     "type": "Stratovolcano",
     "lat": 37.6,
     "lon": 140.1,
-    "elevation": 1819
+    "elevation": 0
   },
   {
     "name": "Barren Island",
@@ -501,7 +501,7 @@
     "type": "Pyroclastic Cone",
     "lat": 12.29,
     "lon": 93.88,
-    "elevation": 305
+    "elevation": 0
   },
   {
     "name": "Barrier",
@@ -509,7 +509,7 @@
     "type": "Complex Volcano",
     "lat": 2.32,
     "lon": 36.57,
-    "elevation": 1032
+    "elevation": 0
   },
   {
     "name": "Bazman",
@@ -517,7 +517,7 @@
     "type": "Stratovolcano",
     "lat": 28,
     "lon": 60,
-    "elevation": 3490
+    "elevation": 0
   },
   {
     "name": "Beerenberg",
@@ -525,7 +525,7 @@
     "type": "Stratovolcano",
     "lat": 71.1,
     "lon": -8.2,
-    "elevation": 2277
+    "elevation": 0
   },
   {
     "name": "Belknap",
@@ -533,7 +533,7 @@
     "type": "Shield",
     "lat": 44.28,
     "lon": -121.83,
-    "elevation": 2096
+    "elevation": 0
   },
   {
     "name": "Bezymianny",
@@ -541,7 +541,7 @@
     "type": "Stratovolcano",
     "lat": 55.98,
     "lon": 160.58,
-    "elevation": 2882
+    "elevation": 0
   },
   {
     "name": "Biliran",
@@ -549,7 +549,7 @@
     "type": "Complex Volcano",
     "lat": 11.5,
     "lon": 124.5,
-    "elevation": 1187
+    "elevation": 0
   },
   {
     "name": "Bolshoi Semiachik",
@@ -557,7 +557,7 @@
     "type": "Stratovolcano",
     "lat": 54.32,
     "lon": 160.02,
-    "elevation": 1720
+    "elevation": 0
   },
   {
     "name": "Bulusan",
@@ -565,7 +565,7 @@
     "type": "Stratovolcano",
     "lat": 12.8,
     "lon": 124.1,
-    "elevation": 1565
+    "elevation": 0
   },
   {
     "name": "Butajira",
@@ -573,7 +573,7 @@
     "type": "Maar",
     "lat": 8.05,
     "lon": 38.35,
-    "elevation": 2281
+    "elevation": 0
   },
   {
     "name": "Cameroon (Mount)",
@@ -581,7 +581,7 @@
     "type": "Stratovolcano",
     "lat": 4.2,
     "lon": 9.17,
-    "elevation": 4095
+    "elevation": 0
   },
   {
     "name": "Camiguin de Babuyanes",
@@ -589,7 +589,7 @@
     "type": "Stratovolcano",
     "lat": 18.83,
     "lon": 121.85,
-    "elevation": 712
+    "elevation": 0
   },
   {
     "name": "Canlaon",
@@ -597,7 +597,7 @@
     "type": "Stratovolcano",
     "lat": 10.41,
     "lon": 123.13,
-    "elevation": 2435
+    "elevation": 0
   },
   {
     "name": "Capulin",
@@ -605,7 +605,7 @@
     "type": "Cinder Cone",
     "lat": 36.45,
     "lon": -104.09,
-    "elevation": 2494
+    "elevation": 0
   },
   {
     "name": "Carrizozo",
@@ -613,7 +613,7 @@
     "type": "Volcanic Field",
     "lat": 33.7,
     "lon": -106,
-    "elevation": 1730
+    "elevation": 0
   },
   {
     "name": "Cayambe",
@@ -621,7 +621,7 @@
     "type": "Stratovolcano",
     "lat": 0.03,
     "lon": -77.99,
-    "elevation": 5790
+    "elevation": 0
   },
   {
     "name": "Cereme",
@@ -629,7 +629,7 @@
     "type": "Stratovolcano",
     "lat": -6.9,
     "lon": 108.41,
-    "elevation": 3078
+    "elevation": 0
   },
   {
     "name": "Chaine des Puys",
@@ -637,7 +637,7 @@
     "type": "Dome",
     "lat": 45.78,
     "lon": 2.97,
-    "elevation": 1464
+    "elevation": 0
   },
   {
     "name": "Chiginagak",
@@ -645,7 +645,7 @@
     "type": "Stratovolcano",
     "lat": 57.13,
     "lon": -156.99,
-    "elevation": 2067
+    "elevation": 0
   },
   {
     "name": "Chikurachki",
@@ -653,7 +653,7 @@
     "type": "Stratovolcano",
     "lat": 50.33,
     "lon": 155.46,
-    "elevation": 5958
+    "elevation": 0
   },
   {
     "name": "Chimborazo",
@@ -661,7 +661,7 @@
     "type": "Stratovolcano",
     "lat": -1.46,
     "lon": -78.82,
-    "elevation": 6310
+    "elevation": 0
   },
   {
     "name": "Cleveland",
@@ -669,7 +669,7 @@
     "type": "Stratovolcano",
     "lat": 52.83,
     "lon": -169.95,
-    "elevation": 1730
+    "elevation": 0
   },
   {
     "name": "Coatepeque",
@@ -677,7 +677,7 @@
     "type": "Caldera",
     "lat": 13.86,
     "lon": -89.54,
-    "elevation": 746
+    "elevation": 0
   },
   {
     "name": "Colima",
@@ -685,7 +685,7 @@
     "type": "Stratovolcano",
     "lat": 19.51,
     "lon": -103.62,
-    "elevation": 4100
+    "elevation": 0
   },
   {
     "name": "Concepción",
@@ -693,7 +693,7 @@
     "type": "Stratovolcano",
     "lat": 11.5,
     "lon": -85.6,
-    "elevation": 1610
+    "elevation": 0
   },
   {
     "name": "Copahue",
@@ -701,6 +701,6 @@
     "type": "Stratovolcano",
     "lat": -37.85,
     "lon": -71.17,
-    "elevation": 2965
+    "elevation": 0
   }
 ]
