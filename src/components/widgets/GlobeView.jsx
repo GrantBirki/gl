@@ -4,6 +4,7 @@ import map from '../../config/components/map.json';
 export default function GlobeView() {
   return (
     <Globe
+      globeImageUrl={'/assets/globe.jpg'}
       pointsData={map}
       labelsData={map}
       labelLat="lat"
