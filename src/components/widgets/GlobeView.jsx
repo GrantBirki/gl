@@ -9,7 +9,7 @@ export default function GlobeView() {
     startLng: (Math.random() - 0.5) * 360,
     endLat: (Math.random() - 0.5) * 180,
     endLng: (Math.random() - 0.5) * 360,
-    color: "#ffffff",
+    color: '#ffffff',
   }));
 
   return (

@@ -1,12 +1,87 @@
 [
   {
     "name": "Seattle",
-    "lat": 47.606209 ,
+    "lat": 47.606209,
     "lon": -122.332069
   },
   {
-    "name": "Denver",
-    "lat": 39.739235 ,
-    "lon": -104.990250
+    "name": "Boulder",
+    "lat": 40.014986,
+    "lon": -105.270546
+  },
+  {
+    "name": "Steamboat",
+    "lat": 40.484977,
+    "lon": -106.831716
+  },
+  {
+    "name": "Taipei",
+    "lat": 25.032969,
+    "lon": 121.565418
+  },
+  {
+    "name": "Tokyo",
+    "lat": 35.689487,
+    "lon": 139.691706
+  },
+  {
+    "name": "Bogota",
+    "lat": 4.710989,
+    "lon": -74.072092
+  },
+  {
+    "name": "Cartagena",
+    "lat": 10.391049,
+    "lon": -75.479426
+  },
+  {
+    "name": "Medellin",
+    "lat": 6.244203,
+    "lon": -75.581211
+  },
+  {
+    "name": "Cabo San Lucas",
+    "lat": 22.890533,
+    "lon": -109.916737
+  },
+  {
+    "name": "San Jose",
+    "lat": 9.928069,
+    "lon": -84.090725
+  },
+  {
+    "name": "Sint Maarten",
+    "lat": 18.04248,
+    "lon": -63.05483
+  },
+  {
+    "name": "Juneau",
+    "lat": 58.301944,
+    "lon": -134.419722
+  },
+  {
+    "name": "Cape Town",
+    "lat": -33.924869,
+    "lon": 18.424055
+  },
+  {
+    "name": "Vancover",
+    "lat": 49.282729,
+    "lon": -123.120738
+  },
+  {
+    "name": "Coeur d'Alene",
+    "lat": 47.677683,
+    "lon": -116.780466
+  },
+  {
+    "name": "Los Angeles",
+    "lat": 34.052235,
+    "lon": -118.243683
+  },
+  {
+    "name": "Banff",
+    "lat": 51.178363,
+    "lon": -115.570769
   }
 ]
