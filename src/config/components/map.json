@@ -338,5 +338,75 @@
     "name": "Reykjavik",
     "lat": 64.126521,
     "lon": -21.817439
+  },
+  {
+    "name": "Waikoloa",
+    "lat": 19.943889,
+    "lon": -155.791111
+  },
+  {
+    "name": "Cape Cod",
+    "lat": 41.668789,
+    "lon": -70.296241
+  },
+  {
+    "name": "Lake Tahoe",
+    "lat": 39.096849,
+    "lon": -120.032351
+  },
+  {
+    "name": "Phoenix",
+    "lat": 33.448377,
+    "lon": -112.074037
+  },
+  {
+    "name": "White Bear Lake",
+    "lat": 45.083996,
+    "lon": -93.009738
+  },
+  {
+    "name": "White Fish",
+    "lat": 48.410986,
+    "lon": -114.337628
+  },
+  {
+    "name": "Stehikin",
+    "lat": 48.3125,
+    "lon": -120.721389
+  },
+  {
+    "name": "Bozeman",
+    "lat": 45.676998,
+    "lon": -111.042934
+  },
+  {
+    "name": "Salt Lake City",
+    "lat": 40.760779,
+    "lon": -111.891047
+  },
+  {
+    "name": "Colorado Springs",
+    "lat": 38.833882,
+    "lon": -104.821363
+  },
+  {
+    "name": "Fort Collins",
+    "lat": 40.58526,
+    "lon": -105.084423
+  },
+  {
+    "name": "Corvallis",
+    "lat": 44.564566,
+    "lon": -123.262044
+  },
+  {
+    "name": "Hiroshima",
+    "lat": 34.385203,
+    "lon": 132.455293
+  },
+  {
+    "name": "Banjul",
+    "lat": 13.45568,
+    "lon": -16.577408
   }
 ]
