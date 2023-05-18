@@ -18,7 +18,9 @@ export default function GlobeView() {
       {({ size }) => (
         <Globe
           width={size.width}
+          animateIn={false}
           globeImageUrl={'/assets/globe.jpg'}
+          bumpImageUrl={'/assets/earth-topology.png'}
           pointsData={map}
           labelsData={map}
           labelLat="lat"
