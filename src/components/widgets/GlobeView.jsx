@@ -28,7 +28,7 @@ export default function GlobeView() {
           labelDotOrientation={() => 'bottom'}
           labelText="name"
           labelColor={() => 'rgba(255, 165, 0, 0.75)'}
-          labelResolution={2}
+          labelResolution={3}
           labelSize={1}
           labelDotRadius={1}
           arcsData={arcsData} // flying arcs
