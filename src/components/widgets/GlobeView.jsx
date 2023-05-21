@@ -1,17 +1,19 @@
 import Globe from 'react-globe.gl';
 import { SizeMe } from 'react-sizeme';
-import map from '../../config/components/map.json';
 
-export default function GlobeView() {
-  // flying arcs
-  const N = 12;
-  const arcsData = [...Array(N).keys()].map(() => ({
-    startLat: (Math.random() - 0.5) * 180,
-    startLng: (Math.random() - 0.5) * 360,
-    endLat: (Math.random() - 0.5) * 180,
-    endLng: (Math.random() - 0.5) * 360,
-    color: '#ffffff',
-  }));
+export default function GlobeView(props) {
+  var arcsData = [];
+  if (props?.arcs?.enabled === true) {
+    // flying arcs
+    const N = props?.arcs?.count || 12;
+    arcsData = [...Array(N).keys()].map(() => ({
+      startLat: (Math.random() - 0.5) * 180,
+      startLng: (Math.random() - 0.5) * 360,
+      endLat: (Math.random() - 0.5) * 180,
+      endLng: (Math.random() - 0.5) * 360,
+      color: '#ffffff',
+    }));
+  }
 
   return (
     <SizeMe>
@@ -21,8 +23,8 @@ export default function GlobeView() {
           animateIn={false}
           globeImageUrl={'/assets/globe.jpg'}
           bumpImageUrl={'/assets/earth-topology.png'}
-          pointsData={map}
-          labelsData={map}
+          pointsData={props.labels}
+          labelsData={props.labels}
           labelLat="lat"
           labelLng="lon"
           labelDotOrientation={() => 'bottom'}
