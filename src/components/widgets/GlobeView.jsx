@@ -17,7 +17,7 @@ export default function GlobeView(props) {
 
   // check if the display is a mobile device and set the height accordingly
   const isMobile = window.innerWidth <= 800;
-  const height = isMobile ? 400 : 700;
+  const height = isMobile ? 500 : 700;
 
   return (
     <SizeMe>
