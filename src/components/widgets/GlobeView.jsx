@@ -15,11 +15,16 @@ export default function GlobeView(props) {
     }));
   }
 
+  // check if the display is a mobile device and set the height accordingly
+  const isMobile = window.innerWidth <= 800;
+  const height = isMobile ? 400 : 700;
+
   return (
     <SizeMe>
       {({ size }) => (
         <Globe
           width={size.width}
+          height={height}
           animateIn={false}
           globeImageUrl={'/assets/globe.jpg'}
           bumpImageUrl={'/assets/earth-topology.png'}
