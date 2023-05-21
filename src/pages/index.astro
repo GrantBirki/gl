@@ -14,6 +14,7 @@ import Stats from '~/components/widgets/Stats.astro';
 import CallToAction from '~/components/widgets/CallToAction.astro';
 import Block from '~/components/widgets/Block.astro';
 import Locations from '~/components/widgets/Locations.jsx';
+import GlobeView from '~/components/widgets/GlobeView.jsx';
 
 import hero from '~/config/home/hero';
 import content from '~/config/home/content';
@@ -25,6 +26,8 @@ import features2 from '~/config/home/features2';
 import callToAction from '~/config/components/call-to-action';
 import stats from '~/config/home/stats';
 import locations from '~/config/home/locations';
+
+import labels from '../config/components/map.json';
 
 const meta = {
   title: SITE.title,
@@ -221,6 +224,15 @@ const meta = {
       </CallToAction>
     )
   }
+
+  <Block
+    backgroundCss={''}
+    enabled={true}
+    highlight={'Travel Globe 🌍'}
+    content={`Give the globe a spin and see where we've been!`}
+  />
+
+  <GlobeView client:only="react" labels={labels} arcs={{ enabled: true, count: 12 }} />
 
   <Block
     backgroundCss={''}

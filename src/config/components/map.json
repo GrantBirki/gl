@@ -1,0 +1,457 @@
+[
+  {
+    "name": "Seattle",
+    "lat": 47.606209,
+    "lon": -122.332069
+  },
+  {
+    "name": "Boulder",
+    "lat": 40.014986,
+    "lon": -105.270546
+  },
+  {
+    "name": "Steamboat",
+    "lat": 40.484977,
+    "lon": -106.831716
+  },
+  {
+    "name": "Taipei",
+    "lat": 25.032969,
+    "lon": 121.565418
+  },
+  {
+    "name": "Tokyo",
+    "lat": 35.689487,
+    "lon": 139.691706
+  },
+  {
+    "name": "Bogota",
+    "lat": 4.710989,
+    "lon": -74.072092
+  },
+  {
+    "name": "Cartagena",
+    "lat": 10.391049,
+    "lon": -75.479426
+  },
+  {
+    "name": "Medellin",
+    "lat": 6.244203,
+    "lon": -75.581211
+  },
+  {
+    "name": "Cabo San Lucas",
+    "lat": 22.890533,
+    "lon": -109.916737
+  },
+  {
+    "name": "San Jose",
+    "lat": 9.928069,
+    "lon": -84.090725
+  },
+  {
+    "name": "Sint Maarten",
+    "lat": 18.04248,
+    "lon": -63.05483
+  },
+  {
+    "name": "Juneau",
+    "lat": 58.301944,
+    "lon": -134.419722
+  },
+  {
+    "name": "Cape Town",
+    "lat": -33.924869,
+    "lon": 18.424055
+  },
+  {
+    "name": "Vancover",
+    "lat": 49.282729,
+    "lon": -123.120738
+  },
+  {
+    "name": "Coeur d'Alene",
+    "lat": 47.677683,
+    "lon": -116.780466
+  },
+  {
+    "name": "Los Angeles",
+    "lat": 34.052235,
+    "lon": -118.243683
+  },
+  {
+    "name": "Banff",
+    "lat": 51.178363,
+    "lon": -115.570769
+  },
+  {
+    "name": "Portland",
+    "lat": 45.523062,
+    "lon": -122.676482
+  },
+  {
+    "name": "San Diego",
+    "lat": 32.715738,
+    "lon": -117.161084
+  },
+  {
+    "name": "Orlando",
+    "lat": 28.538336,
+    "lon": -81.379234
+  },
+  {
+    "name": "Washington DC",
+    "lat": 38.907192,
+    "lon": -77.036871
+  },
+  {
+    "name": "Woman Lake",
+    "lat": 46.93612,
+    "lon": -94.45997
+  },
+  {
+    "name": "Las Vegas",
+    "lat": 36.169941,
+    "lon": -115.13983
+  },
+  {
+    "name": "Havana",
+    "lat": 23.113592,
+    "lon": -82.366596
+  },
+  {
+    "name": "Moab",
+    "lat": 38.573315,
+    "lon": -109.549839
+  },
+  {
+    "name": "Crested Butte",
+    "lat": 38.869715,
+    "lon": -106.987823
+  },
+  {
+    "name": "Madison",
+    "lat": 43.073052,
+    "lon": -89.40123
+  },
+  {
+    "name": "Ouray",
+    "lat": 38.022772,
+    "lon": -107.671449
+  },
+  {
+    "name": "Paris",
+    "lat": 48.856614,
+    "lon": 2.352222
+  },
+  {
+    "name": "London",
+    "lat": 51.507351,
+    "lon": -0.127758
+  },
+  {
+    "name": "Bergen",
+    "lat": 60.391263,
+    "lon": 5.322054
+  },
+  {
+    "name": "Dublin",
+    "lat": 53.349805,
+    "lon": -6.26031
+  },
+  {
+    "name": "Belfast",
+    "lat": 54.597285,
+    "lon": -5.93012
+  },
+  {
+    "name": "Split",
+    "lat": 43.508132,
+    "lon": 16.440193
+  },
+  {
+    "name": "Zagreb",
+    "lat": 45.815011,
+    "lon": 15.981919
+  },
+  {
+    "name": "Budapest",
+    "lat": 47.497912,
+    "lon": 19.040235
+  },
+  {
+    "name": "Santorini",
+    "lat": 36.393156,
+    "lon": 25.461509
+  },
+  {
+    "name": "Athens",
+    "lat": 37.983917,
+    "lon": 23.72936
+  },
+  {
+    "name": "Naxos",
+    "lat": 37.102103,
+    "lon": 25.376819
+  },
+  {
+    "name": "Paros",
+    "lat": 37.085643,
+    "lon": 25.14878
+  },
+  {
+    "name": "Copenhagen",
+    "lat": 55.676097,
+    "lon": 12.568337
+  },
+  {
+    "name": "Stockholm",
+    "lat": 59.329323,
+    "lon": 18.068581
+  },
+  {
+    "name": "Uppsala",
+    "lat": 59.858562,
+    "lon": 17.638927
+  },
+  {
+    "name": "Amsterdam",
+    "lat": 52.370216,
+    "lon": 4.895168
+  },
+  {
+    "name": "Erg Chigaga",
+    "lat": 29.815138,
+    "lon": -6.073287
+  },
+  {
+    "name": "Casablanca",
+    "lat": 33.57311,
+    "lon": -7.589843
+  },
+  {
+    "name": "Marrakech",
+    "lat": 31.629472,
+    "lon": -7.981084
+  },
+  {
+    "name": "Rome",
+    "lat": 41.902783,
+    "lon": 12.496366
+  },
+  {
+    "name": "Wales",
+    "lat": 52.130661,
+    "lon": -3.783712
+  },
+  {
+    "name": "Isle of Man",
+    "lat": 54.236107,
+    "lon": -4.548056
+  },
+  {
+    "name": "Annecy",
+    "lat": 45.899247,
+    "lon": 6.129384
+  },
+  {
+    "name": "Munich",
+    "lat": 48.135125,
+    "lon": 11.581981
+  },
+  {
+    "name": "Milan",
+    "lat": 45.465422,
+    "lon": 9.185924
+  },
+  {
+    "name": "Venice",
+    "lat": 45.440847,
+    "lon": 12.315515
+  },
+  {
+    "name": "Capri",
+    "lat": 40.553201,
+    "lon": 14.222154
+  },
+  {
+    "name": "Cinque Terre",
+    "lat": 44.14612,
+    "lon": 9.643501
+  },
+  {
+    "name": "Florence",
+    "lat": 43.76956,
+    "lon": 11.255814
+  },
+  {
+    "name": "Naples",
+    "lat": 40.851775,
+    "lon": 14.268124
+  },
+  {
+    "name": "Pompeii",
+    "lat": 40.746157,
+    "lon": 14.498934
+  },
+  {
+    "name": "Amalfi",
+    "lat": 40.634003,
+    "lon": 14.60268
+  },
+  {
+    "name": "Thessaloniki",
+    "lat": 40.640063,
+    "lon": 22.944419
+  },
+  {
+    "name": "Meteora",
+    "lat": 39.713824,
+    "lon": 21.630587
+  },
+  {
+    "name": "Vienna",
+    "lat": 48.208174,
+    "lon": 16.373819
+  },
+  {
+    "name": "Prague",
+    "lat": 50.075538,
+    "lon": 14.4378
+  },
+  {
+    "name": "Oswiecim",
+    "lat": 50.034966,
+    "lon": 19.219459
+  },
+  {
+    "name": "Kracow",
+    "lat": 50.06465,
+    "lon": 19.94498
+  },
+  {
+    "name": "Kutna Hora",
+    "lat": 49.948436,
+    "lon": 15.268654
+  },
+  {
+    "name": "Reykjavik",
+    "lat": 64.126521,
+    "lon": -21.817439
+  },
+  {
+    "name": "Waikoloa",
+    "lat": 19.943889,
+    "lon": -155.791111
+  },
+  {
+    "name": "Cape Cod",
+    "lat": 41.668789,
+    "lon": -70.296241
+  },
+  {
+    "name": "Lake Tahoe",
+    "lat": 39.096849,
+    "lon": -120.032351
+  },
+  {
+    "name": "Phoenix",
+    "lat": 33.448377,
+    "lon": -112.074037
+  },
+  {
+    "name": "White Bear Lake",
+    "lat": 45.083996,
+    "lon": -93.009738
+  },
+  {
+    "name": "White Fish",
+    "lat": 48.410986,
+    "lon": -114.337628
+  },
+  {
+    "name": "Stehikin",
+    "lat": 48.3125,
+    "lon": -120.721389
+  },
+  {
+    "name": "Bozeman",
+    "lat": 45.676998,
+    "lon": -111.042934
+  },
+  {
+    "name": "Salt Lake City",
+    "lat": 40.760779,
+    "lon": -111.891047
+  },
+  {
+    "name": "Colorado Springs",
+    "lat": 38.833882,
+    "lon": -104.821363
+  },
+  {
+    "name": "Fort Collins",
+    "lat": 40.58526,
+    "lon": -105.084423
+  },
+  {
+    "name": "Corvallis",
+    "lat": 44.564566,
+    "lon": -123.262044
+  },
+  {
+    "name": "Hiroshima",
+    "lat": 34.385203,
+    "lon": 132.455293
+  },
+  {
+    "name": "Jasper",
+    "lat": 52.873383,
+    "lon": -117.954294
+  },
+  {
+    "name": "Churchill River",
+    "lat": 55.586742,
+    "lon": -105.326799
+  },
+  {
+    "name": "Keneba",
+    "lat": 13.332774,
+    "lon": -16.010899
+  },
+  {
+    "name": "Boston",
+    "lat": 42.360082,
+    "lon": -71.05888
+  },
+  {
+    "name": "Nantucket",
+    "lat": 41.28347,
+    "lon": -70.099451
+  },
+  {
+    "name": "Burlington",
+    "lat": 44.475882,
+    "lon": -73.212072
+  },
+  {
+    "name": "Farmington",
+    "lat": 36.728058,
+    "lon": -108.218686
+  },
+  {
+    "name": "Beaver Dam",
+    "lat": 43.457769,
+    "lon": -88.8373
+  },
+  {
+    "name": "Chicago",
+    "lat": 41.878114,
+    "lon": -87.629798
+  },
+  {
+    "name": "Rockford",
+    "lat": 42.271131,
+    "lon": -89.093995
+  }
+]
