@@ -433,5 +433,25 @@
     "name": "Burlington",
     "lat": 44.475882,
     "lon": -73.212072
+  },
+  {
+    "name": "Farmington",
+    "lat": 36.728058,
+    "lon": -108.218686
+  },
+  {
+    "name": "Beaver Dam",
+    "lat": 43.457769,
+    "lon": -88.8373
+  },
+  {
+    "name": "Chicago",
+    "lat": 41.878114,
+    "lon": -87.629798
+  },
+  {
+    "name": "Rockford",
+    "lat": 42.271131,
+    "lon": -89.093995
   }
 ]
