@@ -32,7 +32,7 @@
     "@iconify-json/tabler": "^1.1.80",
     "@tailwindcss/typography": "^0.5.9",
     "@typescript-eslint/eslint-plugin": "^5.60.1",
-    "@typescript-eslint/parser": "^5.59.8",
+    "@typescript-eslint/parser": "^5.60.1",
     "astro": "^2.7.2",
     "astro-compress": "^1.1.35",
     "astro-icon": "^1.0.0-next.2",
