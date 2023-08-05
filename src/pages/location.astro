@@ -1,0 +1,28 @@
+---
+import { SITE } from '~/config/site/config.js';
+import Layout from '~/layouts/PageLayout.astro';
+
+import GLLocations from '~/components/widgets/Locations.jsx';
+import locations from '~/config/pages/locations/locations';
+
+const meta = {
+  title: SITE.title,
+  description: SITE.description,
+  dontUseTitleTemplate: true,
+};
+---
+
+<Layout {meta}>
+  <!-- Locations Widget ****************** -->
+  {
+    locations && locations.enabled && locations.locations.length > 0 && (
+      <GLLocations
+        client:only="react"
+        highlight={locations.highlight}
+        title={locations.title}
+        subtitle={locations.subtitle}
+        locations={locations.locations}
+      />
+    )
+  }
+</Layout>
