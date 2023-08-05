@@ -1,6 +1,7 @@
 ---
 import { SITE } from '~/config/site/config.js';
 import Layout from '~/layouts/PageLayout.astro';
+import { getPermalink } from '~/utils/permalinks';
 
 import Hero from '~/components/widgets/Hero.astro';
 import Note from '~/components/widgets/Note.astro';
@@ -13,7 +14,6 @@ import FAQs from '~/components/widgets/FAQs.astro';
 import Stats from '~/components/widgets/Stats.astro';
 import CallToAction from '~/components/widgets/CallToAction.astro';
 import Block from '~/components/widgets/Block.astro';
-import Locations from '~/components/widgets/Locations.jsx';
 import GlobeView from '~/components/widgets/GlobeView.jsx';
 
 import hero from '~/config/home/hero';
@@ -25,7 +25,6 @@ import features from '~/config/home/features';
 import features2 from '~/config/home/features2';
 import callToAction from '~/config/components/call-to-action';
 import stats from '~/config/home/stats';
-import locations from '~/config/home/locations';
 
 import labels from '../config/components/map.json';
 
@@ -192,19 +191,35 @@ const meta = {
 
   {stats && stats.enabled && <Stats items={stats.items} />}
 
-  <!-- Locations Widget ****************** -->
-
-  {
-    locations && locations.enabled && locations.locations.length > 0 && (
-      <Locations
-        client:only="react"
-        highlight={locations.highlight}
-        title={locations.title}
-        subtitle={locations.subtitle}
-        locations={locations.locations}
-      />
-    )
-  }
+  <!-- Locations 'link' block -->
+  <Block
+    enabled={true}
+    title={'Location'}
+    subtitle={null}
+    highlight={'Wedding Location'}
+    content={'Details about the wedding ceremony and reception locations'}
+    image={{
+      enabled: false,
+      src: null,
+      alt: 'alt text here',
+    }}
+    callToAction={{
+      enabled: true,
+      text: 'View Location',
+      href: getPermalink('/location'),
+      target: '_self',
+      rel: 'noopener',
+      icon: 'tabler:mountain',
+    }}
+    callToAction2={{
+      enabled: false,
+      text: 'Button 2',
+      href: 'https://www.google.com',
+      target: '_blank',
+      rel: 'noopener',
+      icon: 'tabler:star',
+    }}
+  />
 
   <!-- CallToAction Widget *********** -->
   {
@@ -240,4 +255,4 @@ const meta = {
     highlight={'About the site'}
     content={`This website is <em>nifty!</em> Did Grant build this website? Yeah, I bet he did... yep he did. If you're a computer nerd like Grant and somehow manage to get married you too can use this site as it is <a class="text-muted hover:text-gray-700 underline text-sage-900 transition duration-150 ease-in-out" href="https://github.com/grantbirki/gl" target="_blank">open source</a> and free to use.`}
   />
-</Layout>
+</Layout>~/config/pages/locations/locations
