@@ -1,7 +1,7 @@
 // Configuration for the footer component on all pages
 
 // ----------- imports -----------
-// import { getPermalink } from '~/utils/permalinks';
+import { getPermalink } from '~/utils/permalinks';
 // ----------- imports -----------
 
 const footerData = {
@@ -13,7 +13,7 @@ const footerData = {
       // List of links to be displayed in the section
       links: [
         { text: 'Event Details', href: '#' },
-        { text: 'Venue', href: '#' },
+        { text: 'Location', href: getPermalink('/location') },
       ],
     },
     {
