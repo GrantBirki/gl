@@ -11,8 +11,8 @@ const headerData = {
       text: 'Pages',
       links: [
         {
-          text: 'Venue',
-          href: '#',
+          text: 'Location',
+          href: getPermalink('/location'),
         },
         {
           text: 'Details',
