@@ -27,7 +27,7 @@ jobs:
     steps:
       # https://github.com/github/branch-deploy/blob/d3c24bd92505e623615b75ffdfac5ed5259adbdb/docs/merge-commit-strategy.md
       - name: deployment check
-        uses: github/branch-deploy@v7.1.0
+        uses: github/branch-deploy@v8.0.0
         id: deployment-check
         with:
           merge_deploy_mode: "true"
@@ -39,7 +39,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: checkout
-        uses: actions/checkout@v3
+        uses: actions/checkout@v4
 
       - name: astro build cache
         id: astro-build-cache
