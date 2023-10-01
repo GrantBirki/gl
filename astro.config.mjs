@@ -51,14 +51,14 @@ export default defineConfig({
       })
     ),
     compress({
-      css: true,
-      html: {
+      CSS: true,
+      HTML: {
         removeAttributeQuotes: false,
       },
-      img: false,
-      js: true,
-      svg: true,
-      logger: 1,
+      Image: false,
+      JavaScript: true,
+      SVG: true,
+      Logger: 1,
     }),
     react(),
   ],
