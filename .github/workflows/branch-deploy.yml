@@ -83,7 +83,7 @@ jobs:
       # deploy the site to GitHub Pages
       - name: deploy
         id: deployment
-        uses: actions/deploy-pages@v4.0.4
+        uses: actions/deploy-pages@v3.0.1
 
   # update the deployment result - manually complete the deployment that was created by the branch-deploy action
   result:
@@ -158,7 +158,7 @@ jobs:
       # if the deployment was successful, add a 'success' comment
       - name: success comment
         if: ${{ steps.deploy-status.outputs.DEPLOY_STATUS != 'failure' }}
-        uses: peter-evans/create-or-update-comment@c6c9a1a66007646a28c153e2a8580a5bad27bcfa # pin@v3.0.2
+        uses: peter-evans/create-or-update-comment@71345be0265236311c031f5c7866368bd1eff043 # pin@v4.0.0
         with:
           issue-number: ${{ github.event.issue.number }}
           body: |
@@ -171,7 +171,7 @@ jobs:
       # if the deployment was not successful, add a 'failure' comment
       - name: failure comment
         if: ${{ steps.deploy-status.outputs.DEPLOY_STATUS == 'failure' }}
-        uses: peter-evans/create-or-update-comment@c6c9a1a66007646a28c153e2a8580a5bad27bcfa # pin@v3.0.2
+        uses: peter-evans/create-or-update-comment@71345be0265236311c031f5c7866368bd1eff043 # pin@v4.0.0
         with:
           issue-number: ${{ github.event.issue.number }}
           body: |
