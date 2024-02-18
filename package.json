@@ -50,7 +50,7 @@
     "typescript": "^5.0.3"
   },
   "engines": {
-    "node": ">=19.7.0"
+    "node": ">=20.3.0"
   },
   "dependencies": {
     "@astrojs/react": "^2.2.1",
