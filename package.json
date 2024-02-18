@@ -17,9 +17,9 @@
   },
   "devDependencies": {
     "@astrojs/image": "=0.17.0",
-    "@astrojs/mdx": "^0.19.5",
-    "@astrojs/partytown": "^1.2.3",
-    "@astrojs/rss": "^2.4.3",
+    "@astrojs/mdx": "=0.19.7",
+    "@astrojs/partytown": "^2.0.3",
+    "@astrojs/rss": "^3.0.0",
     "@astrojs/sitemap": "^3.0.0",
     "@astrojs/tailwind": "^4.0.0",
     "@astrolib/analytics": "^0.3.0",
