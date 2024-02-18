@@ -49,7 +49,7 @@ jobs:
           key: ${{ runner.os }}-astro-build-${{ hashFiles('**/cache.json') }}
 
       - name: build with astro
-        uses: withastro/action@dc081df9eacdb11181ea51e5d05853faa5aee891 # pin@v0.2.0
+        uses: withastro/action@v1.0.6
 
   deploy:
     if: ${{ needs.deployment-check.outputs.continue == 'true' }}
@@ -61,4 +61,4 @@ jobs:
     steps:
       - name: Deploy to GitHub Pages
         id: deployment
-        uses: actions/deploy-pages@12ab2b16cf43a7a061fe99da74b6f8f11fb77f5b # pin@v2.0.3
+        uses: actions/deploy-pages@v4.0.4

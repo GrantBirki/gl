@@ -13,6 +13,7 @@ permissions:
   checks: read
   pages: write
   id-token: write
+  actions: read
 
 # set an environment variable for use in all the jobs pointing the site_url
 env:
@@ -64,13 +65,13 @@ jobs:
 
       - name: astro build cache
         id: astro-build-cache
-        uses: actions/cache@v3
+        uses: actions/cache@v4
         with:
           path: .cache
           key: ${{ runner.os }}-astro-build-${{ hashFiles('**/cache.json') }}
 
       - name: build with astro
-        uses: withastro/action@dc081df9eacdb11181ea51e5d05853faa5aee891 # pin@v0.2.0
+        uses: withastro/action@v1.0.6
 
   # deploy to GitHub Pages
   deploy:
@@ -82,7 +83,7 @@ jobs:
       # deploy the site to GitHub Pages
       - name: deploy
         id: deployment
-        uses: actions/deploy-pages@12ab2b16cf43a7a061fe99da74b6f8f11fb77f5b # pin@v2.0.3
+        uses: actions/deploy-pages@v4.0.4
 
   # update the deployment result - manually complete the deployment that was created by the branch-deploy action
   result:
