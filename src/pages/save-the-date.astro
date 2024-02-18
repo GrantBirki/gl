@@ -5,6 +5,7 @@ import Layout from '~/layouts/PageLayout.astro';
 import Hero from '~/components/widgets/Hero.astro';
 import hero from '~/config/pages/save-the-date/hero';
 import Block from '~/components/widgets/Block.astro';
+import ConfettiPop from '~/components/widgets/Confetti.jsx';
 
 const meta = {
   title: SITE.title,
@@ -14,6 +15,8 @@ const meta = {
 ---
 
 <Layout {meta}>
+  <ConfettiPop client:only="react" />
+
   <!-- Hero Widget ******************* -->
 
   {
