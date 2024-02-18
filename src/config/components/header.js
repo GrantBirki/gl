@@ -31,8 +31,8 @@ const headerData = {
       href: '/registry',
     },
     {
-      text: 'Invite',
-      href: '#',
+      text: 'Save the Date',
+      href: '/save-the-date',
     },
     {
       text: 'Gallery',

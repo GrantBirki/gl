@@ -43,6 +43,7 @@
     "mdast-util-to-string": "^4.0.0",
     "prettier": "^3.0.3",
     "prettier-plugin-astro": "^0.12.0",
+    "react-confetti": "^6.1.0",
     "reading-time": "^1.5.0",
     "sharp": "^0.32.1",
     "svgo": "2.8.0",
@@ -64,6 +65,7 @@
     "react-dom": "^18.2.0",
     "react-globe.gl": "^2.27.2",
     "react-photo-album": "^2.3.1",
-    "react-sizeme": "^3.0.2"
+    "react-sizeme": "^3.0.2",
+    "react-use": "^17.5.0"
   }
 }
