@@ -53,7 +53,7 @@ const hero = {
     // If the image should be enabled or not
     enabled: true,
     // Image source
-    src: import('~/assets/images/hero.jpg'),
+    src: import('~/assets/images/save-the-date.png'),
     // Image alt text
     alt: 'Grant and Leah',
   },
