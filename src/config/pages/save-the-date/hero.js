@@ -14,7 +14,7 @@ const hero = {
   // Hero subtitle with HTML support
   subtitle: {
     enabled: true, // If the subtitle should be enabled or not
-    text: `<span class="fancy">Woohoo - A digital save the date! G+L are getting married on MM-DD-YYYY!</span>`,
+    text: `<span class="fancy">Woohoo - A digital save the date!</span>`,
   },
 
   // First CTA block
