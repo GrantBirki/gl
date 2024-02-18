@@ -6,7 +6,6 @@ import sitemap from '@astrojs/sitemap';
 import image from '@astrojs/image';
 import mdx from '@astrojs/mdx';
 import partytown from '@astrojs/partytown';
-import compress from 'astro-compress';
 import { readingTimeRemarkPlugin } from './src/utils/frontmatter.mjs';
 import { SITE } from './src/config/site/config.js';
 import react from '@astrojs/react';
@@ -50,16 +49,6 @@ export default defineConfig({
         },
       })
     ),
-    compress({
-      CSS: true,
-      HTML: {
-        removeAttributeQuotes: false,
-      },
-      Image: false,
-      JavaScript: true,
-      SVG: true,
-      Logger: 1,
-    }),
     react(),
   ],
   vite: {
