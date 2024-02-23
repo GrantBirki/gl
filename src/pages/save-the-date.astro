@@ -2,7 +2,7 @@
 import { SITE } from '~/config/site/config.js';
 import Layout from '~/layouts/PageLayout.astro';
 
-import Hero from '~/components/widgets/Hero.astro';
+import HeroVertImg from '~/components/widgets/HeroVertImg.astro';
 import hero from '~/config/pages/save-the-date/hero';
 import Block from '~/components/widgets/Block.astro';
 import ConfettiPop from '~/components/widgets/Confetti.jsx';
@@ -21,7 +21,7 @@ const meta = {
 
   {
     hero && hero.enabled && (
-      <Hero
+      <HeroVertImg
         padding={hero.padding}
         callToAction={{
           enabled: hero.callToAction.enabled,
