@@ -50,7 +50,7 @@ jobs:
           key: ${{ runner.os }}-astro-build-${{ hashFiles('**/cache.json') }}
 
       - name: build with astro
-        uses: withastro/action@v1.0.6
+        uses: withastro/action@v2.0.0
 
   deploy:
     if: ${{ needs.deployment-check.outputs.continue == 'true' }}
