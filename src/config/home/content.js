@@ -2,7 +2,7 @@
 
 const content = {
   // If the entire content component should be enabled
-  enabled: true,
+  enabled: false,
 
   // Configuration for the primary section of the content component (the first and larger section)
   primary: {
@@ -56,7 +56,7 @@ const content = {
   // Configuration for the secondary section of the content component (the second and smaller section)
   secondary: {
     // If the secondary section should be enabled
-    enabled: true,
+    enabled: false,
 
     // Items to be displayed in the secondary section
     items: [
