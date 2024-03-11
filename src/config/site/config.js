@@ -16,6 +16,9 @@ const CONFIG = {
   // The website title which is displayed in the browser tab
   title: 'G + L',
 
+  // wedding data
+  weddingDate: '09/28/2024',
+
   // Website description
   description: 'Grant and Leah are getting married! 💍',
 
