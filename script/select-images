@@ -1,0 +1,14 @@
+#!/bin/bash
+
+# Read the keep.txt file into a bash array
+while IFS= read -r line; do
+  keep+=("$line")
+done < tmp/keep.txt
+
+# Convert the bash array into a jq array
+jq_keep=$(printf '%s\n' "${keep[@]}" | jq -R . | jq -s .)
+
+# Use jq to filter the JSON array in photos.json
+jq --argjson keep "$jq_keep" '
+  map(select(.alt as $item | $keep | index($item)))
+' src/config/home/photos.json > src/config/home/filtered_photos.json
