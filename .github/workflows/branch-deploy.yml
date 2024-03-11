@@ -71,7 +71,7 @@ jobs:
           key: ${{ runner.os }}-astro-build-${{ hashFiles('**/cache.json') }}
 
       - name: build with astro
-        uses: withastro/action@v1.0.6
+        uses: withastro/action@v2.0.0
 
   # deploy to GitHub Pages
   deploy:
@@ -83,7 +83,7 @@ jobs:
       # deploy the site to GitHub Pages
       - name: deploy
         id: deployment
-        uses: actions/deploy-pages@v3.0.1
+        uses: actions/deploy-pages@v4
 
   # update the deployment result - manually complete the deployment that was created by the branch-deploy action
   result:
