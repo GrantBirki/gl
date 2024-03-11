@@ -3,7 +3,7 @@ import { SITE } from '~/config/site/config.js';
 import Layout from '~/layouts/PageLayout.astro';
 import { getPermalink } from '~/utils/permalinks';
 
-import Hero from '~/components/widgets/Hero.astro';
+import HeroExtraWide from '~/components/widgets/HeroExtraWide.astro';
 import Note from '~/components/widgets/Note.astro';
 import Features from '~/components/widgets/Features.astro';
 import Features2 from '~/components/widgets/Features2.astro';
@@ -40,7 +40,7 @@ const meta = {
 
   {
     hero && hero.enabled && (
-      <Hero
+      <HeroExtraWide
         callToAction={{
           enabled: hero.callToAction.enabled,
           text: hero.callToAction.text,
