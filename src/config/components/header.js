@@ -16,11 +16,7 @@ const headerData = {
         },
         {
           text: 'Details',
-          href: '#',
-        },
-        {
-          text: 'Contact',
-          href: '#',
+          href: '/details',
         },
       ],
     },
