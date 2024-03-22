@@ -8,16 +8,20 @@ const headerData = {
   // List of links to be displayed in the header
   links: [
     {
-      text: 'Pages',
+      text: 'Location',
       links: [
         {
           text: 'Location',
           href: getPermalink('/location'),
         },
         {
-          text: 'Details',
-          href: '/details',
+          text: 'Hotel',
+          href: '/hotel',
         },
+        {
+          text: 'Venue',
+          href: '/venue',
+        }
       ],
     },
 
@@ -29,6 +33,10 @@ const headerData = {
     {
       text: 'Save the Date',
       href: '/save-the-date',
+    },
+    {
+      text: 'Details',
+      href: '/details',
     },
     {
       text: 'Gallery',
