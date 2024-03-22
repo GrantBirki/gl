@@ -18,29 +18,29 @@ const locations = {
       name: 'Venue',
       address: {
         enabled: true,
-        line1: '123 Sesame Street',
-        city: 'Seattle',
-        state: 'WA',
-        postcode: '12345',
+        line1: '1501 Hwy 175',
+        city: 'Hopland',
+        state: 'CA',
+        postcode: '95449',
         country: 'United States',
       },
-      description: 'Ceremony location and details',
+      description: 'Venue location and details',
       image: {
-        alt: 'ceremony location',
+        alt: 'venue location',
         height: '140',
-        src: 'https://images.unsplash.com/photo-1678986992005-87c3f4a2b0af?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwcm9maWxlLXBhZ2V8MXx8fGVufDB8fHx8&auto=format&fit=crop&w=700&q=60',
+        src: 'https://github.com/GrantBirki/gl/assets/23362539/cdded9ca-3e22-4dd1-801a-fd94387af58a',
       },
       buttons: [
         {
           text: 'Directions',
-          link: 'https://www.google.com', // google maps link
+          link: 'https://maps.app.goo.gl/aYgM5oJ49CAgoMwm9', // google maps link
           target: '_blank', // opens in new tab
           size: 'large',
           icon: 'directions',
         },
         {
           text: 'Details',
-          link: 'tel:1234567890', // phone number
+          link: '/details', // internal link
           target: '_self', // opens in same tab
           size: 'large',
           icon: 'link',
@@ -48,25 +48,25 @@ const locations = {
       ],
     },
     {
-      name: 'Hotel',
+      name: 'Pinschower Inn',
       address: {
         enabled: true,
-        line1: '13401 US-101',
-        city: 'Hopland',
+        line1: '302 N Main Street',
+        city: 'Cloverdale',
         state: 'CA',
-        postcode: '95449',
+        postcode: '95425',
         country: 'United States',
       },
-      description: 'Thatcher Hotel:',
+      description: 'Inn Details:',
       image: {
         alt: 'reception location',
         height: '140',
-        src: 'https://github.com/GrantBirki/gl/assets/23362539/766ac14e-b5a4-49a9-8ace-0d938d56bcd1',
+        src: 'https://github.com/GrantBirki/gl/assets/23362539/86fcab4f-0b06-4615-bbc0-c6a95463963a',
       },
       buttons: [
         {
           text: 'Directions',
-          link: 'https://maps.app.goo.gl/F2dMVx2p5WANsHZ87', // google maps link
+          link: 'https://maps.app.goo.gl/iwK6vfkbHNY2nkbq6', // google maps link
           target: '_blank', // opens in new tab
           size: 'large',
           icon: 'directions',
