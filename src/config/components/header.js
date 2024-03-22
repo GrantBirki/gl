@@ -21,7 +21,7 @@ const headerData = {
         {
           text: 'Venue',
           href: '/venue',
-        }
+        },
       ],
     },
 
