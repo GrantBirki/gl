@@ -9,6 +9,8 @@ layout: '~/layouts/MarkdownLayout.astro'
 
 Grant and Leah's wedding will be a small and intimate gathering of friends and family. It will be a full weekend of celebration in the wine country of Northern California.
 
+Due to our venue being a VRBO property, the amount of guests we can invite is very limited.
+
 ## When and Where
 
 - When: Our wedding will be the whole weekend of September 28th, 2024 (Friday to Monday - 27th -> 30th)
