@@ -30,6 +30,8 @@ The venue is beautiful and has a lot of space for guests to relax and enjoy the 
 
 There are a few ways to get to the wedding [location](/location). We recommend flying into the San Francisco International Airport (SFO) and renting a car to drive to the venue. There will be multiple groups of people driving to the venue, so we can help coordinate rides if needed.
 
+You can also fly into the [Charles M. Schulz - Sonoma County Airport](https://sonomacountyairport.org/) which is a smaller airport that is closer to the venue which is located just outside of Santa Rosa, CA.
+
 However, if you prefer not to fly there are other options as well. You can drive to the venue which is what a few family members are doing to turn it into a road trip / vacation. You can also take the California Zephyr train which is operated by [Amtrak](https://www.amtrak.com/california-zephyr-train) and goes from Chicago to San Francisco (with stops in Colorado of course).
 
 ## Dress Code
