@@ -53,7 +53,15 @@ const meta = {
     backgroundCss={''}
     enabled={true}
     title={`<span class="extra-fancy">${SITE.weddingDate}</span>`}
-    content={'<div class="fancy">Grant and Leah<br><a class="underline-link" href="https://maps.app.goo.gl/Pyyhy51YdWWvGfnA8">Old Hopland, CA</a><br>Details to follow</div>'}
+    content={'<div class="fancy">Grant and Leah<br><a class="underline-link" href="https://maps.app.goo.gl/Pyyhy51YdWWvGfnA8">Old Hopland, CA</a></div>'}
+    callToAction={{
+      enabled: true,
+      text: 'Details',
+      href: '/details',
+      target: '_self',
+      rel: 'noopener',
+      icon: 'tabler:notebook',
+    }}
   />
   <br />
 </Layout>
