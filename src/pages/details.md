@@ -11,7 +11,7 @@ Grant and Leah's wedding will be a small and intimate gathering of friends and f
 
 ## When and Where
 
-- When: Our wedding will be the whole weekend of September 28th, 2024
+- When: Our wedding will be the whole weekend of September 28th, 2024 (Friday to Monday - 27th -> 30th)
 - Where: [Old Hopland, CA](https://maps.app.goo.gl/Pyyhy51YdWWvGfnA8)
 
 ## Accommodations
