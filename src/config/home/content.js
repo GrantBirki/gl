@@ -49,7 +49,7 @@ const content = {
       // Alt text for the image
       alt: 'Colorful Image',
       // The image to be displayed
-      src: import('~/assets/images/caos.jpg'),
+      src: import('~/assets/images/save-the-date.png'),
     },
   },
 
@@ -87,7 +87,7 @@ const content = {
       // Alt text for the image
       alt: 'Vintage Image',
       // The image to be displayed
-      src: import('~/assets/images/vintage.jpg'),
+      src: import('~/assets/images/save-the-date.png'),
     },
   },
 };
