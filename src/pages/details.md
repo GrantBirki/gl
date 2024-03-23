@@ -36,4 +36,4 @@ However, if you prefer not to fly there are other options as well. You can drive
 
 ## Dress Code
 
-TDB
+The dress code for the wedding is semi-formal / cocktail attire.
