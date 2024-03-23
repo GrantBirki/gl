@@ -3,8 +3,8 @@ title: 'Venue'
 layout: '~/layouts/MarkdownLayout.astro'
 ---
 
-## Venue
+## Dooley Creek Ranch
 
-![pinschower](/assets/dooley-creek-ranch.jpg)
+![dooley-creek-ranch](/assets/dooley-creek-ranch.jpg)
 
 Coming soon!
