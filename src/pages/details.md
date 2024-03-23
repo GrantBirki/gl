@@ -22,7 +22,7 @@ To view more information about accommodations, please visit the [hotel](/hotel) 
 
 ## Venue
 
-The wedding venue itself is at the _Dooley Creek Ranch_. This is a VRBO property that we have booked for the entire weekend. It is where we will be having the ceremony, reception, and all the other wedding festivities!
+The wedding venue is at the _Dooley Creek Ranch_. This is a VRBO property that we have booked for the entire weekend. It is where we will be having the ceremony, reception, and all the other wedding festivities!
 
 The venue is beautiful and has a lot of space for guests to relax and enjoy the weekend. To view more information about the venue, please visit the dedicated [venue](/venue) page.
 
@@ -31,3 +31,7 @@ The venue is beautiful and has a lot of space for guests to relax and enjoy the 
 There are a few ways to get to the wedding [location](/location). We recommend flying into the San Francisco International Airport (SFO) and renting a car to drive to the venue. There will be multiple groups of people driving to the venue, so we can help coordinate rides if needed.
 
 However, if you prefer not to fly there are other options as well. You can drive to the venue which is what a few family members are doing to turn it into a road trip / vacation. You can also take the California Zephyr train which is operated by [Amtrak](https://www.amtrak.com/california-zephyr-train) and goes from Chicago to San Francisco (with stops in Colorado of course).
+
+## Dress Code
+
+TDB
