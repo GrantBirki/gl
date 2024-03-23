@@ -28,7 +28,7 @@ const locations = {
       image: {
         alt: 'venue location',
         height: '140',
-        src: 'https://github.com/GrantBirki/gl/assets/23362539/cdded9ca-3e22-4dd1-801a-fd94387af58a',
+        src: 'https://i.imgur.com/LZj8Gfo.jpeg',
       },
       buttons: [
         {
@@ -40,7 +40,7 @@ const locations = {
         },
         {
           text: 'Details',
-          link: '/details', // internal link
+          link: '/venue', // internal link
           target: '_self', // opens in same tab
           size: 'large',
           icon: 'link',
@@ -61,7 +61,7 @@ const locations = {
       image: {
         alt: 'reception location',
         height: '140',
-        src: 'https://github.com/GrantBirki/gl/assets/23362539/86fcab4f-0b06-4615-bbc0-c6a95463963a',
+        src: 'https://i.imgur.com/gTjLhpH.jpeg',
       },
       buttons: [
         {
