@@ -22,7 +22,7 @@ To view more information about accommodations, please visit the [hotel](/hotel) 
 
 ## Venue
 
-The wedding venue itself is at the *Dooley Creek Ranch*. This is a VRBO property that we have booked for the entire weekend. It is where we will be having the ceremony, reception, and all the other wedding festivities!
+The wedding venue itself is at the _Dooley Creek Ranch_. This is a VRBO property that we have booked for the entire weekend. It is where we will be having the ceremony, reception, and all the other wedding festivities!
 
 The venue is beautiful and has a lot of space for guests to relax and enjoy the weekend. To view more information about the venue, please visit the dedicated [venue](/venue) page.
 
