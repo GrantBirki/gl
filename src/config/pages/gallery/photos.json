@@ -813,20 +813,27 @@
   },
   {
     "key": 117,
+    "alt": "family-waterski.jpg",
+    "src": "/assets/gallery/family-waterski.jpg",
+    "width": 1632,
+    "height": 1224
+  },
+  {
+    "key": 118,
     "alt": "grant-and-leah-norway-boat.jpg",
     "src": "/assets/gallery/grant-and-leah-norway-boat.jpg",
     "width": 1440,
     "height": 1800
   },
   {
-    "key": 118,
+    "key": 119,
     "alt": "grant-with-kite.jpg",
     "src": "/assets/gallery/grant-with-kite.jpg",
     "width": 712,
     "height": 477
   },
   {
-    "key": 119,
+    "key": 120,
     "alt": "howelsen-hill.jpg",
     "src": "/assets/gallery/howelsen-hill.jpg",
     "width": 2189,
