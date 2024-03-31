@@ -11,6 +11,8 @@ The [Pinschower Inn](https://www.pinschowerinn.com/) is a bed-and-breakfast in C
 
 We have booked out the entire inn for the wedding weekend for guests to stay in.
 
+Please wait for further instructions on how to book or individually select your room.
+
 ### Details
 
 - [Website](https://www.pinschowerinn.com/)
