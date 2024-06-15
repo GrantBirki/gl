@@ -17,7 +17,7 @@ const CONFIG = {
   title: 'G + L',
 
   // wedding data
-  weddingDate: '09/28/2024',
+  weddingDate: '09/30/2024',
 
   // Website description
   description: 'Grant and Leah are getting married! 💍',

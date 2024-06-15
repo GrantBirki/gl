@@ -3,28 +3,24 @@ title: 'Venue'
 layout: '~/layouts/MarkdownLayout.astro'
 ---
 
-## Dooley Creek Ranch
+## De Tierra
 
-![dooley-creek-ranch](/assets/dooley-creek-ranch.jpg)
+![de_tierra](/assets/house.jpg)
 
-The Dooley Creek Ranch is a hilltop retreat less than 2 hours from San Francisco in Hopland, CA. This Tuscan-inspired villa will be where we host our wedding weekend!
+De Tierra is a beautiful property located in Salinas, California. The property is a residential rental property that we have booked for the entire weekend for our wedding celebration. It has a pool, vineyard, and several buildings with multiple rooms and beds where guests will be staying.
 
 ## Address
 
-1501 Hwy 175, Hopland, CA 95449
+505 Corral de Tierra Rd. Salinas Ca 93908
+
+- Google Maps: [Directions Link](https://maps.app.goo.gl/e9ZA5bm9XZ361UqLA)
 
 ## Gallery
 
-![dooley-1](/assets/dooley-1.jpg)
-![dooley-2](/assets/dooley-2.jpg)
-![dooley-3](/assets/dooley-3.jpg)
-![dooley-4](/assets/dooley-4.jpg)
-![dooley-5](/assets/dooley-5.jpg)
-![dooley-6](/assets/dooley-6.jpg)
-![dooley-7](/assets/dooley-7.jpg)
-![dooley-8](/assets/dooley-8.jpg)
-![dooley-9](/assets/dooley-9.jpg)
-![dooley-10](/assets/dooley-10.jpg)
-![dooley-11](/assets/dooley-11.jpg)
-![dooley-12](/assets/dooley-12.jpg)
-![dooley-13](/assets/dooley-13.jpg)
+![de_tierra-1](/assets/house_full.jpg)
+![de_tierra-2](/assets/house_drone_shot.jpg)
+![de_tierra-3](/assets/house_inside.jpg)
+![de_tierra-4](/assets/house_with_pool.jpg)
+![de_tierra-5](/assets/outside_house.jpg)
+![de_tierra-6](/assets/outside_house_2.jpg)
+![de_tierra-7](/assets/table.jpg)
