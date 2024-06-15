@@ -15,8 +15,8 @@ const headerData = {
           href: getPermalink('/location'),
         },
         {
-          text: 'Hotel',
-          href: '/hotel',
+          text: 'Accommodations',
+          href: '/accommodations',
         },
         {
           text: 'Venue',
