@@ -20,6 +20,10 @@ Our wedding will also be fairly untraditional and unique to us.
 - When: Our wedding celebration will be from September 29th, 2024 to October 2nd, 2024 (Sunday to Wednesday)
 - Where: [505 Corral De Tierra Rd](https://maps.app.goo.gl/e9ZA5bm9XZ361UqLA) - Salinas, CA
 
+The actual wedding will be taking place on Monday - September 30th, 2024.
+
+The Monterey area in California is absolutely beautiful and we highly encourage you to make a vacation out of it if you can. Feel free to explore the area and enjoy the beautiful coast.
+
 ## Accommodations
 
 The property limits the size of the wedding to the number of guests that can stay on the property. We have rented the property for the entire weekend and have booked out all the rooms for guests to stay in. This means that a total of 32 guests can stay on the property.
@@ -27,6 +31,8 @@ The property limits the size of the wedding to the number of guests that can sta
 The property has a few separate buildings with multiple rooms and beds where guests will be staying.
 
 To view more information about accommodations, please visit the [accommodations](/accommodations) page.
+
+The most important takeaway here is that **everyone has accommodations** and you don't need to worry about finding a place to stay. If you are coming to the wedding, you will have a place to stay on the property.
 
 ## Venue
 
