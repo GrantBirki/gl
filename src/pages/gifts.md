@@ -1,11 +1,11 @@
 ---
-title: 'Wedding Registry'
+title: 'Wedding Gifts'
 layout: '~/layouts/MarkdownLayout.astro'
 ---
 
 ![G and L](/assets/gallery/B_gl_love_lock.jpg)
 
-## Our Wedding Registry
+## Gifts
 
 > Note: This registry page is a work in progress and will be updated as we get closer to the wedding date.
 

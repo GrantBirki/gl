@@ -27,8 +27,8 @@ const headerData = {
 
     // A single link with no dropdown
     {
-      text: 'Registry',
-      href: '/registry',
+      text: 'Gifts',
+      href: '/gifts',
     },
     {
       text: 'Save the Date',
