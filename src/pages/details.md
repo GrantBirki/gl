@@ -42,7 +42,7 @@ The venue is beautiful and has a lot of space for guests to relax and enjoy the 
 
 ## Getting There
 
-There are a few ways to get to the wedding [location](/location). We recommend flying into the San Francisco International Airport (SFO) and renting a car to drive to the venue. There will be multiple groups of people driving to the venue, so we can help coordinate rides if needed.
+There are a few ways to get to the wedding [venue](/venue). We recommend flying into the San Francisco International Airport (SFO) and renting a car to drive to the venue. There will be multiple groups of people driving to the venue, so we can help coordinate rides if needed.
 
 SFO isn't the only airport you can fly into (but it will likely be the most common option). You can also fly into the San Jose International Airport ([SJC](https://www.flysanjose.com/)), the Oakland International Airport ([OAK](https://www.oaklandairport.com/)) or even the Monterey Regional Airport ([MRY](https://www.montereyairport.com/)).
 

@@ -10,10 +10,10 @@ const headerData = {
     {
       text: 'Location',
       links: [
-        {
-          text: 'Location',
-          href: getPermalink('/location'),
-        },
+        // {
+        //   text: 'Location',
+        //   href: getPermalink('/location'),
+        // },
         {
           text: 'Accommodations',
           href: '/accommodations',
