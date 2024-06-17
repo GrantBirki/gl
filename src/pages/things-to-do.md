@@ -18,11 +18,12 @@ There's an abundance of outdoor things to do - please keep in mind it can be 20 
 **Point Lobos State Reserve** - China Cove trail is the best trail in the park and the water is Caribbean blue if it’s a sunny day
 
 **Garapatta State Park** - Calla Lily Valley and Soberanes Canyon Trail are both on Leah’s list of places to go!
-Scenic Bluff Path in Carmel - walk Scenic Drive along the coast on a beautiful path with spectacular homes (you can also drive this road, which we highly recommend)
+
+**Scenic Bluff Path in Carmel** - walk Scenic Drive along the coast on a beautiful path with spectacular homes (you can also drive this road, which we highly recommend)
 
 ### Golf ⛳
 
-Non-guests can play at Pebble Beach golf links by reserving a tee time 24 hours in advance (if you are lucky) - otherwise you might need a small bank loan. Beyond the world-acclaimed Pebble Beach golf links, there are a few public local greens to play at for the day. G & L are not golfers, but research tells us Pacific Grove Golf Links is one option that does not require an overnight stay to play and is on the water.
+Non-guests can play at Pebble Beach golf links by reserving a tee time 24 hours in advance (if you are lucky). Beyond the world-acclaimed Pebble Beach golf links, there are a few public local greens to play at for the day. G & L are not golfers, but research tells us Pacific Grove Golf Links is one option that does not require an overnight stay to play and is on the water.
 
 ### Beaches 🏖️
 
@@ -32,19 +33,21 @@ Many beaches on the California coast will take your breath away but the best to 
 
 Rent a kayak or paddle board in downtown Monterey to explore the kelp forests and see the wildlife!
 
-If you want to enjoy the scenery...
-
-We recommend the walking paths of course but one thing that you cannot miss is _17 mile drive_ through Pebble Beach Golf Links. It costs $12 per vehicle and is spectacular. You should stop at the Lodge for lunch and watch the golfers right at hole 18!
-
 ---
 
 ## If you’re feeling mellow 🧘‍♀️
+
+ ### 17-mile Drive ###
+
+You must not miss _17 mile drive_ through Pebble Beach Golf Links. It costs $12 per vehicle and is spectacular. You should stop at the Lodge for lunch and watch the golfers right at hole 18!
 
 ### Scenic Drive, Carmel By The Sea 🚗
 
 This is a drive, or walk if you’d like, along the ocean highlighting the special homes of the area, including some iconic fairytale homes, the butterfly house and the Frank Lloyd Wright house.
 
-For a different type of scenery, there is the Monterey Wine Trail. This trail can be traced back to the 1790s by the first Spanish missionaries and conquistadors who planted the vineyards. There are a dozen local wineries you can visit.
+### Monterey Wine Trail 
+
+This trail can be traced back to the 1790s by the first Spanish missionaries and conquistadors who planted the vineyards. There are a dozen local wineries you can visit.
 
 ### For the Sea Animal Lovers 🐠
 
@@ -58,7 +61,7 @@ Tide-pooling: this is one of Leah’s favorite coastal activities but make sure 
 
 ### The Shops 🛒
 
-Carmel has the cutest shops, dozens of art galleries and even the De Tierra winery tasting room so don’t miss a wander around there. There are many delicious eateries and cafes, many of which we have yet to try. We’re sure you won’t be disappointed. Monterey also has a shopping street called Cannery Row with an interestingly fun history. Pacific Grove has several antique shops and they’re great to wander about, too.
+Carmel by the sea has the cutest shops, dozens of art galleries and even the De Tierra winery tasting room so don’t miss a wander around there. There are many delicious eateries and cafes, many of which we have yet to try. We’re sure you won’t be disappointed. Monterey also has a shopping street called Cannery Row with an interestingly fun history. Pacific Grove has several antique shops and they’re great to wander about, too.
 
 ### The Cafes ☕
 
