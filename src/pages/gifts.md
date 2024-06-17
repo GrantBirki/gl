@@ -7,11 +7,11 @@ layout: '~/layouts/MarkdownLayout.astro'
 
 ## Gifts
 
-> Note: This registry page is a work in progress and will be updated as we get closer to the wedding date.
+We are thrilled to celebrate our wedding with you and deeply appreciate your love and presence.
 
-We are so excited to celebrate our wedding with you and are so grateful for your love and support.
+If you wish to contribute, we have several registries available. However, we would be especially grateful for donations to our travel fund or our environmental fund. We are excited to continue our adventures together, with plans to celebrate our honeymoon on an African safari in 2025.
 
-TODO
+Thank you for being a part of our special day ❤️
 
 - ✈️ [Travel Fund](https://account.venmo.com/u/GrantBirki) - Venmo
 - 🛒 [Amazon](https://www.amazon.com/wedding/grant-birkinbine-leah-caragol--may-2024/registry/11BZEM3G36MR4)
