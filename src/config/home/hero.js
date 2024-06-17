@@ -13,7 +13,7 @@ const hero = {
   // Hero subtitle with HTML support
   subtitle: {
     enabled: true, // If the subtitle should be enabled or not
-    text: `<span class="fancy">We are getting married!! Please join us, our family, and friends for a "weekend" of celebration near Monterey and Carmel Valley.<br><br>De Tierra Events
+    text: `<span class="fancy">We are getting married!! Please join us, our family, and friends for a "weekend" of celebration near Monterey and Carmel Valley.<br><br>De Tierra Vineyards
     Salinas, California
     <br>September 29 - October 2nd, 2024
     </span>`,
