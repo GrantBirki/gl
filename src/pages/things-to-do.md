@@ -37,7 +37,7 @@ Rent a kayak or paddle board in downtown Monterey to explore the kelp forests an
 
 ## If you’re feeling mellow 🧘‍♀️
 
- ### 17-mile Drive ###
+### 17-mile Drive
 
 You must not miss _17 mile drive_ through Pebble Beach Golf Links. It costs $12 per vehicle and is spectacular. You should stop at the Lodge for lunch and watch the golfers right at hole 18!
 
@@ -45,7 +45,7 @@ You must not miss _17 mile drive_ through Pebble Beach Golf Links. It costs $12 
 
 This is a drive, or walk if you’d like, along the ocean highlighting the special homes of the area, including some iconic fairytale homes, the butterfly house and the Frank Lloyd Wright house.
 
-### Monterey Wine Trail 
+### Monterey Wine Trail
 
 This trail can be traced back to the 1790s by the first Spanish missionaries and conquistadors who planted the vineyards. There are a dozen local wineries you can visit.
 
