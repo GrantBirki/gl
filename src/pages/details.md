@@ -38,17 +38,7 @@ The most important takeaway here is that **everyone has accommodations** and you
 
 The wedding venue is at the _De Tierra Events_ property. This is a rental property that we have booked for the entire celebration. It is where we will be having the ceremony, reception, and all the other wedding festivities!
 
-The venue is beautiful and has a lot of space for guests to relax and enjoy the weekend. To view more information about the venue, please visit the [venue](/venue) page.
-
-## Getting There
-
-There are a few ways to get to the wedding [venue](/venue). We recommend flying into the San Francisco International Airport (SFO) and renting a car to drive to the venue. There will be multiple groups of people driving to the venue, so we can help coordinate rides if needed.
-
-SFO isn't the only airport you can fly into (but it will likely be the most common option). You can also fly into the San Jose International Airport ([SJC](https://www.flysanjose.com/)), the Oakland International Airport ([OAK](https://www.oaklandairport.com/)) or even the Monterey Regional Airport ([MRY](https://www.montereyairport.com/)).
-
-There are a lot of options for getting into the Bay Area via air travel. Take a look at [Google Flights](https://www.google.com/travel/flights) to find the best option for you which will be a balance of cost, convenience, and travel time.
-
-However, if you prefer not to fly there are other options as well. You can drive to the venue which is what a few family members are doing to turn it into a road trip / vacation. You can also take the California Zephyr train which is operated by [Amtrak](https://www.amtrak.com/california-zephyr-train) and goes from Chicago to San Francisco (with stops in Colorado of course).
+The venue is beautiful and has a lot of space for guests to relax and enjoy the weekend. To view more information about the venue, please visit the [travel + stay](/travel-and-stay) page.
 
 ## Dress Code
 

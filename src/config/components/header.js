@@ -8,24 +8,13 @@ const headerData = {
   // List of links to be displayed in the header
   links: [
     {
-      text: 'Location',
-      links: [
-        // {
-        //   text: 'Location',
-        //   href: getPermalink('/location'),
-        // },
-        {
-          text: 'Accommodations',
-          href: '/accommodations',
-        },
-        {
-          text: 'Venue',
-          href: '/venue',
-        },
-      ],
+      text: 'Home',
+      href: '/',
     },
-
-    // A single link with no dropdown
+    {
+      text: 'Travel + Stay',
+      href: '/travel-and-stay',
+    },
     {
       text: 'Gifts',
       href: '/gifts',
