@@ -42,6 +42,10 @@ const headerData = {
       text: 'Gallery',
       href: getPermalink('/gallery'),
     },
+    {
+      text: 'RSVP',
+      href: '/rsvp',
+    },
 
     // // The blog link is a special case, it uses the getBlogPermalink function
     // {
