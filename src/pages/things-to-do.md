@@ -16,7 +16,8 @@ There's an abundance of outdoor things to do - please keep in mind it can be 20 
 **Monterey Bay Coastal Trail** - this beautiful trail is gravel and flat, following the coast around the peninsula. This is also a great spot to walk and spot sea otters and whales. If the tide is low - go tide pooling!
 
 **Point Lobos State Reserve** - China Cove trail is the best trail in the park and the water is Caribbean blue if it’s a sunny day
-Garapatta State Park - Calla Lily Valley and Soberanes Canyon Trail are both on Leah’s list of places to go! 
+
+**Garapatta State Park** - Calla Lily Valley and Soberanes Canyon Trail are both on Leah’s list of places to go!
 Scenic Bluff Path in Carmel - walk Scenic Drive along the coast on a beautiful path with spectacular homes (you can also drive this road, which we highly recommend)
 
 ### Golf ⛳
