@@ -12,8 +12,8 @@ const footerData = {
       title: 'Details',
       // List of links to be displayed in the section
       links: [
-        { text: 'Event Details', href: '/details' },
-        // { text: 'Location', href: getPermalink('/location') },
+        // { text: 'Event Details', href: '/details' },
+        { text: 'Schedule', href: '/schedule' },
       ],
     },
     {

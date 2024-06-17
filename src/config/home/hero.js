@@ -13,23 +13,26 @@ const hero = {
   // Hero subtitle with HTML support
   subtitle: {
     enabled: true, // If the subtitle should be enabled or not
-    text: `<span class="fancy">We are getting married! Join us in our celebration.</span>`,
+    text: `<span class="fancy">We are getting married!! Please join us, our family, and friends for a "weekend" of celebration near Monterey and Carmel Valley.<br><br>De Tierra Events
+    Salinas, California
+    <br>September 29 - October 2nd, 2024
+    </span>`,
   },
 
   // First CTA block
   callToAction: {
     // Enable or disable first CTA
-    enabled: false,
+    enabled: true,
     // CTA text
-    text: 'Get template',
+    text: 'Schedule',
     // CTA link
-    href: 'https://github.com/grantbirki/gl',
+    href: '/schedule',
     // Target html <a> tag
-    target: '_blank',
+    target: '_self',
     // Rel html <a> tag
     rel: 'noopener',
     // CTA icon
-    icon: 'tabler:download',
+    icon: 'tabler:calendar',
   },
 
   // Second CTA block (optional)

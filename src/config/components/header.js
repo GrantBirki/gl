@@ -24,10 +24,6 @@ const headerData = {
       href: '/save-the-date',
     },
     {
-      text: 'Details',
-      href: '/details',
-    },
-    {
       text: 'Gallery',
       href: getPermalink('/gallery'),
     },
