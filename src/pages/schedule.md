@@ -5,17 +5,17 @@ layout: '~/layouts/MarkdownLayout.astro'
 
 ## Welcome Dinner 🍽️
 
-| Time | Date | Location |
-| ---- | ---- | -------- |
+| Time     | Date                   | Location       |
+| -------- | ---------------------- | -------------- |
 | 6pm(ish) | Sunday, September 29th | Hacienda House |
 
 Check-in after 3 pm and join us at the main house on De Tierra's property for a causal dinner & drinks to start the festivities!
 
 ## Ceremony & Reception 💍
 
-| Time | Date | Location |
-| ---- | ---- | -------- |
-| 4pm | Monday, September 30th | Front Lawn |
+| Time | Date                   | Location   |
+| ---- | ---------------------- | ---------- |
+| 4pm  | Monday, September 30th | Front Lawn |
 
 Ceremony is to be followed by dinner in the olive grove and lots of dancing!
 
@@ -23,17 +23,17 @@ Ceremony is to be followed by dinner in the olive grove and lots of dancing!
 
 ## After Party 🥳
 
-| Time | Date | Location |
-| ---- | ---- | -------- |
+| Time            | Date                   | Location  |
+| --------------- | ---------------------- | --------- |
 | 10:30 pm - late | Monday, September 30th | Game Room |
 
 Due to a noise ordinance, we’ve got to wrap up the party at 10pm, so join us to keep the party going with some late-night bites and quieter music in the game room.
 
 ## Your Day to Explore 🏖️
 
-| Time | Date | Location |
-| ---- | ---- | -------- |
-| 9:30am(ish) | Tuesday, October 1st | *Wherever you want* |
+| Time        | Date                 | Location            |
+| ----------- | -------------------- | ------------------- |
+| 9:30am(ish) | Tuesday, October 1st | _Wherever you want_ |
 
 > Breakfast at 9:30ish
 
@@ -41,9 +41,9 @@ We will have a pancake and waffle breakfast at the Hacienda House for guests at 
 
 ## Send Off 👋
 
-| Time | Date | Location |
-| ---- | ---- | -------- |
-| Morning    | Wednesday, October 2nd | Hacienda House |
+| Time    | Date                   | Location       |
+| ------- | ---------------------- | -------------- |
+| Morning | Wednesday, October 2nd | Hacienda House |
 
 Wednesday, October 2nd
 Hacienda House

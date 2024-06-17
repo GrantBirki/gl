@@ -9,7 +9,7 @@ We fell in love with this area on a family trip with the Birkinbine family and h
 
 ## If you’re feeling active 🏃‍♂️
 
-There's an abundance of outdoor things to do - please keep in mind it can be 20 degrees cooler on the coast so bring layers! 
+There's an abundance of outdoor things to do - please keep in mind it can be 20 degrees cooler on the coast so bring layers!
 
 ### Hikes / Walks ⛰️
 
@@ -34,7 +34,7 @@ Rent a kayak or paddle board in downtown Monterey to explore the kelp forests an
 
 If you want to enjoy the scenery...
 
-We recommend the walking paths of course but one thing that you cannot miss is *17 mile drive* through Pebble Beach Golf Links. It costs $12 per vehicle and is spectacular. You should stop at the Lodge for lunch and watch the golfers right at hole 18!
+We recommend the walking paths of course but one thing that you cannot miss is _17 mile drive_ through Pebble Beach Golf Links. It costs $12 per vehicle and is spectacular. You should stop at the Lodge for lunch and watch the golfers right at hole 18!
 
 ---
 

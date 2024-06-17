@@ -24,6 +24,14 @@ const headerData = {
       href: '/save-the-date',
     },
     {
+      text: 'Things to Do',
+      href: '/things-to-do',
+    },
+    {
+      text: 'FAQs',
+      href: '/faqs',
+    },
+    {
       text: 'Gallery',
       href: getPermalink('/gallery'),
     },
