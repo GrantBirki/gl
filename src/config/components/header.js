@@ -8,39 +8,40 @@ const headerData = {
   // List of links to be displayed in the header
   links: [
     {
-      text: 'Location',
-      links: [
-        {
-          text: 'Location',
-          href: getPermalink('/location'),
-        },
-        {
-          text: 'Accommodations',
-          href: '/accommodations',
-        },
-        {
-          text: 'Venue',
-          href: '/venue',
-        },
-      ],
+      text: 'Home',
+      href: '/',
     },
-
-    // A single link with no dropdown
     {
-      text: 'Registry',
-      href: '/registry',
+      text: 'Travel + Stay',
+      href: '/travel-and-stay',
+    },
+    {
+      text: 'Schedule',
+      href: '/schedule',
+    },
+    {
+      text: 'Gifts',
+      href: '/gifts',
     },
     {
       text: 'Save the Date',
       href: '/save-the-date',
     },
     {
-      text: 'Details',
-      href: '/details',
+      text: 'Things to Do',
+      href: '/things-to-do',
+    },
+    {
+      text: 'FAQs',
+      href: '/faqs',
     },
     {
       text: 'Gallery',
       href: getPermalink('/gallery'),
+    },
+    {
+      text: 'RSVP',
+      href: '/rsvp',
     },
 
     // // The blog link is a special case, it uses the getBlogPermalink function
