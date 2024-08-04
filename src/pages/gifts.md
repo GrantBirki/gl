@@ -14,6 +14,7 @@ If you wish to contribute, we have several registries available. However, we wou
 Thank you for being a part of our special day ❤️
 
 - 🎁 [Main Registry](https://www.zola.com/registry/leahandgrantseptember30) - Zola
+- 🎨 [Etsy](https://www.etsy.com/registry/MTM4NDcyNzAxfDEyODc0Nzc3OQ)
 - ✈️ [Travel Fund](https://account.venmo.com/u/GrantBirki) - Venmo
 - 🛒 [Amazon](https://www.amazon.com/wedding/grant-birkinbine-leah-caragol--may-2024/registry/11BZEM3G36MR4)
 - 🌱 [Donate](https://www.catf.us/) - Environmental Fund
