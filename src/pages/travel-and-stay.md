@@ -38,6 +38,10 @@ To reduce any confusion, we’ve attempted to put guests and couples in rooms in
 
 Since this area has so much to offer and we love it, we would encourage you to extend your trip! If you would like some recommendations for lodging in Monterey, Carmel or Big Sur, drop us a line and book those soon!
 
+### Schedule
+
+Click the link [here](/schedule) to view the schedule for the weekend.
+
 ### Gallery
 
 ![de_tierra-1](/assets/house_full.jpg)

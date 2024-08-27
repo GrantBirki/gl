@@ -24,3 +24,16 @@ We’ve decided to keep our wedding intimate and our venue has a guest maximum, 
 ## Is there transportation available on the day of the wedding?
 
 Lucky for a lot of you, your bed will not be far from the dance floor so nope! - but don’t worry after 10pm we will be quiet enough for you to sleep. For those at the Bixby house, the venue requests that you return to the house by 10:30pm and we will not be providing transportation so this might be a great opportunity for some carpooling.
+
+## If I buy alcohol to bring and we don’t finish it, can it be returned?
+
+Many states in the US allow you to returned unopened alcohol to the store you purchased it from. California is **not** one of those states. It is illegal to return alcohol in California.
+
+## What should I bring?
+
+The venue should have everything you need but here are some suggestions that may make your stay more comfortable:
+
+- **Sunscreen** - the sun is strong in California and you'll get burned faster than you think
+- **Sunglasses** - for your eyeballs. We will be outside quite a bit
+- **Prescriptions** - if you need them, don't forget them. There is no pharmacy nearby. This includes allergy medicine if you have allergies (the venue might have a lot of pollen triggers). Also, don't forget your prescription glasses or contacts (this is a common one)
+- **Beverages** - we will be providing a lot of beverages but if you have a favorite and want to bring it, go for it! We will have a fridge for you to store it in.
