@@ -22,6 +22,14 @@ We recommend flying into San Jose International (SJC) or San Francisco Internati
 
 If you’d like to avoid renting a car and are coming from Denver, it might be more convenient to fly to Monterey Regional Airport (MRY) as there is a direct flight. This is only 20 minutes from the venue and you can take an Uber or taxi to De Tierra.
 
+### Driving
+
+If you think you might want a rental car, and your flight is into any airport other than Monterey, you will probably need a rental car. Flying into Monterey is the only time we would recommend not getting a rental car if you are staying on property for the weekend or plan on carpooling with other guests when going off property.
+
+The majority of guests will be getting rental cars for their own individual groups to get to/from the venue and for any other activities they may want to do in the area.
+
+**Important**: Please keep in mind the fact that the venue is in an area with little (or even no) cell phone service. We recommend **downloading offline maps** for the area you will be driving in before you leave your hotel or the venue. If you do not have offline maps available, you will find that your phone loses service, and your directions are lost before you make it to the venue. Google maps supports [offline map downloads](https://support.google.com/maps/answer/6291838?hl=en&co=GENIE.Platform%3DiOS&oco=0) for both Android and iOS.
+
 ### Lodging
 
 The best part of our venue is it includes lodging for all guests for our stay. There is the Hacienda House (sleeps 16), Vineyard House (sleeps 6), Vista Glamping (sleeps 2), and Bixby House (sleeps 10). The Bixby house is a 10-minute drive away, which means it is also 10 minutes closer to Monterey and Carmel. This house will not have any events throughout the stay so it is best for people who would prefer some quiet time and privacy.
