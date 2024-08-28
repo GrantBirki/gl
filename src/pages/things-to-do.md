@@ -66,3 +66,9 @@ Carmel by the sea has the cutest shops, dozens of art galleries and even the De 
 ### The Cafes ☕
 
 Carmel has many cafes and bakeries that are worth a visit. You can just stroll around and find one that suits your fancy. There are even a few unique tea shops and specialty chocolate shops as well.
+
+---
+
+## If you're feeling ice cream 🍦
+
+If you are looking for some of the best ice cream you have ever had, look no further. Take your butt on down to [Revival Ice Cream](https://maps.app.goo.gl/C7fwGa3YfcV5mxML6) in Monterey and try the **Bee's Knees** flavor. It is life altering.
