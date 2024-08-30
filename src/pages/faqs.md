@@ -37,3 +37,4 @@ The venue should have everything you need but here are some suggestions that may
 - **Sunglasses** - for your eyeballs. We will be outside quite a bit
 - **Prescriptions** - if you need them, don't forget them. There is no pharmacy nearby. This includes allergy medicine if you have allergies (the venue might have a lot of pollen triggers). Also, don't forget your prescription glasses or contacts (this is a common one)
 - **Beverages** - we will be providing a lot of beverages but if you have a favorite and want to bring it, go for it! We will have a fridge for you to store it in.
+- **Bathing suit** - if you plan on swimming in the pool or hot tub bring along your suit
