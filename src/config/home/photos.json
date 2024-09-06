@@ -85,6 +85,20 @@
   },
   {
     "key": 13,
+    "alt": "seattle-1.jpg",
+    "src": "/assets/gallery/seattle-1.jpg",
+    "width": 1519,
+    "height": 2013
+  },
+  {
+    "key": 14,
+    "alt": "seattle-2.jpg",
+    "src": "/assets/gallery/seattle-2.jpg",
+    "width": 2071,
+    "height": 1575
+  },
+  {
+    "key": 15,
     "alt": "family-waterski.jpg",
     "src": "/assets/gallery/family-waterski.jpg",
     "width": 1632,
