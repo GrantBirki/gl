@@ -46,6 +46,26 @@ It is important to note that the _signature drinks_ for the wedding are **Moscow
 - Tequila - For shots, makeshift margaritas, and a Moscow Mule alternative... the **Mexican Mule**
 - Gin - Good for gin and tonics
 
+### Mixers
+
+Mixers are really up to your own preference if you want to be mixing or making your own drinks. The key mixers that we need are for the signature drinks which are **Moscow Mules** and **Mojitos**. Here are the ingredients for those drinks:
+
+#### Moscow Mule
+
+- Vodka
+- Ginger beer
+- Lime juice
+- Lime (for wedges)
+- Mint (for garnish)
+
+#### Mojito
+
+- White rum
+- Sugar (simple syrup)
+- Soda water
+- Lime juice
+- Mint
+
 ### Canned Cocktails
 
 - ⭐ [Cutwater](https://www.cutwaterspirits.com/) - this is canned cocktails that are a great hit!
