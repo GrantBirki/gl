@@ -23,6 +23,14 @@ export default defineConfig({
   markdown: {
     remarkPlugins: [readingTimeRemarkPlugin],
   },
+
+  redirects: {
+    '/qrcode': {
+      status: 302,
+      destination: 'https://weduploader.com/upload/Q53WpiAyHCbZpTw8',
+    },
+  },
+
   integrations: [
     icon({
       include: {
