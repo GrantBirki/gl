@@ -70,3 +70,48 @@ Mixers are really up to your own preference if you want to be mixing or making y
 
 - ⭐ [Cutwater](https://www.cutwaterspirits.com/) - this is canned cocktails that are a great hit!
 - [Long Drink](https://www.thelongdrink.com/) - a great alternative cutwater
+
+## Audio Equipment
+
+The audio equipment is rented for Sunday and Monday. We will need to return it on Tuesday.
+
+I (Grant) will be picking up the equipment on Sunday (September 29th) between 12:00pm and 1:00pm.
+
+The address for pickup is [1737 hickory st. Unit D Sand City, Ca 93955](https://maps.app.goo.gl/LxVCMWCZzVtRxqph7). It is fairly close to the Monterey airport.
+
+## Wedding Cookies
+
+On Monday, September 30th, I (Grant) will be making chocolate chip cookies for the wedding. I will need to recruit one or two volunteers to help with baking. I plan to start baking immediately after rehearsal prep that morning.
+
+### Ingredients
+
+#### Dry 🧑‍🍳
+
+- 3 cups all-purpose flour
+- 1 teaspoon baking soda
+- 1/2 teaspoon baking powder
+- 1 teaspoon sea salt
+
+#### Wet 🥚
+
+- 1 cup salted butter softened
+- 1 cup granulated sugar
+- 1 cup light brown sugar packed
+- 3 teaspoons pure vanilla extract
+- 2 large eggs
+
+#### Chocolate 🍪
+
+- 2 cups chocolate chips (14 oz)
+
+### Instructions
+
+1. Preheat oven to 375 degrees
+2. In a bowl mix flour, baking soda, baking powder and salt. Set aside.
+3. Cream together butter and sugars until combined.
+4. Beat in eggs and vanilla until light (about 1 minute).
+5. Mix in the dry ingredients until combined.
+6. Add chocolate chips and mix well.
+7. Roll 2-3 Tablespoons of dough into balls and place them evenly spaced on your prepared cookie sheets (I use a silicone baking mats).
+8. Bake in preheated oven for approximately 8-10 minutes. Take them out when they are just barely starting to turn brown.
+9. Let them sit on the baking pan for 5 minutes before removing to cooling rack.
