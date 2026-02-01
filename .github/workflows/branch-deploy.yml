@@ -59,13 +59,13 @@ jobs:
 
     steps:
       - name: checkout
-        uses: actions/checkout@v4
+        uses: actions/checkout@v6
         with:
           ref: ${{ needs.trigger.outputs.ref }}
 
       - name: astro build cache
         id: astro-build-cache
-        uses: actions/cache@v4
+        uses: actions/cache@v5
         with:
           path: .cache
           key: ${{ runner.os }}-astro-build-${{ hashFiles('**/cache.json') }}
