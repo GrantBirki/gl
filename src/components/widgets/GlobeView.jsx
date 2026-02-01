@@ -1,7 +1,50 @@
+import { useEffect, useRef, useState } from 'react';
 import Globe from 'react-globe.gl';
-import { SizeMe } from 'react-sizeme';
 
 export default function GlobeView(props) {
+  const containerRef = useRef(null);
+  const [size, setSize] = useState({ width: 0, height: 0 });
+  const [height, setHeight] = useState(() => {
+    if (typeof window === 'undefined') return 700;
+    return window.innerWidth <= 800 ? 500 : 700;
+  });
+
+  useEffect(() => {
+    const updateHeight = () => {
+      setHeight(window.innerWidth <= 800 ? 500 : 700);
+    };
+
+    updateHeight();
+    window.addEventListener('resize', updateHeight);
+    return () => window.removeEventListener('resize', updateHeight);
+  }, []);
+
+  useEffect(() => {
+    const el = containerRef.current;
+    if (!el) return undefined;
+
+    if (typeof ResizeObserver === 'undefined') {
+      const measure = () => {
+        const rect = el.getBoundingClientRect();
+        setSize({ width: rect.width, height: rect.height });
+      };
+
+      measure();
+      window.addEventListener('resize', measure);
+      return () => window.removeEventListener('resize', measure);
+    }
+
+    const observer = new ResizeObserver((entries) => {
+      const entry = entries[0];
+      if (!entry) return;
+      const { width, height: measuredHeight } = entry.contentRect;
+      setSize({ width, height: measuredHeight });
+    });
+
+    observer.observe(el);
+    return () => observer.disconnect();
+  }, []);
+
   var arcsData = [];
   if (props?.arcs?.enabled === true) {
     // flying arcs
@@ -15,15 +58,10 @@ export default function GlobeView(props) {
     }));
   }
 
-  // check if the display is a mobile device and set the height accordingly
-  const isMobile = window.innerWidth <= 800;
-  const height = isMobile ? 500 : 700;
-
   return (
-    <SizeMe>
-      {({ size }) => (
+    <div ref={containerRef} style={{ width: '100%' }}>
         <Globe
-          width={size.width}
+          width={size.width || 1}
           height={height}
           animateIn={false}
           globeImageUrl={'/assets/globe.jpg'}
@@ -44,7 +82,6 @@ export default function GlobeView(props) {
           arcDashGap={1} // flying arcs
           arcDashAnimateTime={() => Math.random() * 4000 + 2000} // flying arcs
         />
-      )}
-    </SizeMe>
+    </div>
   );
 }
