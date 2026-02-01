@@ -60,28 +60,28 @@ export default function GlobeView(props) {
 
   return (
     <div ref={containerRef} style={{ width: '100%' }}>
-        <Globe
-          width={size.width || 1}
-          height={height}
-          animateIn={false}
-          globeImageUrl={'/assets/globe.jpg'}
-          bumpImageUrl={'/assets/earth-topology.png'}
-          pointsData={props.labels}
-          labelsData={props.labels}
-          labelLat="lat"
-          labelLng="lon"
-          labelDotOrientation={() => 'bottom'}
-          labelText="name"
-          labelColor={() => 'rgba(255, 165, 0, 0.75)'}
-          labelResolution={3}
-          labelSize={1}
-          labelDotRadius={1}
-          arcsData={arcsData} // flying arcs
-          arcColor={'color'} // flying arcs
-          arcDashLength={() => Math.random()} // flying arcs
-          arcDashGap={1} // flying arcs
-          arcDashAnimateTime={() => Math.random() * 4000 + 2000} // flying arcs
-        />
+      <Globe
+        width={size.width || 1}
+        height={height}
+        animateIn={false}
+        globeImageUrl={'/assets/globe.jpg'}
+        bumpImageUrl={'/assets/earth-topology.png'}
+        pointsData={props.labels}
+        labelsData={props.labels}
+        labelLat="lat"
+        labelLng="lon"
+        labelDotOrientation={() => 'bottom'}
+        labelText="name"
+        labelColor={() => 'rgba(255, 165, 0, 0.75)'}
+        labelResolution={3}
+        labelSize={1}
+        labelDotRadius={1}
+        arcsData={arcsData} // flying arcs
+        arcColor={'color'} // flying arcs
+        arcDashLength={() => Math.random()} // flying arcs
+        arcDashGap={1} // flying arcs
+        arcDashAnimateTime={() => Math.random() * 4000 + 2000} // flying arcs
+      />
     </div>
   );
 }
