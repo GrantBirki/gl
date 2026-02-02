@@ -1,4 +1,4 @@
-name: lint
+name: test
 
 on:
   push:
@@ -11,7 +11,7 @@ permissions:
   contents: read
 
 jobs:
-  lint:
+  test:
     runs-on: ubuntu-latest
 
     steps:
@@ -27,8 +27,5 @@ jobs:
       - name: install dependencies
         run: npm ci
 
-      - name: format
-        run: npm run format-ci
-      
-      - name: lint
-        run: npm run lint:eslint
+      - name: test
+        run: ./script/test
