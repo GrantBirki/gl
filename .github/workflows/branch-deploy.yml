@@ -36,13 +36,14 @@ jobs:
       deployment_id: ${{ steps.branch-deploy.outputs.deployment_id }}
       environment: ${{ steps.branch-deploy.outputs.environment }}
       ref: ${{ steps.branch-deploy.outputs.ref }}
+      sha: ${{ steps.branch-deploy.outputs.sha }}
       comment_id: ${{ steps.branch-deploy.outputs.comment_id }}
       initial_reaction_id: ${{ steps.branch-deploy.outputs.initial_reaction_id }}
       actor_handle: ${{ steps.branch-deploy.outputs.actor_handle }}
 
     steps:
       # execute the branch-deploy action
-      - uses: github/branch-deploy@041fcdd389fabfeb4b7e7e6070b399046c863c10 # pin@v9
+      - uses: grantbirki/branch-deploy@a7a7ea40a15a79a036322c2924ab74f5eded702c # pin@v12.1.0
         id: branch-deploy
         with:
           trigger: ".deploy"
@@ -62,7 +63,7 @@ jobs:
       - name: checkout
         uses: actions/checkout@de0fac2e4500dabe0009e67214ff5f5447ce83dd # pin@v6
         with:
-          ref: ${{ needs.trigger.outputs.ref }}
+          ref: ${{ needs.trigger.outputs.sha }}
 
       - name: astro build cache
         id: astro-build-cache
@@ -132,6 +133,7 @@ jobs:
       # remove the default 'eyes' reaction from the comment that triggered the deployment
       # this reaction is added by the branch-deploy action by default
       - name: remove eyes reaction
+        if: ${{ always() && needs.trigger.outputs.initial_reaction_id != '' }}
         env:
           GH_REPO: ${{ github.repository }}
           GH_TOKEN: ${{ github.token }}

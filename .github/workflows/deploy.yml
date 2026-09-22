@@ -24,11 +24,12 @@ jobs:
     runs-on: ubuntu-latest
     outputs: # set outputs for use in downstream jobs
       continue: ${{ steps.deployment-check.outputs.continue }}
+      sha: ${{ steps.deployment-check.outputs.sha }}
 
     steps:
       # https://github.com/github/branch-deploy/blob/d3c24bd92505e623615b75ffdfac5ed5259adbdb/docs/merge-commit-strategy.md
       - name: deployment check
-        uses: github/branch-deploy@041fcdd389fabfeb4b7e7e6070b399046c863c10 # pin@v9
+        uses: grantbirki/branch-deploy@a7a7ea40a15a79a036322c2924ab74f5eded702c # pin@v12.1.0
         id: deployment-check
         with:
           merge_deploy_mode: "true"
@@ -41,6 +42,8 @@ jobs:
     steps:
       - name: checkout
         uses: actions/checkout@de0fac2e4500dabe0009e67214ff5f5447ce83dd # pin@v6
+        with:
+          ref: ${{ needs.deployment-check.outputs.sha }}
 
       - name: astro build cache
         id: astro-build-cache
