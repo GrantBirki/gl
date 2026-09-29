@@ -7,12 +7,8 @@ on:
   # Allows you to run this workflow manually from the Actions tab
   workflow_dispatch:
 
-# Sets permissions of the GITHUB_TOKEN to allow deployment to GitHub Pages
-permissions:
-  contents: read
-  pages: write
-  id-token: write
-  actions: read
+permissions: {}
+cache-mode: none
 
 # Allow one concurrent deployment
 concurrency:
@@ -21,6 +17,9 @@ concurrency:
 
 jobs:
   deployment-check:
+    permissions:
+      contents: read
+      deployments: read
     runs-on: ubuntu-latest
     outputs: # set outputs for use in downstream jobs
       continue: ${{ steps.deployment-check.outputs.continue }}
@@ -35,34 +34,108 @@ jobs:
           merge_deploy_mode: "true"
           environment: github-pages
 
+  # Candidate scripts, dependencies, configuration, and imports run only here.
   build:
-    if: ${{ needs.deployment-check.outputs.continue == 'true' }}
     needs: deployment-check
+    if: ${{ needs.deployment-check.outputs.continue == 'true' }}
     runs-on: ubuntu-latest
+    permissions:
+      contents: read
     steps:
+      - name: validate selected revision
+        env:
+          SELECTED_SHA: ${{ needs.deployment-check.outputs.sha }}
+        run: '[[ "$SELECTED_SHA" =~ ^[0-9a-f]{40}$ ]]'
+
       - name: checkout
         uses: actions/checkout@de0fac2e4500dabe0009e67214ff5f5447ce83dd # pin@v6
         with:
           ref: ${{ needs.deployment-check.outputs.sha }}
+          fetch-depth: 1
+          persist-credentials: false
 
-      - name: astro build cache
-        id: astro-build-cache
-        uses: actions/cache@27d5ce7f107fe9357f9df03efb73ab90386fccae # pin@v5
+      - name: verify selected checkout
+        env:
+          SELECTED_SHA: ${{ needs.deployment-check.outputs.sha }}
+        run: 'test "$(git rev-parse HEAD)" = "$SELECTED_SHA"'
+
+      - name: setup node
+        uses: actions/setup-node@48b55a011bda9f5d6aeb4c2d9c7362e8dae4041e # pin@v6
         with:
-          path: .cache
-          key: ${{ runner.os }}-astro-build-${{ hashFiles('**/cache.json') }}
+          node-version-file: .node-version
+          package-manager-cache: false
 
-      - name: build with astro
-        uses: withastro/action@acfe56dffc635abfb9506c77d51ce097030360d1 # pin@v2.0.0
+      - name: bootstrap
+        run: npm ci
+
+      - name: build
+        run: npm run build
+
+      - name: archive site
+        run: tar --format=posix -cf "$RUNNER_TEMP/site.tar" -C dist .
+
+      - name: upload build
+        uses: actions/upload-artifact@ea165f8d65b6e75b540449e92b4886f43607fa02 # pin@v4.6.2
+        with:
+          name: site-${{ github.run_attempt }}-${{ needs.deployment-check.outputs.sha }}
+          path: ${{ runner.temp }}/site.tar
+          if-no-files-found: error
+          retention-days: 1
+
+  # A fresh runner treats the candidate archive strictly as static files.
+  prepare:
+    needs: [deployment-check, build]
+    if: ${{ needs.deployment-check.outputs.continue == 'true' }}
+    runs-on: ubuntu-latest
+    permissions:
+      contents: read
+    steps:
+      - name: checkout trusted packaging
+        uses: actions/checkout@de0fac2e4500dabe0009e67214ff5f5447ce83dd # pin@v6
+        with:
+          ref: ${{ github.sha }}
+          fetch-depth: 1
+          persist-credentials: false
+          sparse-checkout: .github/scripts
+
+      - name: verify trusted checkout
+        env:
+          TRUSTED_SHA: ${{ github.sha }}
+        run: |
+          [[ "$TRUSTED_SHA" =~ ^[0-9a-f]{40}$ ]]
+          test "$(git rev-parse HEAD)" = "$TRUSTED_SHA"
+
+      - name: download build
+        uses: actions/download-artifact@d3f86a106a0bac45b974a628896c90dbdf5c8093 # pin@v4.3.0
+        with:
+          name: site-${{ github.run_attempt }}-${{ needs.deployment-check.outputs.sha }}
+          path: ${{ runner.temp }}/site-input
+
+      - name: prepare static files
+        env:
+          SELECTED_SHA: ${{ needs.deployment-check.outputs.sha }}
+          TRUSTED_SHA: ${{ github.sha }}
+        run: python3 .github/scripts/prepare-pages.py "$RUNNER_TEMP/site-input/site.tar" "$RUNNER_TEMP/site-output" "$SELECTED_SHA" "$TRUSTED_SHA"
+
+      - name: upload pages artifact
+        uses: actions/upload-pages-artifact@56afc609e74202658d3ffba0e8f6dda462b719fa # pin@v3.0.1
+        with:
+          name: pages-${{ github.run_id }}-${{ github.run_attempt }}
+          path: ${{ runner.temp }}/site-output
 
   deploy:
+    needs: [deployment-check, build, prepare]
     if: ${{ needs.deployment-check.outputs.continue == 'true' }}
-    needs: [ deployment-check, build ]
     runs-on: ubuntu-latest
+    permissions:
+      pages: write
+      id-token: write
     environment:
       name: github-pages
       url: ${{ steps.deployment.outputs.page_url }}
     steps:
-      - name: Deploy to GitHub Pages
+      - name: deploy
         id: deployment
         uses: actions/deploy-pages@d6db90164ac5ed86f2b6aed7e0febac5b3c0c03e # pin@v4
+        with:
+          artifact_name: pages-${{ github.run_id }}-${{ github.run_attempt }}
