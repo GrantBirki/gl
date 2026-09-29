@@ -27,6 +27,7 @@ jobs:
       deployments: write
       pull-requests: write
       checks: read
+      statuses: read
       actions: read
     runs-on: ubuntu-latest
     outputs: # set outputs for use in downstream jobs
