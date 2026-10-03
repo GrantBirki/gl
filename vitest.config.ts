@@ -16,8 +16,13 @@ export default defineConfig({
     coverage: {
       provider: 'v8',
       reporter: ['text', 'text-summary'],
-      all: true,
-      include: ['src/utils/blog.ts', 'src/utils/frontmatter.mjs', 'src/utils/permalinks.ts', 'src/utils/utils.ts'],
+      include: [
+        'src/utils/blog.ts',
+        'src/utils/frontmatter.mjs',
+        'src/utils/permalinks.ts',
+        'src/utils/utils.ts',
+        'src/utils/window-size.mjs',
+      ],
       thresholds: {
         lines: 100,
         functions: 100,

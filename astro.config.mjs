@@ -1,7 +1,9 @@
 import path from 'path';
 import { fileURLToPath } from 'url';
 import { defineConfig } from 'astro/config';
-import tailwind from '@astrojs/tailwind';
+import tailwind from 'tailwindcss';
+import autoprefixer from 'autoprefixer';
+import { unified } from '@astrojs/markdown-remark';
 import sitemap from '@astrojs/sitemap';
 import mdx from '@astrojs/mdx';
 import partytown from '@astrojs/partytown';
@@ -19,8 +21,9 @@ export default defineConfig({
   base: SITE.basePathname,
   trailingSlash: SITE.trailingSlash ? 'always' : 'never',
   output: 'static',
+  compressHTML: true,
   markdown: {
-    remarkPlugins: [readingTimeRemarkPlugin],
+    processor: unified({ remarkPlugins: [readingTimeRemarkPlugin] }),
   },
   image: {
     domains: ['flowbite.s3.amazonaws.com', 'i.imgur.com', 'user-images.githubusercontent.com'],
@@ -36,15 +39,11 @@ export default defineConfig({
   integrations: [
     icon({
       include: {
-        mdi: ['*'], // Loads entire Material Design Icon set
         tabler: ['*'], // Loads entire Tabler Icon set
         'flat-color-icons': ['*'], // Loads entire Flat Color Icon set
         'icon-park': ['*'], // Loads entire Icon Park Icon set
         ri: ['*'], // Loads entire Remix Icon set
       },
-    }),
-    tailwind({
-      applyBaseStyles: false,
     }),
     sitemap(),
     mdx(),
@@ -58,6 +57,11 @@ export default defineConfig({
     react(),
   ],
   vite: {
+    css: {
+      postcss: {
+        plugins: [tailwind(), autoprefixer()],
+      },
+    },
     resolve: {
       alias: {
         '~': path.resolve(__dirname, './src'),

@@ -1,0 +1,98 @@
+---
+import { Icon } from 'astro-icon/components';
+
+const props = Astro.props;
+const icons = { phone: 'tabler:phone', email: 'tabler:mail', directions: 'tabler:directions', link: 'tabler:link' };
+let gridCss = 'grid sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-3';
+if (props.locations.length === 1) {
+  gridCss = 'grid sm:grid-cols-1 md:grid-cols-1 lg:grid-cols-1';
+} else if (props.locations.length === 2) {
+  gridCss = 'grid sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-2';
+}
+---
+
+<section class="scroll-mt-16 dark:bg-slate-800 bg-sage-50">
+  <div class="max-w-6xl mx-auto px-4 sm:px-6">
+    <div class="md:mx-auto text-center">
+      <div class="py-12 md:py-20">
+        {
+          props.highlight && (
+            <p class="text-base text-primary dark:text-sage-200 font-semibold tracking-wide uppercase">
+              {props.highlight}
+            </p>
+          )
+        }
+
+        {
+          props.title && (
+            <h2 class="text-4xl md:text-5xl font-bold leading-tighter tracking-tighter mb-4 font-heading">
+              {props.title}
+            </h2>
+          )
+        }
+
+        {
+          props.subtitle && (
+            <p class="max-w-3xl mx-auto sm:text-center text-xl text-muted dark:text-slate-400">{props.subtitle}</p>
+          )
+        }
+
+        <div class={gridCss}>
+          {
+            props.locations.map((location) => {
+              return (
+                <article class="m-8 overflow-hidden rounded-lg bg-white shadow-2xl dark:bg-slate-900">
+                  <img
+                    class="w-full object-cover"
+                    alt={location.image.alt}
+                    height={location.image.height}
+                    src={location.image.src}
+                  />
+                  <div class="p-4">
+                    <h3 class="sm:text-3xl md:text-3xl lg:text-4xl font-bold leading-tighter tracking-tighter mb-4 font-heading dark:text-white">
+                      {location.name}
+                    </h3>
+                    {location.description && (
+                      <p class="max-w-3xl mx-auto sm:text-center text-xl text-muted dark:text-slate-400">
+                        {location.description}
+                      </p>
+                    )}
+                    {location.address.enabled && (
+                      <div class="py-2 max-w-3xl mx-auto sm:text-center text-l text-muted dark:text-slate-400">
+                        <p>Address:</p>
+                        <p>{location.address.line1}</p>
+                        <p>{location.address.line2}</p>
+                        <p>
+                          {location.address.city}, {location.address.state} {location.address.postcode}
+                        </p>
+                        <p>{location.address.country}</p>
+                      </div>
+                    )}
+                  </div>
+                  <div class="flex flex-wrap items-center gap-2 p-2">
+                    {location.buttons.map((button) => {
+                      return (
+                        <a
+                          class:list={[
+                            'inline-flex items-center gap-2 rounded px-2 py-1.5 font-medium uppercase text-blue-600 transition hover:bg-blue-50 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-blue-600',
+                            button.size === 'large' ? 'text-base' : button.size === 'small' ? 'text-xs' : 'text-sm',
+                          ]}
+                          target={button.target}
+                          href={button.link}
+                          rel={button.target === '_blank' ? 'noopener noreferrer' : undefined}
+                        >
+                          {icons[button.icon] && <Icon name={icons[button.icon]} class="h-5 w-5" aria-hidden="true" />}
+                          {button.text}
+                        </a>
+                      );
+                    })}
+                  </div>
+                </article>
+              );
+            })
+          }
+        </div>
+      </div>
+    </div>
+  </div>
+</section>

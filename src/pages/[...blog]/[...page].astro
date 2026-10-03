@@ -1,4 +1,11 @@
 ---
+import type { Page } from 'astro';
+import type { Post } from '~/types';
+
+export interface Props {
+  page: Page<Post>;
+}
+
 import { SITE, BLOG } from '~/config/site/config.js';
 
 import Layout from '~/layouts/PageLayout.astro';
