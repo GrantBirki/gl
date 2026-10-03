@@ -72,7 +72,7 @@ class BuiltSiteTests(unittest.TestCase):
         page = Page(DIST / "location/index.html")
         for name in ["tabler:directions", "tabler:link"]:
             icon = page.find("svg", **{"data-icon": name})[0]
-            self.assertEqual(icon["viewBox"], "0 0 24 24")
+            self.assertEqual(icon["viewbox"], "0 0 24 24")
             self.assertEqual(icon["aria-hidden"], "true")
         ids = [attrs["id"] for _, attrs in page.elements if "id" in attrs]
         self.assertEqual(len(ids), len(set(ids)))
