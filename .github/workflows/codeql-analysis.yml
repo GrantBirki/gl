@@ -6,6 +6,8 @@ on:
   schedule:
     - cron: '29 10 * * 4'
 
+cache-mode: none
+
 jobs:
   analyze:
     name: Analyze
@@ -28,6 +30,7 @@ jobs:
       - name: Initialize CodeQL
         uses: github/codeql-action/init@8a470fddafa5cbb6266ee11b37ef4d8aae19c571 # pin@v2
         with:
+          trap-caching: false
           languages: ${{ matrix.language }}
 
       - name: Autobuild
