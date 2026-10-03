@@ -4,4 +4,6 @@ The build job intentionally runs the selected commit's complete toolchain, inclu
 
 A separate read-only job loads packaging code from the exact workflow commit and treats the build archive as untrusted static files. It rejects links, special files, duplicate paths, and paths outside the output directory. Artifacts are selected within the current run by the selected commit and attempt. Packaging writes `version.txt` from that selected commit and `workflow-version.txt` from the trusted workflow commit. Publishing runs in another job and never executes the generated site.
 
-The existing comment commands do not enable `.noop`; result mode reports the required jobs' actual outcomes and handles the original deployment context and lock. Run the packaging checks without installing dependencies: `python3 -m unittest discover -s .github/scripts -p "test_*.py"`.
+The validated output is archived as `artifact.tar` with readable file and directory permissions and uploaded with a SHA-pinned `upload-artifact` action. This avoids the mutable action reference inside `upload-pages-artifact`. Both deployment paths keep the same artifact names and one-day retention.
+
+The existing comment commands do not enable `.noop`; result mode reports the required jobs' actual outcomes and handles the original deployment context and lock. The `pages packaging` workflow tests the complete archive path on a fresh runner without Node dependencies or caches. Run those checks locally with `python3 -m unittest discover -s .github/scripts -p "test_*.py"`.
