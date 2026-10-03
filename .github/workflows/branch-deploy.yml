@@ -137,11 +137,16 @@ jobs:
           TRUSTED_SHA: ${{ github.sha }}
         run: python3 .github/scripts/prepare-pages.py "$RUNNER_TEMP/site-input/site.tar" "$RUNNER_TEMP/site-output" "$SELECTED_SHA" "$TRUSTED_SHA"
 
+      - name: archive static files
+        run: python3 .github/scripts/archive-pages.py "$RUNNER_TEMP/site-output" "$RUNNER_TEMP/artifact.tar"
+
       - name: upload pages artifact
-        uses: actions/upload-pages-artifact@56afc609e74202658d3ffba0e8f6dda462b719fa # pin@v3.0.1
+        uses: actions/upload-artifact@ea165f8d65b6e75b540449e92b4886f43607fa02 # pin@v4.6.2
         with:
           name: pages-${{ github.run_id }}-${{ github.run_attempt }}
-          path: ${{ runner.temp }}/site-output
+          path: ${{ runner.temp }}/artifact.tar
+          retention-days: 1
+          if-no-files-found: error
 
   deploy:
     needs: [trigger, build, prepare]

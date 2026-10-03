@@ -1,0 +1,39 @@
+name: pages packaging
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+    branches: [main]
+
+permissions:
+  contents: read
+
+cache-mode: none
+
+jobs:
+  pages-packaging:
+    runs-on: ubuntu-latest
+    steps:
+      - name: checkout
+        uses: actions/checkout@de0fac2e4500dabe0009e67214ff5f5447ce83dd # pin@v6
+        with:
+          persist-credentials: false
+          sparse-checkout: .github/scripts
+
+      - name: test Pages packaging without dependencies or caches
+        run: python3 -m unittest discover -s .github/scripts -p "test_*.py"
+
+      - name: archive a fresh static fixture
+        run: |
+          mkdir -m 700 "$RUNNER_TEMP/site-output"
+          printf '<!doctype html><title>Packaging check</title>\n' > "$RUNNER_TEMP/site-output/index.html"
+          python3 .github/scripts/archive-pages.py "$RUNNER_TEMP/site-output" "$RUNNER_TEMP/artifact.tar"
+
+      - name: upload packaging fixture
+        uses: actions/upload-artifact@ea165f8d65b6e75b540449e92b4886f43607fa02 # pin@v4.6.2
+        with:
+          name: pages-packaging-${{ github.run_id }}-${{ github.run_attempt }}
+          path: ${{ runner.temp }}/artifact.tar
+          retention-days: 1
+          if-no-files-found: error
