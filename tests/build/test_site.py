@@ -68,6 +68,19 @@ class BuiltSiteTests(unittest.TestCase):
         self.assertTrue(page.find("astro-island"))
         self.assertTrue((DIST / "assets/gallery").is_dir())
 
+    def test_updated_icon_renderer_keeps_geometry_and_symbol_targets(self):
+        page = Page(DIST / "location/index.html")
+        for name in ["tabler:directions", "tabler:link"]:
+            icon = page.find("svg", **{"data-icon": name})[0]
+            self.assertEqual(icon["viewBox"], "0 0 24 24")
+            self.assertEqual(icon["aria-hidden"], "true")
+        ids = [attrs["id"] for _, attrs in page.elements if "id" in attrs]
+        self.assertEqual(len(ids), len(set(ids)))
+        for use in page.find("use"):
+            target = use.get("href", "")
+            if target.startswith("#"):
+                self.assertIn(target[1:], ids)
+
 
 if __name__ == "__main__":
     unittest.main()
