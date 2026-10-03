@@ -3,6 +3,8 @@ name: CodeQL
 on:
   push:
     branches: [ main ]
+  pull_request:
+    branches: [ main ]
   schedule:
     - cron: '29 10 * * 4'
 
@@ -25,16 +27,19 @@ jobs:
     steps:
       - name: checkout
         uses: actions/checkout@de0fac2e4500dabe0009e67214ff5f5447ce83dd # pin@v6
+        with:
+          persist-credentials: false
 
       # Initializes the CodeQL tools for scanning.
       - name: Initialize CodeQL
-        uses: github/codeql-action/init@8a470fddafa5cbb6266ee11b37ef4d8aae19c571 # pin@v2
+        uses: github/codeql-action/init@95e58e9a2cdfd71adc6e0353d5c52f41a045d225 # pin@v4.35.2
         with:
           trap-caching: false
+          dependency-caching: false
           languages: ${{ matrix.language }}
 
       - name: Autobuild
-        uses: github/codeql-action/autobuild@8a470fddafa5cbb6266ee11b37ef4d8aae19c571 # pin@v2
+        uses: github/codeql-action/autobuild@95e58e9a2cdfd71adc6e0353d5c52f41a045d225 # pin@v4.35.2
 
       - name: Perform CodeQL Analysis
-        uses: github/codeql-action/analyze@8a470fddafa5cbb6266ee11b37ef4d8aae19c571 # pin@v2
+        uses: github/codeql-action/analyze@95e58e9a2cdfd71adc6e0353d5c52f41a045d225 # pin@v4.35.2
