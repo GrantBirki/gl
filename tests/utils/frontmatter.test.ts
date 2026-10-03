@@ -12,7 +12,7 @@ describe('readingTimeRemarkPlugin', () => {
     const file = {
       data: {
         astro: {
-          frontmatter: {},
+          frontmatter: {} as { readingTime?: number },
         },
       },
     };

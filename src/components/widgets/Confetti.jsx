@@ -1,8 +1,10 @@
-import useWindowSize from 'react-use/lib/useWindowSize';
+import { useEffect, useState } from 'react';
 import Confetti from 'react-confetti';
+import { getWindowSize, subscribeToWindowSize } from '../../utils/window-size.mjs';
 
 export default function ConfettiPop() {
-  const { width, height } = useWindowSize();
+  const [{ width, height }, setSize] = useState(getWindowSize);
+  useEffect(() => subscribeToWindowSize(setSize), []);
   return (
     <Confetti
       width={width}

@@ -2,7 +2,7 @@
 import { SITE } from '~/config/site/config.js';
 import Layout from '~/layouts/PageLayout.astro';
 
-import GLLocations from '~/components/widgets/Locations.jsx';
+import GLLocations from '~/components/widgets/Locations.astro';
 import locations from '~/config/pages/locations/locations';
 
 const meta = {
@@ -17,7 +17,6 @@ const meta = {
   {
     locations && locations.enabled && locations.locations.length > 0 && (
       <GLLocations
-        client:only="react"
         highlight={locations.highlight}
         title={locations.title}
         subtitle={locations.subtitle}

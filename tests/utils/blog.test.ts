@@ -15,7 +15,6 @@ type BlogConfig = {
 
 type PostFixture = {
   id: string;
-  slug: string;
   data: Record<string, unknown>;
   readingTime?: number;
 };
@@ -33,30 +32,11 @@ const baseBlog: BlogConfig = {
   tag: { pathname: 'tag' },
 };
 
-const createPost = ({ id, slug, data, readingTime }: PostFixture) => ({
-  id,
-  slug,
-  data,
-  render: async () => {
-    const result: {
-      Content: () => string;
-      remarkPluginFrontmatter?: { readingTime: number };
-    } = {
-      Content: () => 'content',
-    };
-
-    if (readingTime !== undefined) {
-      result.remarkPluginFrontmatter = { readingTime };
-    }
-
-    return result;
-  },
-});
+const createPost = (fixture: PostFixture) => fixture;
 
 const buildFixtures = () => [
   createPost({
-    id: '1',
-    slug: 'posts/first-post',
+    id: 'posts/first-post.md',
     data: {
       title: 'First',
       tags: ['Tag One', 'Tag Two'],
@@ -67,8 +47,7 @@ const buildFixtures = () => [
     readingTime: 3,
   }),
   createPost({
-    id: '2',
-    slug: 'second-post',
+    id: 'second-post.mdx',
     data: {
       title: 'Second',
       tags: ['Tag Two'],
@@ -79,8 +58,7 @@ const buildFixtures = () => [
     readingTime: 5,
   }),
   createPost({
-    id: '3',
-    slug: 'third-post',
+    id: 'third-post.md',
     data: {
       title: 'Third',
       tags: [],
@@ -91,8 +69,7 @@ const buildFixtures = () => [
     readingTime: 2,
   }),
   createPost({
-    id: '4',
-    slug: 'fourth-post',
+    id: 'fourth-post.md',
     data: {
       title: 'Fourth',
       tags: undefined,
@@ -110,6 +87,10 @@ const loadBlogModule = async (posts: ReturnType<typeof createPost>[]) => {
 
   vi.doMock('astro:content', () => ({
     getCollection,
+    render: async (post: PostFixture) => ({
+      Content: () => 'content',
+      remarkPluginFrontmatter: post.readingTime === undefined ? undefined : { readingTime: post.readingTime },
+    }),
   }));
 
   vi.doMock('~/config/site/config.js', () => ({
@@ -130,7 +111,7 @@ describe('blog utilities', () => {
     const posts = await blog.fetchPosts();
 
     expect(getCollection).toHaveBeenCalledTimes(1);
-    expect(posts.map((post) => post.id)).toEqual(['4', '2', '1']);
+    expect(posts.map((post) => post.id)).toEqual(['fourth-post.md', 'second-post.mdx', 'posts/first-post.md']);
     expect(posts[2].slug).toBe('first-post');
     expect(posts[2].category).toBe('news');
     expect(posts[2].tags).toEqual(['tag-one', 'tag-two']);
@@ -147,22 +128,22 @@ describe('blog utilities', () => {
     const { blog } = await loadBlogModule(buildFixtures());
 
     const posts = await blog.fetchPosts();
-    const taglessPost = posts.find((post) => post.id === '4');
+    const taglessPost = posts.find((post) => post.id === 'fourth-post.md');
     if (taglessPost) {
       taglessPost.tags = undefined;
     }
 
     const bySlugs = await blog.findPostsBySlugs(['first-post', 'missing']);
-    expect(bySlugs.map((post) => post.id)).toEqual(['1']);
+    expect(bySlugs.map((post) => post.id)).toEqual(['posts/first-post.md']);
 
-    const byIds = await blog.findPostsByIds(['2', '4']);
-    expect(byIds.map((post) => post.id)).toEqual(['2', '4']);
+    const byIds = await blog.findPostsByIds(['second-post.mdx', 'fourth-post.md']);
+    expect(byIds.map((post) => post.id)).toEqual(['second-post.mdx', 'fourth-post.md']);
 
     const latest = await blog.findLatestPosts({ count: 2 });
-    expect(latest.map((post) => post.id)).toEqual(['4', '2']);
+    expect(latest.map((post) => post.id)).toEqual(['fourth-post.md', 'second-post.mdx']);
 
     const defaultLatest = await blog.findLatestPosts({});
-    expect(defaultLatest.map((post) => post.id)).toEqual(['4', '2', '1']);
+    expect(defaultLatest.map((post) => post.id)).toEqual(['fourth-post.md', 'second-post.mdx', 'posts/first-post.md']);
 
     const tags = await blog.findTags();
     expect(tags.sort()).toEqual(['tag-one', 'tag-two']);

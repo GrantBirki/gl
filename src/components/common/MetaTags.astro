@@ -1,10 +1,9 @@
 ---
-import { AstroSeo } from '@astrolib/seo';
-import { GoogleAnalytics } from '@astrolib/analytics';
+import GoogleAnalytics from './GoogleAnalytics.astro';
 import { getImage } from 'astro:assets';
 
 import { SITE } from '~/config/site/config.js';
-import { MetaSEO } from '~/types';
+import type { MetaSEO } from '~/types';
 import { getCanonical, getAsset } from '~/utils/permalinks';
 import { getRelativeUrlByFilePath } from '~/utils/directories';
 
@@ -50,34 +49,23 @@ const image =
 <meta charset="UTF-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-<AstroSeo
-  title={title}
-  titleTemplate={dontUseTitleTemplate ? '%s' : `%s — ${SITE.name}`}
-  description={description}
-  canonical={String(canonical)}
-  noindex={noindex}
-  nofollow={nofollow}
-  openGraph={{
-    url: String(canonical),
-    title: ogTitle,
-    description: description,
-    type: ogType,
-    images: image
-      ? [
-          {
-            url: image.toString(),
-            alt: ogTitle,
-          },
-        ]
-      : undefined,
-    // site_name: 'SiteName',
-  }}
-  twitter={{
-    // handle: '@handle',
-    // site: '@site',
-    cardType: image ? 'summary_large_image' : undefined,
-  }}
-/>
+{title && <title>{dontUseTitleTemplate ? title : `${title} — ${SITE.name}`}</title>}
+{description && <meta name="description" content={description} />}
+<meta name="robots" content={`${noindex ? 'noindex' : 'index'},${nofollow ? 'nofollow' : 'follow'}`} />
+<link rel="canonical" href={String(canonical)} />
+{ogTitle && <meta property="og:title" content={ogTitle} />}
+{description && <meta property="og:description" content={description} />}
+<meta property="og:url" content={String(canonical)} />
+{ogType && <meta property="og:type" content={ogType} />}
+{
+  image && (
+    <>
+      <meta property="og:image" content={image.toString()} />
+      {ogTitle && <meta property="og:image:alt" content={ogTitle} />}
+      <meta name="twitter:card" content="summary_large_image" />
+    </>
+  )
+}
 
 <!-- Google Site Verification -->
 {SITE.googleSiteVerificationId && <meta name="google-site-verification" content={SITE.googleSiteVerificationId} />}

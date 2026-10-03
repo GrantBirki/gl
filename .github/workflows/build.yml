@@ -37,3 +37,13 @@ jobs:
 
       - name: build
         run: npm run build
+
+      - name: test generated site
+        run: python3 -m unittest discover -s tests/build -p "test_*.py"
+
+      - name: upload site preview
+        uses: actions/upload-artifact@ea165f8d65b6e75b540449e92b4886f43607fa02 # pin@v4.6.2
+        with:
+          name: site-preview
+          path: dist
+          retention-days: 3
