@@ -6,6 +6,8 @@ on:
   schedule:
     - cron: '29 10 * * 4'
 
+cache-mode: none
+
 jobs:
   analyze:
     name: Analyze
