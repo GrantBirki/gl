@@ -42,7 +42,7 @@
     "image-size": "2.0.4",
     "limax": "4.2.2",
     "mdast-util-to-string": "4.0.0",
-    "prettier": "3.8.1",
+    "prettier": "3.9.7",
     "prettier-plugin-astro": "0.12.3",
     "react-confetti": "6.4.0",
     "reading-time": "1.5.0",
