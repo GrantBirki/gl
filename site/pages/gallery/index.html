@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr" class="2xl:text-[20px]">
+  <head>
+    {{ include "head.html" }}
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>G + L</title>
+    <meta name="description" content="Grant and Leah are getting married! 💍">
+    <meta name="robots" content="index,follow">
+    <link rel="canonical" href="https://gl.birki.io/gallery">
+    <meta property="og:title" content="G + L">
+    <meta property="og:description" content="Grant and Leah are getting married! 💍">
+    <meta property="og:url" content="https://gl.birki.io/gallery">
+    <meta property="og:type" content="website">
+    <meta property="og:image" content="https://gl.birki.io/assets/media/default.DKAEHAQX_17F5Qw.webp">
+    <meta property="og:image:alt" content="G + L">
+    <meta name="twitter:card" content="summary_large_image">
+  </head>
+  <body class="antialiased text-page bg-light dark:text-slate-300 tracking-tight dark:bg-dark">
+    {{ include "header.html" }}
+    <main>
+      <section class="relative md:-mt-[76px] not-prose">
+        <div class="absolute inset-0 pointer-events-none" aria-hidden="true"></div>
+        <div class="relative max-w-7xl mx-auto px-4 sm:px-6">
+          <div class="pt-0 md:pt-[76px] pointer-events-none"></div>
+          <div class="pt-12 md:pt-20">
+            <div class="text-center pb-10 md:pb-16 max-w-screen-lg mx-auto">
+              <h1 class="text-5xl md:text-6xl font-bold leading-tighter tracking-tighter mb-4 font-heading dark:text-gray-200"><span class="fancy">Gallery</span></h1>
+              <div class="max-w-3xl mx-auto">
+                <p class="text-xl text-muted mb-6 dark:text-slate-300"><span class="fancy">Highlights from the adventures of Grant and Leah's lives</span></p>
+                <div class="max-w-xs sm:max-w-md m-auto flex flex-nowrap flex-col sm:flex-row sm:justify-center gap-4">   </div>
+              </div>
+            </div>
+            <div>  </div>
+          </div>
+        </div>
+      </section>
+      <br>
+      <section class="bg-sage-50 dark:bg-slate-800 px-10 py-10">
+        <div class="max-w-xl sm:mx-auto lg:max-w-2xl">
+          <div class="md:mx-auto text-center max-w-3xl">
+            <h2 class="text-4xl md:text-5xl font-bold leading-tighter tracking-tighter mb-4 font-heading">Our Travels</h2>
+            <p class="lg:mb-0 md:mb-0 mb-8 max-w-3xl mx-auto sm:text-center text-xl text-muted dark:text-slate-400"><span>Traveling has been a huge part of our lives and it has built a lot of the foundation of our relationship today. We have traveled near and far, collecting photos and memories along the way. We are excited to share some of our favorite moments with you!</span><br><br><span>Please give this page a moment to load as it has tons of high res photos!</span></p>
+            <div>  </div>
+            <div class="max-w-3xl mx-auto">
+              <div class="max-w-xs sm:max-w-md m-auto flex flex-nowrap flex-col sm:flex-row sm:justify-center gap-4">   </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <br>
+      {{ gallery "gallery" }}
+    </main>
+    {{ include "footer.html" }}
+    <script type="module" src="/assets/site.js"></script>
+  </body>
+</html>

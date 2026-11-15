@@ -1,13 +1,8 @@
 #!/usr/bin/env bash
-
 set -euo pipefail
-
-ROOT_DIR="$(cd "$(dirname "${BASH_SOURCE[0]}")/.." && pwd)"
-cd "$ROOT_DIR"
-
-if [[ ! -f package.json ]]; then
-  echo "script/test must be run from the repo root" >&2
-  exit 1
-fi
-
-npm run test:ci
+cd "$(dirname "${BASH_SOURCE[0]}")/.."
+export PYTHONDONTWRITEBYTECODE=1
+python3 -m tools.build
+python3 -m unittest discover -s tests -p 'test_*.py'
+python3 -m unittest discover -s .github/scripts -p 'test_*.py'
+node --test tests/js/*.test.mjs

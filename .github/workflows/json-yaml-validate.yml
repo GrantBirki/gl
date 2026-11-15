@@ -1,25 +1,31 @@
-name: json-yaml-validate 
+name: json-yaml-validate
 on:
   push:
-    branches:
-      - main
+    branches: [main]
   pull_request:
   workflow_dispatch:
 
 permissions:
   contents: read
-  pull-requests: write # enable write permissions for pull request comments
 
 cache-mode: none
 
 jobs:
+  # Keep the existing status name for branch protection. GitHub validates the
+  # workflow YAML; application data is now plain JSON rather than YAML/MDX.
   json-yaml-validate:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # pin@v7.0.1
-
-      - name: json-yaml-validate
-        id: json-yaml-validate
-        uses: GrantBirki/json-yaml-validate@9dbc6e6ff950c53200156e8afbc16ef1355f1c8d # pin@v5.0.1
         with:
-          comment: "true" # enable comment mode
+          persist-credentials: false
+      - name: validate JSON data
+        run: |
+          python3 - <<'PYCODE'
+          import json
+          from pathlib import Path
+          files = [Path('package.json'), Path('package-lock.json'), *Path('site/data').glob('*.json')]
+          for path in files:
+              json.loads(path.read_text(encoding='utf-8'))
+          print(f'Validated {len(files)} JSON files')
+          PYCODE

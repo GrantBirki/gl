@@ -1,0 +1,22 @@
+/* Maintained browser-native interactions. site.css holds the existing visual
+   styles as ordinary CSS; neither stylesheet needs a CSS build tool. */
+.photo-gallery { --gallery-gap: 15px; columns: 3; column-gap: var(--gallery-gap); }
+.photo-gallery img { display: block; width: 100%; height: auto; margin: 0 0 var(--gallery-gap); break-inside: avoid; }
+.photo-gallery[data-enhanced] { display: flex; column-count: auto; gap: var(--gallery-gap); align-items: flex-start; }
+.photo-gallery-column { flex: 1; min-width: 0; }
+.photo-gallery-column img:last-child { margin-bottom: 0; }
+.travel-globe { position: relative; height: 700px; width: 100%; overflow: hidden; background: #000011; }
+.travel-globe canvas { display: block; width: 100%; height: 100%; touch-action: none; cursor: grab; }
+.travel-globe canvas:active { cursor: grabbing; }
+.travel-globe canvas:focus-visible { outline: 2px solid #ffa500; outline-offset: -4px; }
+.globe-labels { position: absolute; inset: 0; pointer-events: none; }
+.globe-labels span { position: absolute; transform: translateX(-50%); font-size: 7px; line-height: 1.1; color: #ffa500; white-space: nowrap; }
+.globe-labels [hidden] { display: none; }
+.globe-picker { position: absolute; top: 14px; left: 16px; display: flex; gap: 8px; align-items: center; color: #cbd5e1; font-size: 12px; }
+.globe-picker select { background: #101324; color: #fff; border: 1px solid #4b5563; border-radius: 4px; padding: 4px; max-width: 210px; }
+.globe-fallback { background: #000011 url('/assets/globe.jpg') center / contain no-repeat; }
+.globe-fallback canvas, .globe-fallback .globe-labels { visibility: hidden; }
+.confetti { position: fixed; inset: 0; pointer-events: none; z-index: 50; width: 100%; height: 100%; }
+@media (max-width: 800px) { .travel-globe { height: 500px; } .photo-gallery { columns: 2; } }
+@media (max-width: 440px) { .photo-gallery { columns: 1; } }
+@media (prefers-reduced-motion: reduce) { html { scroll-behavior: auto !important; } }

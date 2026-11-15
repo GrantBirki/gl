@@ -59,17 +59,8 @@ jobs:
           SELECTED_SHA: ${{ needs.deployment-check.outputs.sha }}
         run: 'test "$(git rev-parse HEAD)" = "$SELECTED_SHA"'
 
-      - name: setup node
-        uses: actions/setup-node@48b55a011bda9f5d6aeb4c2d9c7362e8dae4041e # pin@v6
-        with:
-          node-version-file: .node-version
-          package-manager-cache: false
-
-      - name: bootstrap
-        run: npm ci
-
-      - name: build
-        run: npm run build
+      - name: build without installing dependencies
+        run: python3 -m tools.build
 
       - name: archive site
         run: tar --format=posix -cf "$RUNNER_TEMP/site.tar" -C dist .

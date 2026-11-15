@@ -26,11 +26,5 @@ jobs:
           package-manager-cache: false
           node-version-file: .node-version
 
-      - name: install dependencies
-        run: npm ci
-
-      - name: format
-        run: npm run format-ci
-      
-      - name: lint
-        run: npm run lint:eslint
+      - name: check source and local resources
+        run: python3 -m tools.check
