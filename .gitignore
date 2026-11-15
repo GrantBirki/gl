@@ -26,3 +26,7 @@ pnpm-debug.log*
 .cache/image/_astro/
 
 tmp/
+
+# Python and atomic build staging
+__pycache__/
+.site-build-*/

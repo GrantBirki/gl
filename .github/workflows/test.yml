@@ -26,8 +26,5 @@ jobs:
           package-manager-cache: false
           node-version-file: .node-version
 
-      - name: install dependencies
-        run: npm ci
-
       - name: test
         run: ./script/test

@@ -19,8 +19,11 @@ jobs:
     steps:
       # Comment on new PR requests with deployment instructions
       - uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # pin@v7.0.1
-      - name: comment
-        uses: GrantBirki/comment@937820f3623fd0e300294bcc64ac7577fc0ad4cc # pin@v3.0.3
-        continue-on-error: true
         with:
-          file: .github/new-pr-comment.md
+          persist-credentials: false
+      - name: comment
+        continue-on-error: true
+        env:
+          GH_TOKEN: ${{ github.token }}
+          PR_NUMBER: ${{ github.event.pull_request.number }}
+        run: gh pr comment "$PR_NUMBER" --repo "$GITHUB_REPOSITORY" --body-file .github/new-pr-comment.md

@@ -1,6 +1,0 @@
-dist
-node_modules
-.github
-.changeset
-.cache/image/cache.json
-astrowind-template-in-depth.mdx

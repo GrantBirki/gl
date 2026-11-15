@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr" class="2xl:text-[20px]">
+  <head>
+    {{ include "head.html" }}
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AstroWind template in depth — G + L</title>
+    <meta name="description" content="Internals documentation">
+    <meta name="robots" content="index,follow">
+    <link rel="canonical" href="https://astrowind.vercel.app/astrowind-template-in-depth">
+    <meta property="og:title" content="AstroWind template in depth">
+    <meta property="og:description" content="Internals documentation">
+    <meta property="og:url" content="https://astrowind.vercel.app/astrowind-template-in-depth">
+    <meta property="og:type" content="article">
+    <meta property="og:image" content="https://gl.birki.io/assets/media/save-the-date.B_FoERZE.png">
+    <meta property="og:image:alt" content="AstroWind template in depth">
+    <meta name="twitter:card" content="summary_large_image">
+  </head>
+  <body class="antialiased text-page bg-light dark:text-slate-300 tracking-tight dark:bg-dark">
+    {{ include "header.html" }}
+    <main>
+      <section class="py-8 sm:py-16 lg:py-20 mx-auto">
+        <article>
+          <header class>
+            <div class="flex justify-between flex-col sm:flex-row max-w-3xl mx-auto mt-0 mb-2 px-4 sm:px-6 sm:items-center">
+              <p> <svg width="1em" height="1em" viewbox="0 0 24 24" class="w-4 h-4 inline-block -mt-0.5 dark:text-gray-400" data-icon="tabler:clock" aria-hidden="true">   <symbol id="ai:tabler:clock"><g fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"><path d="M3 12a9 9 0 1 0 18 0a9 9 0 0 0-18 0"></path><path d="M12 7v5l3 3"></path></g></symbol><use href="#ai:tabler:clock"></use>  </svg> <time datetime="Mon Jul 17 2023 00:00:00 GMT+0000 (Coordinated Universal Time)">Jul 17, 2023</time>
+·  <a class="capitalize hover:underline" href="/category/documentation"> documentation </a>   · 6 min read </p>
+            </div>
+            <h1 class="px-4 sm:px-6 max-w-3xl mx-auto text-4xl md:text-5xl font-bold leading-tighter tracking-tighter font-heading"> AstroWind template in depth </h1>
+            <p class="max-w-3xl mx-auto mt-4 mb-8 px-4 sm:px-6 text-xl md:text-2xl text-muted dark:text-slate-400 text-justify"> While easy to get started, Astrowind is quite complex internally.  This page provides documentation on some of the more intricate parts. </p>
+            <picture> <source srcset="/assets/media/save-the-date.B_FoERZE_ZCwfi2.webp 400w, /assets/media/save-the-date.B_FoERZE_p3VV.webp 900w" type="image/webp" sizes="(max-width: 900px) 400px, 900px">  <img src="/assets/media/save-the-date.B_FoERZE_p3VV.webp" srcset="/assets/media/save-the-date.B_FoERZE_ZCwfi2.webp 400w, /assets/media/save-the-date.B_FoERZE_p3VV.webp 900w" sizes="(max-width: 900px) 400px, 900px" alt="Internals documentation" loading="eager" decoding="async" width="900" height="506" class="max-w-full lg:max-w-6xl mx-auto mb-6 sm:rounded-md bg-gray-400 dark:bg-slate-700"> </picture>
+          </header>
+          <div class="mx-auto px-6 sm:px-6 max-w-3xl prose prose-lg lg:prose-xl dark:prose-invert dark:prose-headings:text-slate-300 prose-md prose-headings:font-heading prose-headings:leading-tighter prose-headings:tracking-tighter prose-headings:font-bold prose-a:text-primary dark:prose-a:text-sage-400 prose-img:rounded-md prose-img:shadow-lg mt-8">
+            <h2 id="overview">Overview</h2>
+            <p>It can be a somewhat daunting task trying to get a handle on <em>AstroWind</em> internals, and particularly various points of usage.</p>
+            <p>This page outlines and clarifies some of the techniques found in <em>AstroWind</em>.  Use it as a guide for further modification, or an instructional for techniques to use in your own endeavors.</p>
+            <h2 id="styling">Styling</h2>
+            <p>As the name suggests, <em>AstroWind</em> relies on <em>TailWind</em> for styling.  Furthermore, <em>AstroWind</em> defines custom low level style settings which are incorporated into <em>TailWind</em> seamlessly, and which provides consistency for higher level styling constructs, as well as enabling dark mode.</p>
+            <p>The styling mechanism consists of the following files (all paths are prefixed with <code>/src/</code> ):</p>
+            <h6>assets/styles/base.css</h6>
+            <div class="dd ml-8">
+              <p>This file is essentially an extension of <em>TailWind’s</em> base.css.  High-level component styles are defined here.</p>
+              <p>Note also styling on elements selected by ‘attribute’ selectors at the bottom of the files, particularly those selected by ‘data’ attributes.</p>
+            </div>
+            <h6>components/CustomStyles.astro</h6>
+            <div class="dd ml-8">
+              <p>Defines custom colors and fonts.  For these to take effect in the ‘base.css’ file, they need to be loaded in the html header section. See next.</p>
+            </div>
+            <h6>components/common/MetaTags.astro</h6>
+            <div class="dd ml-8">
+              <p>Instantiates the <em>CustomStyles.astro</em> component, along with other meta information (as the name implies).  All of this is injected in to the header - see next.</p>
+            </div>
+            <h6>layouts/BaseLayout.astro</h6>
+            <div class="dd ml-8">
+              <p>This layout is used for all of the pages rendered by <em>AstroWind</em>.  The contents of <em>MetaTags.astro</em> component, described above, is injected into the html header.</p>
+            </div>
+            <h3 id="dark-mode">Dark Mode</h3>
+            <p><em>Dark Mode</em> is triggered by the little ‘sunlight’ icon:in the page header. It is defined in the <em>components/common/ToggleTheme.astro</em>, but the event is attached and the action defined in <em>components/common/BasicScripts.astro</em> in the following snippet:</p>
+            <pre class="astro-code github-dark" style="background-color:#24292e;color:#e1e4e8;overflow-x:auto" tabindex="0" data-language="javascript"><code><span class="line"><span style="color:#B392F0">    attachEvent</span><span style="color:#E1E4E8">(</span><span style="color:#9ECBFF">&#39;[data-aw-toggle-color-scheme]&#39;</span><span style="color:#E1E4E8">, </span><span style="color:#9ECBFF">&#39;click&#39;</span><span style="color:#E1E4E8">, </span><span style="color:#F97583">function</span><span style="color:#E1E4E8"> () {</span></span>
+<span class="line"><span style="color:#F97583">      if</span><span style="color:#E1E4E8"> (defaultTheme.</span><span style="color:#B392F0">endsWith</span><span style="color:#E1E4E8">(</span><span style="color:#9ECBFF">&#39;:only&#39;</span><span style="color:#E1E4E8">)) {</span></span>
+<span class="line"><span style="color:#F97583">        return</span><span style="color:#E1E4E8">;</span></span>
+<span class="line"><span style="color:#E1E4E8">      }</span></span>
+<span class="line"><span style="color:#E1E4E8">      document.documentElement.classList.</span><span style="color:#B392F0">toggle</span><span style="color:#E1E4E8">(</span><span style="color:#9ECBFF">&#39;dark&#39;</span><span style="color:#E1E4E8">);</span></span>
+<span class="line"><span style="color:#E1E4E8">      localStorage.theme </span><span style="color:#F97583">=</span><span style="color:#E1E4E8"> document.documentElement.classList.</span><span style="color:#B392F0">contains</span><span style="color:#E1E4E8">(</span><span style="color:#9ECBFF">&#39;dark&#39;</span><span style="color:#E1E4E8">) </span><span style="color:#F97583">?</span><span style="color:#9ECBFF"> &#39;dark&#39;</span><span style="color:#F97583"> :</span><span style="color:#9ECBFF"> &#39;light&#39;</span><span style="color:#E1E4E8">;</span></span>
+<span class="line"><span style="color:#E1E4E8">    });</span></span></code></pre>
+            <p>Note that this is a client event.  <em>BasicScripts.astro</em> defines several other client-side functionality as well as this one.</p>
+            <h2 id="advanced-slot-usage">Advanced Slot Usage</h2>
+            <p><em>slots</em> are part of the component implementation, which is a common concept among many frameworks, including <em>Astrojs</em>.  The typical slot definition in a component looks like this:</p>
+            <pre class="astro-code github-dark" style="background-color:#24292e;color:#e1e4e8;overflow-x:auto" tabindex="0" data-language="astro"><code><span class="line"><span style="color:#E1E4E8">  // (file: MyComponent.astro)</span></span>
+<span class="line"><span style="color:#E1E4E8">  ---</span></span>
+<span class="line"><span style="color:#E1E4E8">    const {title} = Astro.props;</span></span>
+<span class="line"><span style="color:#E1E4E8">    interface Props = {</span></span>
+<span class="line"><span style="color:#B392F0">      title</span><span style="color:#E1E4E8">:string</span></span>
+<span class="line"><span style="color:#E1E4E8">    }</span></span>
+<span class="line"><span style="color:#E1E4E8">  ---</span></span>
+<span class="line"><span style="color:#E1E4E8">    &lt;</span><span style="color:#85E89D">div</span><span style="color:#E1E4E8">&gt;</span></span>
+<span class="line"><span style="color:#E1E4E8">      &lt;</span><span style="color:#85E89D">h2</span><span style="color:#E1E4E8">&gt;{title}&lt;/</span><span style="color:#85E89D">h2</span><span style="color:#E1E4E8">&gt;</span></span>
+<span class="line"><span style="color:#E1E4E8">      &lt;</span><span style="color:#85E89D">slot</span><span style="color:#E1E4E8">/&gt;  </span><span style="color:#6A737D">&lt;!-- slot contents injected here --&gt;</span></span>
+<span class="line"><span style="color:#E1E4E8">    &lt;</span><span style="color:#85E89D">div</span><span style="color:#E1E4E8">&gt;</span></span></code></pre>
+            <p>And in usage elsewhere:</p>
+            <pre class="astro-code github-dark" style="background-color:#24292e;color:#e1e4e8;overflow-x:auto" tabindex="0" data-language="astro"><code><span class="line"><span style="color:#E1E4E8">  import MyComponent from &quot;~/components/MyComponent&quot;;</span></span>
+<span class="line"><span style="color:#E1E4E8">  ...</span></span>
+<span class="line"><span style="color:#E1E4E8">  &lt;</span><span style="color:#79B8FF">MyComponent</span><span style="color:#B392F0"> someArg</span><span style="color:#E1E4E8">=</span><span style="color:#9ECBFF">&quot;A Slot example&quot;</span><span style="color:#E1E4E8">&gt;</span></span>
+<span class="line"><span style="color:#E1E4E8">    &lt;</span><span style="color:#85E89D">p</span><span style="color:#E1E4E8">&gt;This content will be displayed in the slot&lt;/</span><span style="color:#85E89D">p</span><span style="color:#E1E4E8">&gt;</span></span>
+<span class="line"><span style="color:#E1E4E8">  &lt;/</span><span style="color:#79B8FF">MyComponent</span><span style="color:#E1E4E8">&gt;</span></span></code></pre>
+            <h3 id="alternate-usage">Alternate usage</h3>
+            <p>There’s another way we can use slots, useful particularly when a component can have markdown content is as follows (study carefully…):</p>
+            <pre class="astro-code github-dark" style="background-color:#24292e;color:#e1e4e8;overflow-x:auto" tabindex="0" data-language="astro"><code><span class="line"><span style="color:#E1E4E8">  // (file: MyComponent.astro)</span></span>
+<span class="line"><span style="color:#E1E4E8">  ---</span></span>
+<span class="line"><span style="color:#E1E4E8">    const {title} = Astro.props;</span></span>
+<span class="line"><span style="color:#E1E4E8">    interface Props = {</span></span>
+<span class="line"><span style="color:#B392F0">      title</span><span style="color:#E1E4E8">:string</span></span>
+<span class="line"><span style="color:#E1E4E8">    }</span></span>
+<span class="line"></span>
+<span class="line"><span style="color:#E1E4E8">    const content:string = await Astro.props.render(&#39;default&#39;);</span></span>
+<span class="line"><span style="color:#E1E4E8">            // renders the html to the &#39;content&#39; variable</span></span>
+<span class="line"><span style="color:#E1E4E8">  ---</span></span>
+<span class="line"><span style="color:#E1E4E8">    &lt;</span><span style="color:#85E89D">div</span><span style="color:#E1E4E8">&gt;</span></span>
+<span class="line"><span style="color:#E1E4E8">      &lt;</span><span style="color:#85E89D">h2</span><span style="color:#E1E4E8">&gt;{title}&lt;/</span><span style="color:#85E89D">h2</span><span style="color:#E1E4E8">&gt;</span></span>
+<span class="line"><span style="color:#E1E4E8">      &lt;</span><span style="color:#85E89D">div</span><span style="color:#B392F0"> set:html</span><span style="color:#E1E4E8">={content}/&gt;  </span><span style="color:#6A737D">&lt;!-- slot contents injected here --&gt;</span></span>
+<span class="line"><span style="color:#E1E4E8">    &lt;</span><span style="color:#85E89D">div</span><span style="color:#E1E4E8">&gt;</span></span></code></pre>
+            <p>Whoa!! What’s going on here?</p>
+            <p>Notice there is no slot definition in the html portion of the component.  Instead, what we do is have <em>Astro</em> render the slot content (here, the ‘default’ content, but you can also render named slots) into a variable, and then use that content in a <em>div</em> (for instance).</p>
+            <p>So, if the usage is in a markdown file, like so:</p>
+            <pre class="astro-code github-dark" style="background-color:#24292e;color:#e1e4e8;overflow-x:auto" tabindex="0" data-language="mdx"><code><span class="line"><span style="color:#E1E4E8">  import MyComponent from &#39;../../components/MyComponent&#39;;</span></span>
+<span class="line"></span>
+<span class="line"><span style="color:#79B8FF;font-weight:bold">  # Using the above component in a .mdx file (that can take components)</span></span>
+<span class="line"></span>
+<span class="line"><span style="color:#E1E4E8">  &lt;</span><span style="color:#79B8FF">MyComponent</span><span style="color:#B392F0"> title</span><span style="color:#F97583">=</span><span style="color:#9ECBFF">&quot;This is a slot implementor&quot;</span><span style="color:#E1E4E8">&gt;</span></span>
+<span class="line"><span style="color:#79B8FF;font-weight:bold">  ### Here is some markdown content</span></span>
+<span class="line"><span style="color:#FFAB70">  -</span><span style="color:#E1E4E8"> With a bullet item.</span></span>
+<span class="line"><span style="color:#E1E4E8">  &lt;/</span><span style="color:#79B8FF">MyComponent</span><span style="color:#E1E4E8">&gt;</span></span></code></pre>
+            <p><em>MyComponent</em> renders the markdown to html and then injects it into the div.</p>
+            <p>This actually has a big advantage — consider that with the normal usage you don’t have access to the slot contents: <em>Astro</em> just plops the content into the <em>&lt;slot/&gt;</em> tag.  Using this method, however, allows you to access the content and further manipulate it before it gets inserted into the html.</p>
+            <p>This allows a great deal of flexibility in component design.</p>
+            <h3 id="yet-another-step">Yet Another Step</h3>
+            <p>Now, we get to the techniques used in <em>AstroWind</em>, we’ll use the  <em>pages/index.astro</em> file to illustrate.</p>
+            <p>You’ll note that the index file imports a lot of components, each one roughly analagous to a panel in the index page.  Each of these components, in turn, is instantiated sequentially throughout the page.  But, you’ll notice that some of them use this kind of construct (we’ll use the last section, <em>CallToAction</em>, as it is most illustrative of the technique):</p>
+            <pre class="astro-code github-dark" style="background-color:#24292e;color:#e1e4e8;overflow-x:auto" tabindex="0" data-language="astro"><code><span class="line"><span style="color:#E1E4E8">  &lt;</span><span style="color:#79B8FF">CallToAction</span></span>
+<span class="line"><span style="color:#B392F0">    callToAction</span><span style="color:#E1E4E8">={{</span></span>
+<span class="line"><span style="color:#E1E4E8">      text: </span><span style="color:#9ECBFF">&#39;Get template&#39;</span><span style="color:#E1E4E8">,</span></span>
+<span class="line"><span style="color:#E1E4E8">      href: </span><span style="color:#9ECBFF">&#39;https://github.com/onwidget/astrowind&#39;</span><span style="color:#E1E4E8">,</span></span>
+<span class="line"><span style="color:#E1E4E8">      icon: </span><span style="color:#9ECBFF">&#39;tabler:download&#39;</span><span style="color:#E1E4E8">,</span></span>
+<span class="line"><span style="color:#E1E4E8">    }}</span></span>
+<span class="line"><span style="color:#E1E4E8">  &gt;</span></span>
+<span class="line"><span style="color:#E1E4E8">    &lt;</span><span style="color:#79B8FF">Fragment</span><span style="color:#B392F0"> slot</span><span style="color:#E1E4E8">=</span><span style="color:#9ECBFF">&quot;title&quot;</span><span style="color:#E1E4E8">&gt;</span></span>
+<span class="line"><span style="color:#E1E4E8">      Astro + &lt;</span><span style="color:#85E89D">br</span><span style="color:#B392F0"> class</span><span style="color:#E1E4E8">=</span><span style="color:#9ECBFF">&quot;block sm:hidden&quot;</span><span style="color:#E1E4E8"> /&gt;&lt;</span><span style="color:#85E89D">span</span><span style="color:#B392F0"> class</span><span style="color:#E1E4E8">=</span><span style="color:#9ECBFF">&quot;sm:whitespace-nowrap&quot;</span><span style="color:#E1E4E8">&gt;Tailwind CSS&lt;/</span><span style="color:#85E89D">span</span><span style="color:#E1E4E8">&gt;</span></span>
+<span class="line"><span style="color:#E1E4E8">    &lt;/</span><span style="color:#79B8FF">Fragment</span><span style="color:#E1E4E8">&gt;</span></span>
+<span class="line"></span>
+<span class="line"><span style="color:#E1E4E8">    &lt;</span><span style="color:#79B8FF">Fragment</span><span style="color:#B392F0"> slot</span><span style="color:#E1E4E8">=</span><span style="color:#9ECBFF">&quot;subtitle&quot;</span><span style="color:#E1E4E8">&gt;</span></span>
+<span class="line"><span style="color:#E1E4E8">      Be very surprised by these huge fake numbers you are seeing on this page. &lt;</span><span style="color:#85E89D">br</span><span style="color:#B392F0"> class</span><span style="color:#E1E4E8">=</span><span style="color:#9ECBFF">&quot;hidden md:inline&quot;</span><span style="color:#E1E4E8"> /&gt;Don&#39;t</span></span>
+<span class="line"><span style="color:#E1E4E8">      waste more time! :P</span></span>
+<span class="line"><span style="color:#E1E4E8">    &lt;/</span><span style="color:#79B8FF">Fragment</span><span style="color:#E1E4E8">&gt;</span></span>
+<span class="line"><span style="color:#E1E4E8">  &lt;/</span><span style="color:#79B8FF">CallToAction</span><span style="color:#E1E4E8">&gt;</span></span></code></pre>
+            <p>Some things to note, here:</p>
+            <h6>The <em>callToAction</em> argument</h6>
+            <div class="dd ml-8">
+              <p>This argument is actually being passed a javascript object — not a string.  (However, in the TS definition, it could be a string…)</p>
+            </div>
+            <h6>There are several <em>Fragment</em> children</h6>
+            <div class="dd ml-8">
+              <p>Furthermore, these &lt;Fragment/&gt; elements each have a <em>slot=“(value)”</em> specifier.</p>
+            </div>
+            <p>The latter seems odd, because &lt;Fragment/&gt; is a built-in component over which you have no control, and doesn’t have a provision for rendering slots, <em>per se</em>.</p>
+            <p>The answer lies in a paragraph in the <em>Astro</em> docs, slots section, which states:</p>
+            <blockquote>
+              <p>Use a <code>slot=&quot;my-slot&quot;</code> attribute on the child element that you want to pass through to a matching slot <code>name=&quot;my-slot&quot; /&gt;</code> placeholder in your component.</p>
+            </blockquote>
+            <p>That’s pretty concise and a bit of a head-scratcher to read, but basically what it says is that:</p>
+            <ol>
+              <li>Given a component that defines a slot:</li>
+              <li>you can reference a slot from a child element of that component and,</li>
+              <li>provide content to the parent component’s slot from the child by naming the slot in the child with a <code>slot=&quot;&lt;slot-name&gt;&quot;</code> property assignment, where the <em>slot-name</em> is the parent’s slot.</li>
+            </ol>
+            <p>So, in the example above, the <em>CallToAction</em> component defines the <em>subtitle</em> slot, and the following <em>&lt;Fragment slot=“subtitle”&gt;</em> populates the slot with the following content:</p>
+            <pre class="astro-code github-dark" style="background-color:#24292e;color:#e1e4e8;overflow-x:auto" tabindex="0" data-language="astro"><code><span class="line"><span style="color:#E1E4E8">    &lt;</span><span style="color:#79B8FF">Fragment</span><span style="color:#B392F0"> slot</span><span style="color:#E1E4E8">=</span><span style="color:#9ECBFF">&quot;subtitle&quot;</span><span style="color:#E1E4E8">&gt;</span></span>
+<span class="line"><span style="color:#E1E4E8">      Be very surprised by these huge fake numbers you are seeing on this page. &lt;</span><span style="color:#85E89D">br</span><span style="color:#B392F0"> class</span><span style="color:#E1E4E8">=</span><span style="color:#9ECBFF">&quot;hidden md:inline&quot;</span><span style="color:#E1E4E8"> /&gt;Don&#39;t</span></span>
+<span class="line"><span style="color:#E1E4E8">      waste more time! :P</span></span>
+<span class="line"><span style="color:#E1E4E8">    &lt;/</span><span style="color:#79B8FF">Fragment</span><span style="color:#E1E4E8">&gt;</span></span></code></pre>
+            <p>And, the <em>CallToAction</em> component defines and renders it thusly:</p>
+            <pre class="astro-code github-dark" style="background-color:#24292e;color:#e1e4e8;overflow-x:auto" tabindex="0" data-language="astro"><code><span class="line"><span style="color:#6A737D">---</span></span>
+<span class="line"><span style="color:#E1E4E8">  ... </span></span>
+<span class="line"><span style="color:#E1E4E8">  const {</span></span>
+<span class="line"><span style="color:#E1E4E8">    subtitle </span><span style="color:#F97583">=</span><span style="color:#F97583"> await</span><span style="color:#E1E4E8"> Astro.slots.</span><span style="color:#B392F0">render</span><span style="color:#E1E4E8">(</span><span style="color:#9ECBFF">&#39;subtitle&#39;</span><span style="color:#E1E4E8">),</span></span>
+<span class="line"><span style="color:#E1E4E8">} = Astro.props;</span></span>
+<span class="line"><span style="color:#E1E4E8">---</span></span>
+<span class="line"><span style="color:#E1E4E8">  ...</span></span>
+<span class="line"><span style="color:#E1E4E8">  {subtitle </span><span style="color:#F97583">&amp;&amp;</span><span style="color:#E1E4E8"> &lt;</span><span style="color:#85E89D">p</span><span style="color:#B392F0"> class</span><span style="color:#F97583">=</span><span style="color:#9ECBFF">&quot;text-xl text-muted dark:text-slate-400&quot;</span><span style="color:#B392F0"> set</span><span style="color:#E1E4E8">:</span><span style="color:#B392F0">html</span><span style="color:#F97583">=</span><span style="color:#E1E4E8">{subtitle} /&gt;}</span></span>
+<span class="line"><span style="color:#E1E4E8">  ...</span></span>
+<span class="line"></span></code></pre>
+            <p>There’s a lot to wrap your head around, here.</p>
+            <p>Notice first that <em>subtitle</em> is defined as a prop/argument, but it’s being processed as a slot.  Interestingly, prop args and slots seem to be somewhat interchangeable: if the subtitle was just a string, it would simply take that assignment.  The main difference is that if you render them independently, you have to call the render with an <em>await</em> modifier.</p>
+            <h2 id="calltoaction-property">CallToAction Property</h2>
+            <table>
+              <tr>
+                <td class="font-bold">Note:</td>
+                <td>
+                  <p>There’s a <em>lot</em> of duplicate (or at least very similar code) in the following components, especially as regards the <em>CallToAction</em> mechanism — adding to a lot of confusion and something of a maintenance headache:</p>
+                  <div class="ml-8">
+                    <p>src/components/widgets/Hero.astro<br>
+src/components/widgets/Steps2.astro<br>
+src/components/widgets/CallToAction.astro<br>
+src/components/widgets/Hero2.astro<br>
+src/pages/landing/startup.astro</p>
+                  </div>
+                  <p>Seems like this could be cleaned up.</p>
+                </td>
+              </tr>
+            </table>
+            <p>The <em>CallToAction</em> property can be of type <code>string | CallToAction</code> where the <code>CallToAction</code> is a typed object. In the component, this is handled thusly:</p>
+            <pre class="astro-code github-dark" style="background-color:#24292e;color:#e1e4e8;overflow-x:auto" tabindex="0" data-language="astro"><code><span class="line"><span style="color:#6A737D">---</span></span>
+<span class="line"><span style="color:#F97583">  const</span><span style="color:#E1E4E8"> {</span></span>
+<span class="line"><span style="color:#79B8FF">    callToAction</span><span style="color:#F97583"> =</span><span style="color:#F97583"> await</span><span style="color:#E1E4E8"> Astro.slots.</span><span style="color:#B392F0">render</span><span style="color:#E1E4E8">(</span><span style="color:#9ECBFF">&#39;callToAction&#39;</span><span style="color:#E1E4E8">),</span></span>
+<span class="line"><span style="color:#E1E4E8">  } </span><span style="color:#F97583">=</span><span style="color:#E1E4E8"> Astro.props;</span></span>
+<span class="line"><span style="color:#6A737D">          // also rendered as a slot</span></span>
+<span class="line"><span style="color:#6A737D">---</span></span>
+<span class="line"><span style="color:#E1E4E8">  &lt;</span><span style="color:#85E89D">div</span><span style="color:#E1E4E8">&gt;</span></span>
+<span class="line"><span style="color:#E1E4E8">  ...</span></span>
+<span class="line"><span style="color:#E1E4E8">  {</span></span>
+<span class="line"><span style="color:#F97583">  typeof</span><span style="color:#E1E4E8"> callToAction </span><span style="color:#F97583">===</span><span style="color:#9ECBFF"> &#39;string&#39;</span><span style="color:#F97583"> ?</span><span style="color:#E1E4E8"> (</span></span>
+<span class="line"><span style="color:#E1E4E8">    &lt;</span><span style="color:#79B8FF">Fragment</span><span style="color:#B392F0"> set</span><span style="color:#E1E4E8">:</span><span style="color:#B392F0">html</span><span style="color:#F97583">=</span><span style="color:#E1E4E8">{callToAction} /&gt;</span></span>
+<span class="line"><span style="color:#E1E4E8">  ) </span><span style="color:#F97583">:</span><span style="color:#E1E4E8"> (</span></span>
+<span class="line"><span style="color:#E1E4E8">    callToAction </span><span style="color:#F97583">&amp;&amp;</span></span>
+<span class="line"><span style="color:#E1E4E8">    callToAction.text </span><span style="color:#F97583">&amp;&amp;</span></span>
+<span class="line"><span style="color:#E1E4E8">    callToAction.href </span><span style="color:#F97583">&amp;&amp;</span><span style="color:#E1E4E8"> (</span></span>
+<span class="line"><span style="color:#E1E4E8">      &lt;</span><span style="color:#85E89D">div</span><span style="color:#B392F0"> class</span><span style="color:#F97583">=</span><span style="color:#9ECBFF">&quot;mt-6 max-w-xs mx-auto&quot;</span><span style="color:#E1E4E8">&gt;</span></span>
+<span class="line"><span style="color:#E1E4E8">        &lt;</span><span style="color:#85E89D">a</span><span style="color:#B392F0"> class</span><span style="color:#F97583">=</span><span style="color:#9ECBFF">&quot;btn btn-primary w-full sm:w-auto&quot;</span><span style="color:#B392F0"> href</span><span style="color:#F97583">=</span><span style="color:#E1E4E8">{callToAction.href} </span><span style="color:#B392F0">target</span><span style="color:#F97583">=</span><span style="color:#9ECBFF">&quot;_blank&quot;</span><span style="color:#B392F0"> rel</span><span style="color:#F97583">=</span><span style="color:#9ECBFF">&quot;noopener&quot;</span><span style="color:#E1E4E8">&gt;</span></span>
+<span class="line"><span style="color:#E1E4E8">          {callToAction.icon </span><span style="color:#F97583">&amp;&amp;</span><span style="color:#E1E4E8"> &lt;</span><span style="color:#79B8FF">Icon</span><span style="color:#B392F0"> name</span><span style="color:#F97583">=</span><span style="color:#E1E4E8">{callToAction.icon} </span><span style="color:#B392F0">class</span><span style="color:#F97583">=</span><span style="color:#9ECBFF">&quot;w-5 h-5 mr-1 -ml-1.5&quot;</span><span style="color:#E1E4E8"> /&gt;}</span></span>
+<span class="line"><span style="color:#E1E4E8">          {callToAction.text}</span></span>
+<span class="line"><span style="color:#E1E4E8">        &lt;/</span><span style="color:#85E89D">a</span><span style="color:#E1E4E8">&gt;</span></span>
+<span class="line"><span style="color:#E1E4E8">      &lt;/</span><span style="color:#85E89D">div</span><span style="color:#E1E4E8">&gt;</span></span>
+<span class="line"><span style="color:#E1E4E8">    )</span></span>
+<span class="line"><span style="color:#E1E4E8">  )</span></span>
+<span class="line"><span style="color:#E1E4E8">}</span></span>
+<span class="line"><span style="color:#E1E4E8">  &lt;/</span><span style="color:#85E89D">div</span><span style="color:#E1E4E8">&gt;</span></span></code></pre>
+            <p>First, the property type is checked to see if it’s a string: if so, it’s just set into a child <em>&lt;Fragment&gt;‘s</em> html.</p>
+            <p>If not, it is validated as an object and then members of the object are assigned to various
+html elements.</p>
+          </div>
+          <div class="mx-auto px-6 sm:px-6 max-w-3xl mt-8 flex justify-between flex-col sm:flex-row">
+            <ul class="mr-5">
+              <li class="bg-gray-100 dark:bg-slate-700 inline-block mr-2 mb-2 py-0.5 px-2 lowercase font-medium"> <a href="/tag/astro" class="text-muted dark:text-slate-300 hover:text-primary dark:hover:text-gray-200"> astro </a> </li>
+              <li class="bg-gray-100 dark:bg-slate-700 inline-block mr-2 mb-2 py-0.5 px-2 lowercase font-medium"> <a href="/tag/tailwind-css" class="text-muted dark:text-slate-300 hover:text-primary dark:hover:text-gray-200"> tailwind-css </a> </li>
+              <li class="bg-gray-100 dark:bg-slate-700 inline-block mr-2 mb-2 py-0.5 px-2 lowercase font-medium"> <a href="/tag/front-end" class="text-muted dark:text-slate-300 hover:text-primary dark:hover:text-gray-200"> front-end </a> </li>
+            </ul>
+            <div class="mt-5 sm:mt-1 align-middle text-gray-500 dark:text-slate-600"> <span class="align-super font-bold text-gray-400 dark:text-slate-400">Share:</span> <button class="ml-2" title="Twitter Share" data-aw-social-share="twitter" data-aw-url="https://gl.birki.io/astrowind-template-in-depth" data-aw-text="AstroWind template in depth"><svg width="1em" height="1em" viewbox="0 0 24 24" class="w-6 h-6 text-gray-400 dark:text-slate-500 hover:text-black dark:hover:text-slate-300" data-icon="ri:twitter-fill" aria-hidden="true">   <symbol id="ai:ri:twitter-fill"><path fill="currentColor" d="M22.213 5.656a8.4 8.4 0 0 1-2.402.658A4.2 4.2 0 0 0 21.649 4c-.82.488-1.719.83-2.655 1.015a4.182 4.182 0 0 0-7.126 3.814a11.87 11.87 0 0 1-8.621-4.37a4.17 4.17 0 0 0-.566 2.103c0 1.45.739 2.731 1.86 3.481a4.2 4.2 0 0 1-1.894-.523v.051a4.185 4.185 0 0 0 3.355 4.102a4.2 4.2 0 0 1-1.89.072A4.185 4.185 0 0 0 8.02 16.65a8.4 8.4 0 0 1-6.192 1.732a11.83 11.83 0 0 0 6.41 1.88c7.694 0 11.9-6.373 11.9-11.9q0-.271-.012-.541a8.5 8.5 0 0 0 2.086-2.164"></path></symbol><use href="#ai:ri:twitter-fill"></use>  </svg> </button> <button class="ml-2" title="Facebook Share" data-aw-social-share="facebook" data-aw-url="https://gl.birki.io/astrowind-template-in-depth"><svg width="1em" height="1em" viewbox="0 0 24 24" class="w-6 h-6 text-gray-400 dark:text-slate-500 hover:text-black dark:hover:text-slate-300" data-icon="ri:facebook-box-fill" aria-hidden="true">   <symbol id="ai:ri:facebook-box-fill"><path fill="currentColor" d="M15.402 21v-6.966h2.333l.349-2.708h-2.682V9.599c0-.784.218-1.319 1.342-1.319h1.434V5.857a19 19 0 0 0-2.09-.107c-2.067 0-3.482 1.262-3.482 3.58v1.996h-2.338v2.708h2.338V21H4a1 1 0 0 1-1-1V4a1 1 0 0 1 1-1h16a1 1 0 0 1 1 1v16a1 1 0 0 1-1 1z"></path></symbol><use href="#ai:ri:facebook-box-fill"></use>  </svg> </button> <button class="ml-2" title="Linkedin Share" data-aw-social-share="linkedin" data-aw-url="https://gl.birki.io/astrowind-template-in-depth" data-aw-text="AstroWind template in depth"><svg width="1em" height="1em" viewbox="0 0 24 24" class="w-6 h-6 text-gray-400 dark:text-slate-500 hover:text-black dark:hover:text-slate-300" data-icon="ri:linkedin-box-fill" aria-hidden="true">   <symbol id="ai:ri:linkedin-box-fill"><path fill="currentColor" d="M18.336 18.339h-2.665v-4.177c0-.996-.02-2.278-1.39-2.278c-1.389 0-1.601 1.084-1.601 2.205v4.25h-2.666V9.75h2.56v1.17h.035c.358-.674 1.228-1.387 2.528-1.387c2.7 0 3.2 1.778 3.2 4.092v4.714M7.004 8.575a1.546 1.546 0 0 1-1.548-1.549a1.548 1.548 0 1 1 1.547 1.549m1.336 9.764H5.667V9.75H8.34zM19.67 3H4.33C3.594 3 3 3.58 3 4.297v15.406C3 20.42 3.594 21 4.328 21h15.339C20.4 21 21 20.42 21 19.703V4.297C21 3.581 20.4 3 19.666 3z"></path></symbol><use href="#ai:ri:linkedin-box-fill"></use>  </svg> </button> <button class="ml-2" title="Whatsapp Share" data-aw-social-share="whatsapp" data-aw-url="https://gl.birki.io/astrowind-template-in-depth" data-aw-text="AstroWind template in depth"><svg width="1em" height="1em" viewbox="0 0 24 24" class="w-6 h-6 text-gray-400 dark:text-slate-500 hover:text-black dark:hover:text-slate-300" data-icon="ri:whatsapp-fill" aria-hidden="true">   <symbol id="ai:ri:whatsapp-fill"><path fill="currentColor" d="M12.001 2c5.523 0 10 4.477 10 10s-4.477 10-10 10a9.95 9.95 0 0 1-5.03-1.355L2.005 22l1.352-4.968A9.95 9.95 0 0 1 2.001 12c0-5.523 4.477-10 10-10M8.593 7.3l-.2.008a1 1 0 0 0-.372.1a1.3 1.3 0 0 0-.294.228c-.12.113-.188.211-.261.306A2.73 2.73 0 0 0 6.9 9.62c.002.49.13.967.33 1.413c.409.902 1.082 1.857 1.97 2.742c.214.213.424.427.65.626a9.45 9.45 0 0 0 3.84 2.046l.568.087c.185.01.37-.004.556-.013a2 2 0 0 0 .833-.231a5 5 0 0 0 .383-.22q.001.002.125-.09c.135-.1.218-.171.33-.288q.126-.13.21-.302c.078-.163.156-.474.188-.733c.024-.198.017-.306.014-.373c-.004-.107-.093-.218-.19-.265l-.582-.261s-.87-.379-1.402-.621a.5.5 0 0 0-.176-.041a.48.48 0 0 0-.378.127c-.005-.002-.072.055-.795.931a.35.35 0 0 1-.368.13a1.4 1.4 0 0 1-.191-.066c-.124-.052-.167-.072-.252-.108a6 6 0 0 1-1.575-1.003c-.126-.11-.243-.23-.363-.346a6.3 6.3 0 0 1-1.02-1.268l-.059-.095a1 1 0 0 1-.102-.205c-.038-.147.061-.265.061-.265s.243-.266.356-.41c.11-.14.203-.276.263-.373c.118-.19.155-.385.093-.536q-.42-1.026-.868-2.041c-.059-.134-.234-.23-.393-.249q-.081-.01-.162-.016a3 3 0 0 0-.403.004z"></path></symbol><use href="#ai:ri:whatsapp-fill"></use>  </svg> </button> <button class="ml-2" title="Email Share" data-aw-social-share="mail" data-aw-url="https://gl.birki.io/astrowind-template-in-depth" data-aw-text="AstroWind template in depth"><svg width="1em" height="1em" viewbox="0 0 24 24" class="w-6 h-6 text-gray-400 dark:text-slate-500 hover:text-black dark:hover:text-slate-300" data-icon="ri:mail-fill" aria-hidden="true">   <symbol id="ai:ri:mail-fill"><path fill="currentColor" d="M3 3h18a1 1 0 0 1 1 1v16a1 1 0 0 1-1 1H3a1 1 0 0 1-1-1V4a1 1 0 0 1 1-1m9.06 8.683L5.648 6.238L4.353 7.762l7.72 6.555l7.581-6.56l-1.308-1.513z"></path></symbol><use href="#ai:ri:mail-fill"></use>  </svg> </button> </div>
+          </div>
+        </article>
+      </section>
+      <div class="mx-auto px-6 sm:px-6 max-w-3xl pt-8 md:pt-4 pb-12 md:pb-20"> <a class="btn btn-ghost px-3 md:px-3" href="/blog"><svg width="1em" height="1em" viewbox="0 0 24 24" class="w-5 h-5 mr-1 -ml-1.5" data-icon="tabler:chevron-left" aria-hidden="true">   <symbol id="ai:tabler:chevron-left"><path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m15 6l-6 6l6 6"></path></symbol><use href="#ai:tabler:chevron-left"></use>  </svg> Back to Blog</a> </div>
+    </main>
+    {{ include "footer.html" }}
+    <script type="module" src="/assets/site.js"></script>
+  </body>
+</html>

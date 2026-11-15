@@ -63,9 +63,11 @@ class BuiltSiteTests(unittest.TestCase):
             self.assertIn(post.findtext("title"), " ".join(page.text))
         self.assertTrue((DIST / "blog/index.html").is_file())
 
-    def test_gallery_keeps_its_client_renderer(self):
+    def test_gallery_renders_photos_without_a_framework(self):
         page = Page(DIST / "gallery/index.html")
-        self.assertTrue(page.find("astro-island"))
+        self.assertFalse(page.find("astro-island"))
+        self.assertTrue(page.find("div", **{"data-gallery": None}))
+        self.assertGreater(len(page.find("img")), 100)
         self.assertTrue((DIST / "assets/gallery").is_dir())
 
     def test_updated_icon_renderer_keeps_geometry_and_symbol_targets(self):

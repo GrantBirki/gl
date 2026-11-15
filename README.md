@@ -1,49 +1,81 @@
 # G + L 💍
 
-[![deploy](https://github.com/GrantBirki/gl/actions/workflows/deploy.yml/badge.svg)](https://github.com/GrantBirki/gl/actions/workflows/deploy.yml) [![ci](https://github.com/GrantBirki/gl/actions/workflows/ci.yml/badge.svg)](https://github.com/GrantBirki/gl/actions/workflows/ci.yml) [![lint](https://github.com/GrantBirki/gl/actions/workflows/lint.yml/badge.svg)](https://github.com/GrantBirki/gl/actions/workflows/lint.yml) [![CodeQL](https://github.com/GrantBirki/gl/actions/workflows/codeql-analysis.yml/badge.svg)](https://github.com/GrantBirki/gl/actions/workflows/codeql-analysis.yml)
+Wedding website for Grant and Leah: [gl.birki.io](https://gl.birki.io).
 
-Wedding website for Grant and Leah
+This is a static website built with Python's standard library and ordinary HTML,
+CSS, and browser JavaScript. There are **zero third-party application, build, or
+test packages** to install. GitHub Actions remain pinned and maintained separately.
 
-[gl.birki.io](https://gl.birki.io) 🔗
+## Develop and preview
 
-![homepage](src/assets/images/default.png)
+Python 3.11 or later is sufficient to build and serve the site:
 
-## Commands
+```sh
+python3 -m tools.serve --watch
+```
 
-All commands are run from the root of the project, from a terminal:
+The local server listens on `127.0.0.1:4321`. Edit a source file, wait for the
+rebuild message, and refresh the browser. Use `--port` or `--host` when needed.
 
-| Command                          | Action                                             |
-| :------------------------------- | :------------------------------------------------- |
-| `npm install`                    | Installs dependencies                              |
-| `npm run dev`                    | Starts local dev server at `localhost:3000`        |
-| `npm run build`                  | Build your production site to `./dist/`            |
-| `npm run preview`                | Preview your build locally, before deploying       |
-| `npm run format`                 | Format codes with Prettier                         |
-| `npm run lint:eslint`            | Run Eslint                                         |
-| `npm run astro ...`              | Run CLI commands like `astro add`, `astro preview` |
-| `npm run bootstrap`              | Bootstraps the project                             |
-| `script/generate-gallery-images` | Generate gallery images                            |
+```sh
+python3 -m tools.build       # Build the static site into dist/
+python3 -m tools.serve       # Build and preview without watching files
+```
 
-## Development
+## Edit the site
 
-Here are some basic commands to get you up and running to develop with this template:
+- `site/pages/`: editable HTML for every existing page, including the legacy blog.
+  A directory's `index.html` becomes that directory's public route.
+- `site/partials/`: the shared head, navigation, and footer. Pages use
+  `{{ include "header.html" }}` and similar includes.
+- `site/data/home.json` and `gallery.json`: selected homepage photos and the full
+  gallery. `{{ gallery "home" }}` and `{{ gallery "gallery" }}` render them.
+- `site/data/places.json`: names and geographic coordinates for `{{ globe }}`.
+- `public/`: files copied directly to the public site. Optimized images and local
+  fonts are retained under `public/assets/media/`; gallery originals are under
+  `public/assets/gallery/`.
+- `public/assets/site.css`: the previous visual styles, now maintained as plain
+  CSS. There is no Tailwind generator: add or change CSS rules directly.
+  `widgets.css` contains the native gallery, globe, and confetti styles.
+- `public/assets/*.mjs` and `site.js`: small, first-party browser modules. There is
+  no React, Three.js, Astro runtime, external JavaScript CDN, or vendored bundle.
+- `site/rss.xml` and the sitemap XML files: retained static feeds and route lists.
+  Update them when adding or removing blog content or routes. The template blog
+  posts are preserved content, not instructions for the current build system.
 
-1. Install `npm` dependencies
+Add gallery JPG/PNG files, then run `script/generate-gallery-images` to refresh
+metadata. To change the homepage selection, edit `site/data/home.json`, or put one
+filename per line in `tmp/keep.txt` and run `script/select-images`.
 
-   ```bash
-   npm i
-   ```
+Images are prepared ahead of time, rather than optimized on every build. Supply
+appropriately sized images when adding new content. Existing fonts, photographs,
+responsive image variants, SVG icons, and their licenses have been retained.
 
-2. Start the development server
+## Check changes
 
-   ```bash
-   npm start
-   ```
+The complete checks also use Node 22+ for its built-in JavaScript test runner and
+syntax checker. CI uses the version in `.node-version`. No npm install is needed.
 
-3. View your site at [`localhost:3000`](http://localhost:3000/)
+```sh
+./script/test                # Python, packaging, and native JavaScript tests
+python3 -m tools.check       # Syntax, JSON, local assets, and SVG references
+```
 
-> Live reload is enabled by default, so any changes you make will be reflected in the browser.
+The tests cover all 30 previous routes, metadata and RSS, no-JavaScript galleries,
+image dimensions, builder boundaries, reproducible builds, globe geometry, and
+photo layout. Browser checks should also cover desktop/mobile navigation, the
+globe's drag/keyboard/destination controls, and reduced-motion behavior.
 
-## Build Cache
+## Deploy and roll back
 
-This templates also uses a custom GitHub Actions build cache to help speed things up in CI when processing images. If you make any changes to images when working on a project using this template, please ensure to run `npm run build` before deploying to ensure your `cache.json` file is updated.
+The existing `.deploy` PR comment flow and GitHub Pages deployment are retained.
+Candidate code builds in a read-only job; a separate trusted runner validates and
+packages the static archive before deployment. No application secrets are needed.
+
+`package.json` and its empty lockfile are compatibility wrappers for npm commands
+and older deployment workflows. `npm ci && npm run build` still works and installs
+zero packages. Current workflows call Python directly for the build.
+
+Use GitHub's **Revert** action on the migration PR to restore the previous
+implementation; the normal main-branch deployment then publishes that revision.
+See [the architecture notes](docs/architecture.md) for the dependency tradeoffs.
