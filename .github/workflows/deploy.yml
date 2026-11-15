@@ -66,7 +66,7 @@ jobs:
         run: tar --format=posix -cf "$RUNNER_TEMP/site.tar" -C dist .
 
       - name: upload build
-        uses: actions/upload-artifact@ea165f8d65b6e75b540449e92b4886f43607fa02 # pin@v4.6.2
+        uses: actions/upload-artifact@043fb46d1a93c77aae656e7c1c64a875d1fc6a0a # pin@v7.0.1
         with:
           name: site-${{ github.run_attempt }}-${{ needs.deployment-check.outputs.sha }}
           path: ${{ runner.temp }}/site.tar
@@ -112,7 +112,7 @@ jobs:
         run: python3 .github/scripts/archive-pages.py "$RUNNER_TEMP/site-output" "$RUNNER_TEMP/artifact.tar"
 
       - name: upload pages artifact
-        uses: actions/upload-artifact@ea165f8d65b6e75b540449e92b4886f43607fa02 # pin@v4.6.2
+        uses: actions/upload-artifact@043fb46d1a93c77aae656e7c1c64a875d1fc6a0a # pin@v7.0.1
         with:
           name: pages-${{ github.run_id }}-${{ github.run_attempt }}
           path: ${{ runner.temp }}/artifact.tar
