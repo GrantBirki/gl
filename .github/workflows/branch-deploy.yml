@@ -44,7 +44,7 @@ jobs:
 
     steps:
       # execute the branch-deploy action
-      - uses: grantbirki/branch-deploy@7173dcbb72a30da0148076fade87260ddd1b5e28 # pin@v12.4.2
+      - uses: grantbirki/branch-deploy@a589e8d69ed275ec1e1dbfa8de6e3429f077b08b # pin@v12.4.3
         id: branch-deploy
         with:
           trigger: ".deploy"
@@ -169,7 +169,7 @@ jobs:
       pull-requests: write
     steps:
       - name: complete deployment
-        uses: grantbirki/branch-deploy@7173dcbb72a30da0148076fade87260ddd1b5e28 # pin@v12.4.2
+        uses: grantbirki/branch-deploy@a589e8d69ed275ec1e1dbfa8de6e3429f077b08b # pin@v12.4.3
         with:
           result_mode: true
           context: ${{ needs.trigger.outputs.context }}
